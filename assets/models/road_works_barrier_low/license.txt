@@ -1,0 +1,11 @@
+Model Information:
+* title:	Road Works Barrier Low
+* source:	https://sketchfab.com/3d-models/road-works-barrier-low-9a9585f6fcfb42d9b978625b011ee4a8
+* author:	Developer3.5Pro (https://sketchfab.com/GDTitans)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Road Works Barrier Low" (https://sketchfab.com/3d-models/road-works-barrier-low-9a9585f6fcfb42d9b978625b011ee4a8) by Developer3.5Pro (https://sketchfab.com/GDTitans) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
