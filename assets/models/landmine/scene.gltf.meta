@@ -1,0 +1,204 @@
+{
+  "ver": "2.3.12",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "4da7c408-f8c7-40e6-b434-aee9b029b586",
+  "files": [],
+  "subMetas": {
+    "64881": {
+      "importer": "gltf-mesh",
+      "uuid": "4da7c408-f8c7-40e6-b434-aee9b029b586@64881",
+      "displayName": "",
+      "id": "64881",
+      "name": "pCylinder1_lambert2_0.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 380
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3effa": {
+      "importer": "texture",
+      "uuid": "4da7c408-f8c7-40e6-b434-aee9b029b586@3effa",
+      "displayName": "",
+      "id": "3effa",
+      "name": "UnnamedTexture-0.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/landmine/textures/lambert2_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "221a5": {
+      "importer": "texture",
+      "uuid": "4da7c408-f8c7-40e6-b434-aee9b029b586@221a5",
+      "displayName": "",
+      "id": "221a5",
+      "name": "UnnamedTexture-1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/landmine/textures/lambert2_metallicRoughness.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0089c": {
+      "importer": "texture",
+      "uuid": "4da7c408-f8c7-40e6-b434-aee9b029b586@0089c",
+      "displayName": "",
+      "id": "0089c",
+      "name": "UnnamedTexture-2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/landmine/textures/lambert2_emissive.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9b633": {
+      "importer": "texture",
+      "uuid": "4da7c408-f8c7-40e6-b434-aee9b029b586@9b633",
+      "displayName": "",
+      "id": "9b633",
+      "name": "UnnamedTexture-3.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/landmine/textures/lambert2_normal.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7a3ca": {
+      "importer": "gltf-material",
+      "uuid": "4da7c408-f8c7-40e6-b434-aee9b029b586@7a3ca",
+      "displayName": "",
+      "id": "7a3ca",
+      "name": "lambert2.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d1932": {
+      "importer": "gltf-scene",
+      "uuid": "4da7c408-f8c7-40e6-b434-aee9b029b586@d1932",
+      "displayName": "",
+      "id": "d1932",
+      "name": "scene.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "uri": "db://assets/models/landmine/textures/lambert2_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/landmine/textures/lambert2_metallicRoughness.png"
+      },
+      {
+        "uri": "db://assets/models/landmine/textures/lambert2_emissive.png"
+      },
+      {
+        "uri": "db://assets/models/landmine/textures/lambert2_normal.png"
+      }
+    ],
+    "redirect": "4da7c408-f8c7-40e6-b434-aee9b029b586@d1932",
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "4da7c408-f8c7-40e6-b434-aee9b029b586@64881"
+      ],
+      "skeletons": [],
+      "textures": [
+        "4da7c408-f8c7-40e6-b434-aee9b029b586@3effa",
+        "4da7c408-f8c7-40e6-b434-aee9b029b586@221a5",
+        "4da7c408-f8c7-40e6-b434-aee9b029b586@0089c",
+        "4da7c408-f8c7-40e6-b434-aee9b029b586@9b633"
+      ],
+      "materials": [
+        "4da7c408-f8c7-40e6-b434-aee9b029b586@7a3ca"
+      ],
+      "scenes": [
+        "4da7c408-f8c7-40e6-b434-aee9b029b586@d1932"
+      ]
+    }
+  }
+}

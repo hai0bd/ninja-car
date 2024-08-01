@@ -10,7 +10,7 @@ export class Player extends Component {
         if (this.node.position.x <= -25) return;
         const pos = this.node.getPosition();
         const rot = this.carAnim.eulerAngles.clone();
-        rot.y = -135;
+        rot.y += -45;
         this.carAnim.setRotationFromEuler(rot);
         pos.x -= 12.5;
         this.node.setPosition(pos);
@@ -19,14 +19,14 @@ export class Player extends Component {
         if (this.node.position.x >= 25) return;
         const pos = this.node.getPosition();
         const rot = this.carAnim.eulerAngles.clone();
-        rot.y = -45;
+        rot.y += 45;
         this.carAnim.setRotationFromEuler(rot);
         pos.x += 12.5;
         this.node.setPosition(pos);
     }
     normalMove() {
         const rot = this.carAnim.eulerAngles.clone();
-        rot.y = -90;
+        rot.y = 35.6;
         this.carAnim.setRotationFromEuler(rot);
     }
 }

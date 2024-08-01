@@ -14,9 +14,9 @@ export class FloatingCoin extends Component {
 
     startPos: Vec3;
 
-    start() {
+    /* start() {
         this.startFloating();
-    }
+    } */
 
     startFloating() {
         // Tạo hiệu ứng tween để di chuyển đối tượng lên và xuống

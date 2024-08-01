@@ -1,0 +1,133 @@
+{
+  "ver": "2.3.12",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "201618fa-92fd-4e25-9f9c-d53360a73bd4",
+  "files": [],
+  "subMetas": {
+    "40935": {
+      "importer": "gltf-mesh",
+      "uuid": "201618fa-92fd-4e25-9f9c-d53360a73bd4@40935",
+      "displayName": "",
+      "id": "40935",
+      "name": "Plane.005.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 602
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c1084": {
+      "importer": "gltf-mesh",
+      "uuid": "201618fa-92fd-4e25-9f9c-d53360a73bd4@c1084",
+      "displayName": "",
+      "id": "c1084",
+      "name": "Plane.004.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "triangleCount": 296
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2c41f": {
+      "importer": "gltf-material",
+      "uuid": "201618fa-92fd-4e25-9f9c-d53360a73bd4@2c41f",
+      "displayName": "",
+      "id": "2c41f",
+      "name": "gas pump red.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2e058": {
+      "importer": "gltf-material",
+      "uuid": "201618fa-92fd-4e25-9f9c-d53360a73bd4@2e058",
+      "displayName": "",
+      "id": "2e058",
+      "name": "gasstation red.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a50ae": {
+      "importer": "gltf-scene",
+      "uuid": "201618fa-92fd-4e25-9f9c-d53360a73bd4@a50ae",
+      "displayName": "",
+      "id": "a50ae",
+      "name": "uploads_files_918168_gasstation.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "201618fa-92fd-4e25-9f9c-d53360a73bd4@a50ae",
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "201618fa-92fd-4e25-9f9c-d53360a73bd4@40935",
+        "201618fa-92fd-4e25-9f9c-d53360a73bd4@c1084"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "201618fa-92fd-4e25-9f9c-d53360a73bd4@2c41f",
+        "201618fa-92fd-4e25-9f9c-d53360a73bd4@2e058"
+      ],
+      "scenes": [
+        "201618fa-92fd-4e25-9f9c-d53360a73bd4@a50ae"
+      ]
+    }
+  }
+}

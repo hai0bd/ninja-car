@@ -1,0 +1,11 @@
+Model Information:
+* title:	Landmine
+* source:	https://sketchfab.com/3d-models/landmine-ae9b8e182f144c569860ad120b3cb386
+* author:	saruedaacevedo (https://sketchfab.com/saruedaacevedo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Landmine" (https://sketchfab.com/3d-models/landmine-ae9b8e182f144c569860ad120b3cb386) by saruedaacevedo (https://sketchfab.com/saruedaacevedo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

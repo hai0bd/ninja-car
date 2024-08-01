@@ -22,17 +22,17 @@ export class CameraFollow extends Component {
     } */
 
     moveRight() {
-        /* if (this.node.position.x <= -25) return;
+        if (this.node.position.x <= -25) return;
         const pos = this.node.getPosition();
         tween(this.node)
-            .to(this.duration, { position: new Vec3(pos.x - 25, pos.y, pos.z) }, { easing: 'quadOut' })
-            .start(); */
+            .to(this.duration, { position: new Vec3(pos.x - 12.5, pos.y, pos.z) }, { easing: 'quadOut' })
+            .start();
     }
 
     moveLeft() {
-        /* if (this.node.position.x >= 25) return;
+        if (this.node.position.x >= 25) return;
         const pos = this.node.getPosition();
-        tween(this.node).to(this.duration, { position: new Vec3(pos.x + 25, pos.y, pos.z) }, { easing: 'cubicOut' }).start(); */
+        tween(this.node).to(this.duration, { position: new Vec3(pos.x + 12.5, pos.y, pos.z) }, { easing: 'cubicOut' }).start();
     }
 }
 
