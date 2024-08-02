@@ -2,6 +2,12 @@ export enum Layer{
     Player = 1,
 }
 
+export enum InputKey{
+    Press_Left = 0,
+    Press_Right = 1,
+    Key_Up = 2
+}
+
 export enum Object {
     Null = 0,
     Coin = 1,

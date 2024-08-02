@@ -1,4 +1,5 @@
 import { _decorator, BoxCollider, Component, EventKeyboard, game, Input, input, KeyCode, Node } from 'cc';
+import { InputKey } from './enum';
 const { ccclass, property } = _decorator;
 
 @ccclass('Player')
@@ -11,28 +12,14 @@ export class Player extends Component {
 
     coin: number = 0;
 
-    moveRight() {
-        if (this.node.position.x <= -25) return;
+    drift(angle: number, deviation: number){
+        this.node.setRotationFromEuler(0, angle, 0);
         const pos = this.node.getPosition();
-        const rot = this.carAnim.eulerAngles.clone();
-        rot.y += -45;
-        this.carAnim.setRotationFromEuler(rot);
-        pos.x -= 12.5;
-        this.node.setPosition(pos);
-    }
-    moveLeft() {
-        if (this.node.position.x >= 25) return;
-        const pos = this.node.getPosition();
-        const rot = this.carAnim.eulerAngles.clone();
-        rot.y += 45;
-        this.carAnim.setRotationFromEuler(rot);
-        pos.x += 12.5;
+        pos.x -= deviation;
         this.node.setPosition(pos);
     }
     normalMove() {
-        const rot = this.carAnim.eulerAngles.clone();
-        rot.y = 35.6;
-        this.carAnim.setRotationFromEuler(rot);
+        this.node.setRotationFromEuler(0, 0, 0);
     }
 }
 

@@ -21,7 +21,7 @@ export class GenerateCoin {
     }
 
     generateCoin(cointType: CoinType) {
-        /* if (cointType == CoinType.Null || cointType == CoinType.Zikzak) {
+        if (cointType == CoinType.Null || cointType == CoinType.Zikzak) {
             for (let i = 0; i < 5; i++) {
                 this.coinNull();
             }
@@ -40,7 +40,7 @@ export class GenerateCoin {
                 else if (mixType == CoinGroup.Right) this.coinRight();
                 else if (mixType == CoinGroup.Left) this.coinLeft();
             }
-        } */
+        }
     }
 
     coinStraight() {
