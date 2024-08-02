@@ -79,6 +79,16 @@
   ],
   "_props": [
     {
+      "roughness": 1,
+      "specularIntensity": 0.422,
+      "emissive": {
+        "__type__": "cc.Color",
+        "r": 54,
+        "g": 54,
+        "b": 54,
+        "a": 255
+      },
+      "normalStrength": 5,
       "mainTexture": {
         "__uuid__": "72ca46df-33bd-4bae-9054-8c836e2f2d28@6c48a",
         "__expectedType__": "cc.Texture2D"

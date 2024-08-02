@@ -1,10 +1,15 @@
-import { _decorator, Component, EventKeyboard, game, Input, input, KeyCode, Node } from 'cc';
+import { _decorator, BoxCollider, Component, EventKeyboard, game, Input, input, KeyCode, Node } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('Player')
 export class Player extends Component {
     @property(Node)
     carAnim: Node;
+
+    @property(BoxCollider)
+    collider: BoxCollider;
+
+    coin: number = 0;
 
     moveRight() {
         if (this.node.position.x <= -25) return;

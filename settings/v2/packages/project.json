@@ -5,5 +5,11 @@
       "width": 540,
       "height": 960
     }
-  }
+  },
+  "layer": [
+    {
+      "name": "Player",
+      "value": 1
+    }
+  ]
 }

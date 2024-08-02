@@ -1,3 +1,7 @@
+export enum Layer{
+    Player = 1,
+}
+
 export enum Object {
     Null = 0,
     Coin = 1,
