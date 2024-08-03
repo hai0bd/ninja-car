@@ -7,7 +7,7 @@ temp/
 local/
 build/android
 profiles/
-native/
+native/android
 #//////////////////////////
 # NPM
 #//////////////////////////
