@@ -45,6 +45,7 @@ export class GameManager extends Component {
         }
 
         const handleInput = new HandleInput();
+        console.log("version 1.0.1");
     }
 
     start() {
