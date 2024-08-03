@@ -1,11 +1,16 @@
-import { _decorator, CCFloat, Component, instantiate, math, Node, Prefab, tween, Vec3 } from 'cc';
+import { _decorator, CCFloat, CCInteger, Component, instantiate, math, Node, Prefab, tween, Vec3 } from 'cc';
 import { GameManager } from './gameManager';
+import { UIManager } from './uiManager';
+import { ObjectPooling } from '../utils/patern/objectPooling';
 const { ccclass, property } = _decorator;
 
 @ccclass('MapControl')
 export class MapControl extends Component {
     @property(Prefab)
     viewPrefab: Prefab[] = [];
+
+    @property(Prefab)
+    finishLine: Prefab;
 
     @property(Node)
     view: Node;
@@ -18,10 +23,29 @@ export class MapControl extends Component {
 
     travels: number = 0;
     stage: number = 1200; // quãng đường mà mỗi fuel có thể đi
+
+    viewPool: ObjectPooling<Node>[] = [];
+    @property(CCInteger)
+    viewMax: number;
     viewAmount: number = 0;
     viewIndex: number = 0;
     nextView: Node = null;
+
     isPumping: boolean = false;
+
+    /* onLoad() {
+        // khởi tạo object pool cho mỗi dạng vỉew
+        for (let i = 0; i < this.viewPrefab.length; i++) {
+            const pool = new ObjectPooling<Node>(() => instantiate(this.viewPrefab[i]), (view) => {
+                view.active = false;
+                view.removeFromParent();
+            });
+            this.viewPool.push(pool);
+        }
+
+        // Khởi tạo next view
+        this.instatiateNextView(0);
+    } */
 
     start() {
         this.stage = this.fuelSize;
@@ -29,7 +53,6 @@ export class MapControl extends Component {
     }
 
     update(deltaTime: number) {
-        if (this.isPumping) return;
         this.speed += 2 * deltaTime;
         const displacement = this.speed * deltaTime; // s = v * t;
         this.travels += displacement; // tổng quãng đường đi được
@@ -38,12 +61,15 @@ export class MapControl extends Component {
         let fuelPercent = this.stage / 1200;
         if (this.stage < 0.1) this.stage = this.fuelSize;
 
-        GameManager.instance.fuelPercent = fuelPercent;
+        UIManager.instance.fuelBar.updateBar(fuelPercent);
 
         if (this.nextView.position.z <= 0) {
             this.view.destroy();
+            /* this.view.active = false;
+            this.viewPool[this.viewIndex].release(this.view); */
             this.view = this.nextView;
 
+            console.log(this.viewAmount);
             this.viewAmount++;
             if (this.viewAmount % 3 == 0) {
                 this.viewIndex++;
@@ -51,6 +77,11 @@ export class MapControl extends Component {
             }
 
             this.instatiateNextView(this.viewIndex);
+
+            if (this.viewAmount == this.viewMax) {
+                const line = instantiate(this.finishLine);
+                this.nextView.addChild(line);
+            }
         }
         /* else if (this.nextView.position.z <= -89 && this.nextView.position.z >= -85) {
             this.isPumping = true;
@@ -62,9 +93,11 @@ export class MapControl extends Component {
     }
     instatiateNextView(nextIndex: number) {
         this.nextView = instantiate(this.viewPrefab[nextIndex]);
+        // this.nextView = this.viewPool[nextIndex].acquire();
         const pos = this.view.getPosition()
         pos.z += 1200;
         this.nextView.setPosition(pos);
+        // this.nextView.active = true;
         this.node.addChild(this.nextView);
     }
 

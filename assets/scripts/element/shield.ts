@@ -13,8 +13,10 @@ export class Shield extends Component {
     }
 
     onTriggerEnter(event: ITriggerEvent) {
+        // console.log(event.otherCollider.node.layer);
         if (event.otherCollider.node.layer == Layer.Player) {
             GameManager.instance.onShield();
+            console.log("onShield");
         }
     }
 }

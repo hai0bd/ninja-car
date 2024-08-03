@@ -1,23 +1,25 @@
 import { instantiate, Node, Prefab, Vec3 } from "cc";
 import { CoinGroup, CoinType } from "../enum";
-import { randomChoice } from "../utils";
+import { randomChoice } from "../utils/utils";
+import { config } from "../utils/config";
 
 export class GenerateCoin {
+    coins: Node;
+    listCoin: Node[] = [];
+    minePos: Vec3[] = [];
     prefab: Prefab;
     testNull: Prefab;
-    coins: Node;
     posX: number = 0;
     posZ: number = -100;
+    distance: number = 0;
     currentCoinGroup: CoinGroup = CoinGroup.Null;
-    minePos: Vec3[] = [];
 
-    listCoin: Node[] = [];
-
-    constructor(prefab: Prefab, testNull: Prefab, coinParent: Node, posZ: number) {
+    constructor(prefab: Prefab, testNull: Prefab, coinParent: Node) {
         this.prefab = prefab;
         this.testNull = testNull;
         this.coins = coinParent;
-        this.posZ = posZ;
+        this.posZ = config.startGenPoint;
+        this.distance = config.coin.distance;
     }
 
     generateCoin(cointType: CoinType) {
@@ -47,7 +49,7 @@ export class GenerateCoin {
         this.posX = randomChoice(3, 25, 0, -25);
         for (let i = 0; i < 3; i++) {
             this.instantiateCoin("coinStraight");
-            this.posZ += 18.5;
+            this.posZ += this.distance;
         }
         this.currentCoinGroup = CoinGroup.Straight;
     }
@@ -64,7 +66,7 @@ export class GenerateCoin {
         for (let i = 0; i < 3; i++) {
             this.instantiateCoin("coinLeft");
             this.posX += 12.5;
-            this.posZ += 18.5;
+            this.posZ += this.distance;
         }
 
         this.posX -= 12.5;
@@ -81,7 +83,7 @@ export class GenerateCoin {
         for (let i = 0; i < 3; i++) {
             this.instantiateCoin("coinRight");
             this.posX -= 12.5;
-            this.posZ += 18.5;
+            this.posZ += this.distance;
         }
 
         this.posX += 12.5;
@@ -90,10 +92,10 @@ export class GenerateCoin {
     coinNull() {
         this.posX = randomChoice(3, 25, 0, -25);
         for (let i = 0; i < 3; i++) {
-            /* const test = instantiate(this.testNull);
+            const test = instantiate(this.testNull);
             test.setPosition(new Vec3(this.posX, test.position.y, this.posZ));
-            this.coins.addChild(test); */
-            this.posZ += 18.5;
+            this.coins.addChild(test);
+            this.posZ += this.distance;
         }
         this.currentCoinGroup = CoinGroup.Null;
     }

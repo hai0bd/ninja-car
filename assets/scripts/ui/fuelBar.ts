@@ -2,8 +2,8 @@ import { _decorator, Color, Component, Node, Sprite, UITransform } from 'cc';
 import { GameManager } from '../control/gameManager';
 const { ccclass, property } = _decorator;
 
-@ccclass('fuelBar')
-export class fuelBar extends Component {
+@ccclass('FuelBar')
+export class FuelBar extends Component {
     @property(Sprite)
     fuel: Sprite
 
@@ -17,8 +17,8 @@ export class fuelBar extends Component {
     time = 0;
     hue = 0;
 
-    update(deltaTime: number) {
-        this.progress = GameManager.instance.fuelPercent;
+    updateBar(fuelPercent: number) {
+        this.progress = fuelPercent;
         // if (this.fuelTransform.width < 0.1) return;
         this.fuelTransform.width = 290 * this.progress;
 
@@ -26,7 +26,7 @@ export class fuelBar extends Component {
         const color = this.hsvToRgb(this.hue, 1, 1);
         this.fuel.color = color; */
 
-        this.time += deltaTime;
+        // this.time += deltaTime;
 
         // Tính toán hue từ 0 đến 120
         // this.progress = (this.time % this.duration) / this.duration;

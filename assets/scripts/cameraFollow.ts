@@ -1,38 +1,30 @@
-import { _decorator, CCFloat, Component, game, Node, tween, Vec3 } from 'cc';
+import { _decorator, CCFloat, Component, game, lerp, Node, tween, Vec3 } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('CameraFollow')
 export class CameraFollow extends Component {
+    @property(Node)
+    target: Node;
+
     @property(CCFloat)
-    duration: number;
+    speed: number;
 
+    offset: Vec3 = new Vec3();
     isMoving: boolean = false;
+    currentTargetPos: Vec3;
 
-    /* moveRight() {
-        if (this.node.position.x <= -25) return;
-        const pos = this.node.getPosition();
-        pos.x -= 25;
-        this.node.setPosition(pos);
-    }
-    moveLeft() {
-        if (this.node.position.x >= 25) return;
-        const pos = this.node.getPosition();
-        pos.x += 25;
-        this.node.setPosition(pos);
-    } */
-
-    moveRight() {
-        if (this.node.position.x <= -25) return;
-        const pos = this.node.getPosition();
-        tween(this.node)
-            .to(this.duration, { position: new Vec3(pos.x - 12.5, pos.y, pos.z) }, { easing: 'quadOut' })
-            .start();
+    start() {
+        this.offset = this.node.getPosition();
+        this.currentTargetPos = this.target.getPosition();
     }
 
-    moveLeft() {
-        if (this.node.position.x >= 25) return;
+    update(deltaTime: number) {
         const pos = this.node.getPosition();
-        tween(this.node).to(this.duration, { position: new Vec3(pos.x + 12.5, pos.y, pos.z) }, { easing: 'cubicOut' }).start();
+        const targetPos = this.target.getPosition().subtract(this.currentTargetPos);
+
+        Vec3.slerp(pos, pos, targetPos.add(this.offset), this.speed * deltaTime);
+
+        this.node.setPosition(pos);
     }
 }
 
