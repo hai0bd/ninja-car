@@ -15,7 +15,7 @@ export class Player extends Component {
     drift(angle: number, deviation: number) {
         this.node.setRotationFromEuler(0, angle, 0);
         const pos = this.node.getPosition();
-        pos.x -= deviation;
+        pos.x += deviation;
         if (pos.x <= -29 || pos.x >= 29) return;
         this.node.setPosition(pos);
     }
