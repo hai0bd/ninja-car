@@ -27,6 +27,9 @@ export class GameManager extends Component {
 
     fuelPercent: number;
     tiltAngle: number = 0;
+
+    isSpeedUp: boolean = false;
+
     inputKey: InputKey = InputKey.Key_Up;
 
     private static _instance: GameManager;
@@ -60,7 +63,7 @@ export class GameManager extends Component {
         const speed = this.map.speed * this.speedTilt * deltaTime;
         this.tiltAngle = lerp(this.tiltAngle, targetTilt, speed * deltaTime);
 
-        this.player.drift(this.tiltAngle, targetTilt / 100);
+        this.player.steer(this.tiltAngle, targetTilt * 0.02);
     }
 
     calculateTilt() {
@@ -75,19 +78,25 @@ export class GameManager extends Component {
     }
 
     onShield() {
-        this.player.collider.enabled = false;
+        if (this.isSpeedUp) return;
+        this.isSpeedUp = true;
         const curentSpeed = this.map.speed;
         this.map.speed *= config.shield.upSpeed;
         this.scheduleOnce(() => {
             this.map.speed = curentSpeed;
-            this.player.collider.enabled = true;
+            this.isSpeedUp = false;
         }, config.shield.time);
     }
 
+    hitObstacle() {
+        if (this.isSpeedUp) return;
+        this.map.hitObstacle();
+    }
+
     addCoin() {
-        /* this.player.coin++;
+        this.player.coin++;
         //audio.play(coin)...
-        UIManager.instance.coinAmount.string = this.player.coin.toString(); */
+        UIManager.instance.coinAmount.string = this.player.coin.toString();
     }
 }
 

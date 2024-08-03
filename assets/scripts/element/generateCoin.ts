@@ -1,4 +1,4 @@
-import { instantiate, Node, Prefab, Vec3 } from "cc";
+import { instantiate, Node, Prefab, random, Vec3 } from "cc";
 import { CoinGroup, CoinType } from "../enum";
 import { randomChoice } from "../utils/utils";
 import { config } from "../utils/config";
@@ -91,10 +91,13 @@ export class GenerateCoin {
 
     coinNull() {
         this.posX = randomChoice(3, 25, 0, -25);
+        const rand = Math.floor(Math.random() * 2);
         for (let i = 0; i < 3; i++) {
-            const test = instantiate(this.testNull);
-            test.setPosition(new Vec3(this.posX, test.position.y, this.posZ));
-            this.coins.addChild(test);
+            if (rand == 0) {
+                const test = instantiate(this.testNull);
+                test.setPosition(new Vec3(this.posX, test.position.y, this.posZ));
+                this.coins.addChild(test);
+            }
             this.posZ += this.distance;
         }
         this.currentCoinGroup = CoinGroup.Null;

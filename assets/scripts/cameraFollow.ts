@@ -9,7 +9,9 @@ export class CameraFollow extends Component {
     @property(CCFloat)
     speed: number;
 
+    @property({ type: Vec3 })
     offset: Vec3 = new Vec3();
+
     isMoving: boolean = false;
     currentTargetPos: Vec3;
 
@@ -21,6 +23,8 @@ export class CameraFollow extends Component {
     update(deltaTime: number) {
         const pos = this.node.getPosition();
         const targetPos = this.target.getPosition().subtract(this.currentTargetPos);
+
+        // this.node.lookAt(new Vec3(this.target.position.x));
 
         Vec3.slerp(pos, pos, targetPos.add(this.offset), this.speed * deltaTime);
 

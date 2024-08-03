@@ -12,7 +12,9 @@ export class Player extends Component {
 
     coin: number = 0;
 
-    drift(angle: number, deviation: number) {
+    steer(angle: number, deviation: number) {
+        // direction = Math sign (vec2.dot(velocity, getRelativeVector(Vector2.up)))
+        // rotation += steeringAmount * steeringPower * velocity * direction
         this.node.setRotationFromEuler(0, angle, 0);
         const pos = this.node.getPosition();
         pos.x += deviation;
