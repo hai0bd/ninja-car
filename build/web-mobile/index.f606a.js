@@ -1,4 +1,4 @@
-System.register(["./application.bc9f9.js"], function (_export, _context) {
+System.register(["./application.fdbc6.js"], function (_export, _context) {
   "use strict";
 
   var Application, canvas, $p, bcr, application;
@@ -6,8 +6,8 @@ System.register(["./application.bc9f9.js"], function (_export, _context) {
     return System["import"](url);
   }
   return {
-    setters: [function (_applicationBc9f9Js) {
-      Application = _applicationBc9f9Js.Application;
+    setters: [function (_applicationFdbc6Js) {
+      Application = _applicationFdbc6Js.Application;
     }],
     execute: function () {
       canvas = document.getElementById('GameCanvas');
