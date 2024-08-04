@@ -25,8 +25,7 @@ export class MapControl extends Component {
     stage: number = 1200; // quãng đường mà mỗi fuel có thể đi
 
     viewPool: ObjectPooling<Node>[] = [];
-    @property(CCInteger)
-    viewMax: number;
+    viewMax: number = 10;
     viewAmount: number = 0;
     viewIndex: number = 0;
     nextView: Node = null;
@@ -48,12 +47,47 @@ export class MapControl extends Component {
     } */
 
     start() {
+        console.log(this.viewMax);
         this.stage = this.fuelSize;
         this.instatiateNextView(0);
     }
 
     update(deltaTime: number) {
         this.speed += 2 * deltaTime;
+
+        this.calculateFuel(deltaTime);
+
+        if (this.viewAmount == this.viewMax) {
+            const line = instantiate(this.finishLine);
+            this.nextView.addChild(line);
+            if(this.nextView.position.z <= -1100){
+                UIManager.instance.onWin();
+            }
+        }
+        else {
+            if (this.nextView.position.z <= 0) {
+                this.view.destroy();
+                /* this.view.active = false;
+                this.viewPool[this.viewIndex].release(this.view); */
+                this.view = this.nextView;
+
+                console.log(this.viewAmount);
+                this.viewAmount++;
+                if (this.viewAmount % 3 == 0) {
+                    this.viewIndex++;
+                    if (this.viewIndex >= this.viewPrefab.length) this.viewIndex = 0;
+                }
+
+                this.instatiateNextView(this.viewIndex);
+            }
+
+        }
+
+        this.runMap(this.view, deltaTime);
+        this.runMap(this.nextView, deltaTime);
+    }
+
+    calculateFuel(deltaTime: number) {
         const displacement = this.speed * deltaTime; // s = v * t;
         this.travels += displacement; // tổng quãng đường đi được
         this.stage -= displacement;
@@ -62,35 +96,8 @@ export class MapControl extends Component {
         if (this.stage < 0.1) this.stage = this.fuelSize;
 
         UIManager.instance.fuelBar.updateBar(fuelPercent);
-
-        if (this.nextView.position.z <= 0) {
-            this.view.destroy();
-            /* this.view.active = false;
-            this.viewPool[this.viewIndex].release(this.view); */
-            this.view = this.nextView;
-
-            console.log(this.viewAmount);
-            this.viewAmount++;
-            if (this.viewAmount % 3 == 0) {
-                this.viewIndex++;
-                if (this.viewIndex >= this.viewPrefab.length) this.viewIndex = 0;
-            }
-
-            this.instatiateNextView(this.viewIndex);
-
-            if (this.viewAmount == this.viewMax) {
-                const line = instantiate(this.finishLine);
-                this.nextView.addChild(line);
-            }
-        }
-        /* else if (this.nextView.position.z <= -89 && this.nextView.position.z >= -85) {
-            this.isPumping = true;
-            this.refuel();
-        } */
-
-        this.runMap(this.view, deltaTime);
-        this.runMap(this.nextView, deltaTime);
     }
+
     instatiateNextView(nextIndex: number) {
         this.nextView = instantiate(this.viewPrefab[nextIndex]);
         // this.nextView = this.viewPool[nextIndex].acquire();
@@ -106,13 +113,6 @@ export class MapControl extends Component {
         pos.z -= this.speed * deltaTime;
         view.setPosition(pos);
     }
-
-    /* refuel() {
-        tween(this.node)
-            .delay(15)
-            .call(() => { this.isPumping = false })
-            .start();
-    } */
 
     hitObstacle() {
         this.stage -= 100;

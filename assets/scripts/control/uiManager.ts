@@ -10,6 +10,12 @@ export class UIManager extends Component {
     @property(Label)
     coinAmount: Label;
 
+    @property(Node)
+    losePopUp: Node;
+
+    @property(Node)
+    winPopUp: Node;
+
     private static _instance: UIManager;
     public static get instance(): UIManager {
         if (!this._instance) {
@@ -24,6 +30,16 @@ export class UIManager extends Component {
         } else {
             this.destroy();
         }
+    }
+
+    onWin(){
+        this.winPopUp.active = true;
+        this.fuelBar.node.active = false;
+    }
+
+    winClick(){
+        this.winPopUp.active = false;
+        this.fuelBar.node.active = true;
     }
 }
 

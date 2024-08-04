@@ -1,4 +1,4 @@
-import { _decorator, CCInteger, Component, EventKeyboard, EventMouse, EventTouch, Input, input, KeyCode, lerp } from 'cc';
+import { _decorator, CCInteger, Component, EventKeyboard, EventMouse, EventTouch, Input, input, instantiate, KeyCode, lerp, Prefab, Vec3 } from 'cc';
 import { Player } from '../player';
 import { CameraFollow } from '../cameraFollow';
 import { MapControl } from './mapControl';
@@ -16,14 +16,16 @@ export class GameManager extends Component {
     @property(CameraFollow)
     mainCam: CameraFollow;
 
-    @property(MapControl)
-    map: MapControl;
+    @property(Prefab)
+    mapPrefab: Prefab;
 
     @property(CCInteger)
-    setMap: number = 1;
+    mapIndex: number = 0;
+
+    map: MapControl;
 
     maxTilt = 45; // Độ nghiêng tối đa (độ)
-    speedTilt = 1; // Tốc độ nghiêng
+    speedTilt = 4; // Tốc độ nghiêng
 
     fuelPercent: number;
     tiltAngle: number = 0;
@@ -48,13 +50,11 @@ export class GameManager extends Component {
         }
 
         const handleInput = new HandleInput();
-        console.log("version 1.0.1");
+        console.log("version 1.0.2");
     }
 
     start() {
-        if (this.setMap == 1) this.map.viewMax == config.map1.maxView;
-        else if (this.setMap == 2) this.map.viewMax == config.map2.maxView;
-        else if (this.setMap == 3) this.map.viewMax == config.map3.maxView;
+        this.nextLevel();
     }
 
     update(deltaTime: number) {
@@ -97,6 +97,43 @@ export class GameManager extends Component {
         this.player.coin++;
         //audio.play(coin)...
         UIManager.instance.coinAmount.string = this.player.coin.toString();
+    }
+
+    nextLevel() {
+        this.resetMap()
+        this.mapIndex++;
+        switch (this.mapIndex) {
+            case 1: {
+                this.map.viewMax = config.map1.maxView;
+                this.map.speed = 100;
+                return;
+            }
+            case 2: {
+                this.map.viewMax = config.map2.maxView;
+                this.map.speed = 200;
+                return;
+            }
+            case 3: {
+                this.map.viewMax = config.map3.maxView;
+                this.map.speed = 300;
+                return;
+            }
+        }
+    }
+
+    resetMap(){
+        this.resetPlayer();
+        const nextMap = instantiate(this.mapPrefab);
+        if(this.map) this.map.node.destroy();
+        this.map = nextMap.getComponent(MapControl);
+        this.node.addChild(nextMap);
+    }
+
+    resetPlayer(){
+        const pos = this.player.node.getPosition();
+        pos.x = 0;
+        this.player.node.setPosition(pos);
+        this.player.node.setRotationFromEuler(Vec3.ZERO);
     }
 }
 
