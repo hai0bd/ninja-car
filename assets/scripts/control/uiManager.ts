@@ -6,9 +6,12 @@ const { ccclass, property } = _decorator;
 export class UIManager extends Component {
     @property(FuelBar)
     fuelBar: FuelBar;
-    
+
     @property(Label)
     coinAmount: Label;
+
+    @property(Node)
+    background: Node;
 
     @property(Node)
     losePopUp: Node;
@@ -32,13 +35,27 @@ export class UIManager extends Component {
         }
     }
 
-    onWin(){
+    onWin() {
+        this.background.active = true;
         this.winPopUp.active = true;
         this.fuelBar.node.active = false;
     }
 
-    winClick(){
+    winClick() {
+        this.background.active = false;
         this.winPopUp.active = false;
+        this.fuelBar.node.active = true;
+    }
+
+    onLose() {
+        this.background.active = true;
+        this.losePopUp.active = true;
+        this.fuelBar.node.active = false;
+    }
+
+    loseClick() {
+        this.background.active = false;
+        this.losePopUp.active = false;
         this.fuelBar.node.active = true;
     }
 }

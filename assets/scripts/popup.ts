@@ -5,14 +5,16 @@ const { ccclass, property } = _decorator;
 
 @ccclass('PopUp')
 export class PopUp extends Component {
-    onNextLevelClick(){
+    onNextLevelClick() {
         console.clear();
         GameManager.instance.nextLevel();
         UIManager.instance.winClick();
     }
 
-    onReplayClick(){
+    onReplayClick() {
+        console.clear();
         GameManager.instance.resetMap();
+        UIManager.instance.loseClick();
         UIManager.instance.winClick();
     }
 }

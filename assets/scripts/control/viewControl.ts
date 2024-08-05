@@ -30,7 +30,12 @@ export class ViewControl extends Component {
     @property(Prefab)
     minePrefab: Prefab;
 
+    @property(Prefab)
+    gasPump: Prefab;
+
     start() {
+        this.genFuel();
+
         const genCoin = new GenerateCoin(this.coinPrefab, this.conePrefab, this.coins);
         // const genMine = ...
         for (let i = 0; i < this.roads.length; i++) {
@@ -65,6 +70,19 @@ export class ViewControl extends Component {
                 this.shields.addChild(shield);
             }
         }
+    }
+
+    genFuel() {
+        const gas = instantiate(this.gasPump);
+        this.node.addChild(gas);
+    }
+
+    genCoin() {
+
+    }
+
+    genMine() {
+
     }
 }
 

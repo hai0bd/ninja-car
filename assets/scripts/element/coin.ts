@@ -16,6 +16,9 @@ export class Coin extends Component {
         this.node.destroy();
     }
 
+    onDestroy() {
+        this.collider.off('onTriggerEnter');
+    }
 
 }
 

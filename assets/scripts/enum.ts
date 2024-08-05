@@ -25,5 +25,6 @@ export enum CoinGroup {
     Null = 0,
     Straight = 1,
     Left = 2,
-    Right = 3
+    Right = 3,
+    Override = 4
 }

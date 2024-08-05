@@ -2513,6 +2513,10 @@
       "__uuid__": "62b6f691-2f2b-4ce8-a018-88f2a371fc6c",
       "__expectedType__": "cc.Prefab"
     },
+    "gasPump": {
+      "__uuid__": "b25f4f43-dd8a-4fc9-9420-9eab1db97b58",
+      "__expectedType__": "cc.Prefab"
+    },
     "_id": ""
   },
   {
@@ -2529,6 +2533,7 @@
     },
     "fileId": "ffQ2hFNeNOYZha01d6l82B",
     "instance": null,
+    "targetOverrides": null,
     "nestedPrefabInstanceRoots": [
       {
         "__id__": 135

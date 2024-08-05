@@ -1,4 +1,4 @@
-import { _decorator, CCInteger, Component, EventKeyboard, EventMouse, EventTouch, Input, input, instantiate, KeyCode, lerp, Prefab, Vec3 } from 'cc';
+import { _decorator, Camera, CCInteger, Component, director, EventKeyboard, EventMouse, EventTouch, Input, input, instantiate, KeyCode, lerp, Prefab, sys, TextureCube, Vec3 } from 'cc';
 import { Player } from '../player';
 import { CameraFollow } from '../cameraFollow';
 import { MapControl } from './mapControl';
@@ -22,9 +22,12 @@ export class GameManager extends Component {
     @property(CCInteger)
     mapIndex: number = 0;
 
+    @property(TextureCube)
+    nightSkyBox: TextureCube;
+
     map: MapControl;
 
-    maxTilt = 45; // Độ nghiêng tối đa (độ)
+    maxTilt = 35; // Độ nghiêng tối đa (độ)
     speedTilt = 4; // Tốc độ nghiêng
 
     fuelPercent: number;
@@ -43,6 +46,9 @@ export class GameManager extends Component {
     }
 
     onLoad() {
+        // console.log(skybox);
+        // skybox.setSkyboxMaterial()
+        // skybox.envmap = 
         if (!GameManager._instance) {
             GameManager._instance = this;
         } else {
@@ -50,10 +56,11 @@ export class GameManager extends Component {
         }
 
         const handleInput = new HandleInput();
-        console.log("version 1.0.2");
+        console.log("version 1.0.3");
     }
 
     start() {
+        // const skybox = director.root.pipeline.pipelineSceneData.skybox;
         this.nextLevel();
     }
 
@@ -90,6 +97,7 @@ export class GameManager extends Component {
 
     hitObstacle() {
         if (this.isSpeedUp) return;
+        this.player.blink();
         this.map.hitObstacle();
     }
 
@@ -99,9 +107,38 @@ export class GameManager extends Component {
         UIManager.instance.coinAmount.string = this.player.coin.toString();
     }
 
+    onWin() {
+        // play hiệu ứng pháo hoa
+        // ..
+
+        // lưu best score
+        if (this.mapIndex == 3) {
+            sys.localStorage.setItem("playerCoins", this.player.coin);
+        }
+    }
+
+    onLose() {
+        this.map.enabled = false;
+        this.player.collider.enabled = false;
+        this.mainCam.enabled = false;
+    }
+
     nextLevel() {
-        this.resetMap()
         this.mapIndex++;
+        this.resetMap()
+
+    }
+
+    resetMap() {
+        this.resetPlayer();
+
+        this.mainCam.enabled = true;
+
+        const nextMap = instantiate(this.mapPrefab);
+        if (this.map) this.map.node.destroy();
+        this.map = nextMap.getComponent(MapControl);
+        this.node.addChild(nextMap);
+
         switch (this.mapIndex) {
             case 1: {
                 this.map.viewMax = config.map1.maxView;
@@ -121,19 +158,17 @@ export class GameManager extends Component {
         }
     }
 
-    resetMap(){
-        this.resetPlayer();
-        const nextMap = instantiate(this.mapPrefab);
-        if(this.map) this.map.node.destroy();
-        this.map = nextMap.getComponent(MapControl);
-        this.node.addChild(nextMap);
-    }
+    resetPlayer() {
+        this.player.coin = 0;
+        this.player.collider.enabled = true;
 
-    resetPlayer(){
         const pos = this.player.node.getPosition();
         pos.x = 0;
         this.player.node.setPosition(pos);
+
         this.player.node.setRotationFromEuler(Vec3.ZERO);
+
+        UIManager.instance.coinAmount.string = '0';
     }
 }
 

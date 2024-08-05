@@ -13,7 +13,6 @@ export class Obstacle extends Component {
 
     onTriggerEnter(event: ITriggerEvent) {
         GameManager.instance.hitObstacle();
-        console.log("hit Obstacle");
     }
 }
 
