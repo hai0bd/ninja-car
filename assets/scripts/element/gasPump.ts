@@ -13,7 +13,7 @@ export class gasPump extends Component {
 
     onTriggerEnter(event: ITriggerEvent) {
         GameManager.instance.map.refuel();
-        this.node.destroy();
+        this.node.active = false;
     }
     onDestroy() {
         this.collider.off('onTriggerEnter');

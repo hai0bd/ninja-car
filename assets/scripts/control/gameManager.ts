@@ -1,4 +1,4 @@
-import { _decorator, Camera, CCInteger, Component, director, EventKeyboard, EventMouse, EventTouch, Input, input, instantiate, KeyCode, lerp, Prefab, sys, TextureCube, Vec3 } from 'cc';
+import { _decorator, Camera, CCInteger, Component, director, EventKeyboard, EventMouse, EventTouch, Input, input, instantiate, KeyCode, lerp, Prefab, profiler, sys, TextureCube, Vec3 } from 'cc';
 import { Player } from '../player';
 import { CameraFollow } from '../cameraFollow';
 import { MapControl } from './mapControl';
@@ -56,7 +56,8 @@ export class GameManager extends Component {
         }
 
         const handleInput = new HandleInput();
-        console.log("version 1.0.3");
+        profiler.showStats();
+        console.log("version 1.0.4");
     }
 
     start() {
@@ -111,6 +112,8 @@ export class GameManager extends Component {
         // play hiệu ứng pháo hoa
         // ..
 
+        this.gamePause();
+
         // lưu best score
         if (this.mapIndex == 3) {
             sys.localStorage.setItem("playerCoins", this.player.coin);
@@ -118,6 +121,10 @@ export class GameManager extends Component {
     }
 
     onLose() {
+        this.gamePause();
+    }
+
+    gamePause() {
         this.map.enabled = false;
         this.player.collider.enabled = false;
         this.mainCam.enabled = false;

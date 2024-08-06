@@ -212,7 +212,7 @@
       "y": -180,
       "z": -4.413906298050159e-31
     },
-    "_id": "c9DMICJLFO5IeO07EPon7U"
+    "_id": "9ce3OgufNMzpFavfxk1OVb"
   },
   {
     "__type__": "cc.Camera",
@@ -258,7 +258,7 @@
     "_usePostProcess": false,
     "_cameraType": -1,
     "_trackingType": 0,
-    "_id": "7dWQTpwS5LrIHnc1zAPUtf"
+    "_id": "fdN2oQCUJH9phZxShKq8K2"
   },
   {
     "__type__": "94fd9LX0yVAvLRj84hbjAog",
@@ -280,7 +280,7 @@
       "y": 33.574,
       "z": -145.644
     },
-    "_id": "82SsKUI4xJU6lGzuD/JTYj"
+    "_id": "ac7Z3aRkVGFrsZhvWRww5x"
   },
   {
     "__type__": "cc.Node",

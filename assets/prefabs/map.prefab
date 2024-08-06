@@ -4139,7 +4139,7 @@
     "__prefab": {
       "__id__": 275
     },
-    "viewPrefab": [
+    "viewPrefabs": [
       {
         "__uuid__": "b127c9ad-d05d-4cc5-8946-a7b2e61768cb",
         "__expectedType__": "cc.Prefab"
@@ -4160,7 +4160,6 @@
     "view": {
       "__id__": 2
     },
-    "fuelSize": 1500,
     "speed": 200,
     "_id": ""
   },

@@ -2,20 +2,25 @@ import { instantiate, Node, Prefab, random, Vec3 } from "cc";
 import { CoinGroup, CoinType } from "../enum";
 import { randomChoice } from "../utils/utils";
 import { config } from "../utils/config";
+import { ObjectPool } from "../utils/patern/objectPool";
+import { Coin } from "./coin";
 
 export class GenerateCoin {
     coins: Node;
     listCoin: Node[] = [];
     minePos: Vec3[] = [];
-    prefab: Prefab;
+    // prefab: Prefab;
     testNull: Prefab;
     posX: number = 0;
     posZ: number = -100;
     distance: number = 0;
     currentCoinGroup: CoinGroup = CoinGroup.Null;
 
+    coinPool: CoinPool;
+
     constructor(prefab: Prefab, testNull: Prefab, coinParent: Node) {
-        this.prefab = prefab;
+        this.coinPool = new CoinPool(prefab);
+        // this.prefab = prefab;
         this.testNull = testNull;
         this.coins = coinParent;
         this.posZ = config.startGenPoint;
@@ -54,11 +59,11 @@ export class GenerateCoin {
 
         this.posX = randomChoice(3, 25, 0, -25);
 
-        let rand = Math.floor(Math.random() * 2);
-        if (this.currentCoinGroup == CoinGroup.Straight || this.currentCoinGroup == CoinGroup.Override) rand = 1;
+        /* let rand = Math.floor(Math.random() * 2);
+        if (this.currentCoinGroup == CoinGroup.Straight || this.currentCoinGroup == CoinGroup.Override) rand = 1; */
 
         for (let i = 0; i < 3; i++) {
-            if (rand == 0) {
+            /* if (rand == 0) {
                 if (this.posX == 0 && (this.posZ == this.distance / 2 || this.posZ == -this.distance / 2)) {
                     isOverride = true;
                 }
@@ -67,14 +72,15 @@ export class GenerateCoin {
                 test.setPosition(new Vec3(this.posX, test.position.y, this.posZ));
                 this.coins.addChild(test);
                 listCoin.push(test);
-            }
+                this.listCoin.push(test);
+            } */
             this.posZ += this.distance;
         }
-        if (isOverride) {
+        /* if (isOverride) {
             this.destroyList(listCoin);
             this.currentCoinGroup = CoinGroup.Override;
             return;
-        }
+        } */
         this.currentCoinGroup = CoinGroup.Null;
     }
 
@@ -164,17 +170,49 @@ export class GenerateCoin {
     }
 
     instantiateCoin(name: string) {
-        const coin = instantiate(this.prefab);
+        // const coin = instantiate(this.prefab);
+        const coin = this.coinPool.acquireCoin();
         coin.name = name;
         coin.setPosition(new Vec3(this.posX, coin.position.y, this.posZ));
         this.coins.addChild(coin);
-        this.listCoin.push(this.coins);
+        this.listCoin.push(coin);
         return coin;
     }
 
     destroyList(list: Node[]) {
         for (let i = 0; i < list.length; i++) {
-            list[i].destroy();
+            list[i].active = false;
         }
+    }
+}
+
+export class CoinPool {
+    private pool: ObjectPool<Node>;
+
+    constructor(coinPrefab: Prefab) {
+        this.pool = new ObjectPool<Node>(
+            () => {
+                const coin = instantiate(coinPrefab);
+                const coinComponent = coin.getComponent(Coin);
+                if (coinComponent) {
+                    coinComponent.setPool(this);
+                }
+                return coin;
+            },
+            (coin: Node) => {
+                coin.removeFromParent();
+                coin.active = false;
+            }
+        );
+    }
+
+    acquireCoin(): Node {
+        const coin = this.pool.acquire();
+        coin.active = true;
+        return coin;
+    }
+
+    releaseCoin(coin: Node) {
+        this.pool.release(coin);
     }
 }

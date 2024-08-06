@@ -1,13 +1,14 @@
 import { _decorator, CCFloat, CCInteger, Component, Game, instantiate, math, Node, Prefab, tween, Vec3 } from 'cc';
 import { GameManager } from './gameManager';
 import { UIManager } from './uiManager';
-import { ObjectPooling } from '../utils/patern/objectPooling';
+import { ObjectPool } from '../utils/patern/objectPool';
+import { ViewControl } from './viewControl';
 const { ccclass, property } = _decorator;
 
 @ccclass('MapControl')
 export class MapControl extends Component {
-    @property(Prefab)
-    viewPrefab: Prefab[] = [];
+    @property([Prefab])
+    viewPrefabs: Prefab[] = [];
 
     @property(Prefab)
     finishLine: Prefab;
@@ -16,46 +17,40 @@ export class MapControl extends Component {
     view: Node;
 
     @property(CCFloat)
-    fuelSize: number = 1500;
-
-    @property(CCFloat)
     speed: number = 200;
 
-    travels: number = 0;
+    // travels: number = 0;
     stage: number; // quãng đường mà mỗi fuel có thể đi
+    fuelSize: number = 1500;
 
     nextView: Node = null;
-    viewPool: ObjectPooling<Node>[] = [];
+    viewPools: ObjectPool<Node>[] = [];
     viewMax: number = 10;
     viewAmount: number = 0;
     viewIndex: number = 0;
 
-    isPumping: boolean = false;
-    isWin: boolean = false;
-
-    /* onLoad() {
-        // khởi tạo object pool cho mỗi dạng vỉew
-        for (let i = 0; i < this.viewPrefab.length; i++) {
-            const pool = new ObjectPooling<Node>(() => {instantiate(this.viewPrefab[i])}, (view) => {
-                view.active = false;
-                view.removeFromParent();
-            });
-            this.viewPool.push(pool);
-        }
-
-        // Khởi tạo next view
-        this.instatiateNextView(0);
-    } */
-
     start() {
-        this.stage = this.fuelSize;
+        // khởi tạo object pool cho mỗi dạng vỉew
+        this.viewPrefabs.forEach(prefab => {
+            const pool = new ObjectPool<Node>(
+                () => instantiate(prefab),
+                (node: Node) => {
+                    node.removeFromParent();
+                    node.active = false;
+                }
+            );
+            this.viewPools.push(pool);
+        })
+
         this.instatiateNextView(0);
+
+        this.stage = this.fuelSize;
     }
 
     update(deltaTime: number) {
         this.speed += 2 * deltaTime;
 
-        this.calculateFuel(deltaTime);
+        // this.calculateFuel(deltaTime);
 
         if (this.viewAmount == this.viewMax) {
             const line = instantiate(this.finishLine);
@@ -63,22 +58,20 @@ export class MapControl extends Component {
             if (this.nextView.position.z <= -1100) {
                 UIManager.instance.onWin();
                 GameManager.instance.onWin();
-                this.isWin = true;
             }
         }
         else {
-            if (this.nextView.position.z <= 0) {
-                this.view.destroy();
-                /* this.view.active = false;
-                this.viewPool[this.viewIndex].release(this.view); */
-                this.view = this.nextView;
-
-                this.viewAmount++;
-                if (this.viewAmount % Math.floor(Math.random() * 5) == 0) {
-                    this.viewIndex = Math.floor(Math.random() * this.viewPrefab.length)
-                    if (this.viewIndex >= this.viewPrefab.length) this.viewIndex = 0;
+            if (this.nextView && this.nextView.position.z <= 0) {
+                if (this.view) {
+                    this.releaseView(this.view);
                 }
-
+                this.view = this.nextView;
+                // console.log(this.viewAmount);
+                this.viewAmount++;
+                if (this.viewAmount % 3 == 0) {
+                    this.viewIndex++;
+                    if (this.viewIndex >= this.viewPrefabs.length) this.viewIndex = 0;
+                }
                 this.instatiateNextView(this.viewIndex);
             }
 
@@ -88,15 +81,14 @@ export class MapControl extends Component {
         this.runMap(this.nextView, deltaTime);
     }
 
-    calculateFuel(deltaTime: number) {
+    private calculateFuel(deltaTime: number) {
         const displacement = this.speed * deltaTime; // s = v * t;
-        this.travels += displacement; // tổng quãng đường đi được
+        // this.travels += displacement; // tổng quãng đường đi được
         this.stage -= displacement;
 
         let fuelPercent = this.stage / this.fuelSize;
         if (this.stage < 0.1) { // hết nhiên liệu
             // this.stage = this.fuelSize;
-            if (this.isWin) return;
             UIManager.instance.onLose();
             GameManager.instance.onLose();
             return;
@@ -105,20 +97,40 @@ export class MapControl extends Component {
         UIManager.instance.fuelBar.updateBar(fuelPercent);
     }
 
-    instatiateNextView(nextIndex: number) {
-        this.nextView = instantiate(this.viewPrefab[nextIndex]);
-        // this.nextView = this.viewPool[nextIndex].acquire();
-        const pos = this.view.getPosition()
+    private instatiateNextView(nextIndex: number) {
+        this.nextView = this.acquireView(nextIndex);
+        const pos = this.view!.getPosition()
         pos.z += 1200;
         this.nextView.setPosition(pos);
-        // this.nextView.active = true;
         this.node.addChild(this.nextView);
     }
 
-    runMap(view: Node, deltaTime: number) {
+    private runMap(view: Node, deltaTime: number) {
         const pos = view.getPosition();
         pos.z -= this.speed * deltaTime;
         view.setPosition(pos);
+    }
+
+    private acquireView(index: number): Node {
+        const view = this.viewPools[index].acquire();
+        /* const viewControl = view.getComponent(ViewControl);
+        if (viewControl) {
+            viewControl.resetView();
+        } */
+        view.active = true;
+        return view;
+    }
+
+    private releaseView(view: Node) {
+        /* const viewControl = view.getComponent(ViewControl);
+        if (viewControl) {
+            viewControl.clearNode();
+        } */
+        const index = this.viewPrefabs.findIndex(prefab => prefab.name === view.name);
+        if (index != -1) {
+            this.viewPools[index].release(view);
+        }
+        else view.destroy();
     }
 
     refuel() {

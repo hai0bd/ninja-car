@@ -16,7 +16,7 @@ export class Shield extends Component {
         // console.log(event.otherCollider.node.layer);
         if (event.otherCollider.node.layer == Layer.Player) {
             GameManager.instance.onShield();
-            this.node.destroy();
+            this.node.active = false;
         }
     }
     onDestroy() {
