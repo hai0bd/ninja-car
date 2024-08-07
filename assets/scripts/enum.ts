@@ -1,8 +1,12 @@
-export enum Layer{
+export enum Layer {
     Player = 1,
+    Coin = 2,
+    Obstacle = 4,
+    Gas = 8,
+    Shield = 16
 }
 
-export enum InputKey{
+export enum InputKey {
     Press_Left = 0,
     Press_Right = 1,
     Key_Up = 2

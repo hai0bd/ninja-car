@@ -5,23 +5,6 @@ const { ccclass, property } = _decorator;
 
 @ccclass('Shield')
 export class Shield extends Component {
-    @property(BoxCollider)
-    collider: BoxCollider;
-
-    start() {
-        this.collider.on('onTriggerEnter', this.onTriggerEnter, this);
-    }
-
-    onTriggerEnter(event: ITriggerEvent) {
-        // console.log(event.otherCollider.node.layer);
-        if (event.otherCollider.node.layer == Layer.Player) {
-            GameManager.instance.onShield();
-            this.node.active = false;
-        }
-    }
-    onDestroy() {
-        this.collider.off('onTriggerEnter');
-    }
 }
 
 

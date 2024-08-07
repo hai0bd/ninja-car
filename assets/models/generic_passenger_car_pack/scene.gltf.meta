@@ -28,6 +28,28 @@
       ],
       "subMetas": {}
     },
+    "11531": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@11531",
+      "displayName": "",
+      "id": "11531",
+      "name": "Wheel_G001_Wheel_0-32_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 32,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 230
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
     "14738": {
       "importer": "texture",
       "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@14738",
@@ -47,6 +69,50 @@
       "ver": "1.0.22",
       "imported": true,
       "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "18991": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@18991",
+      "displayName": "",
+      "id": "18991",
+      "name": "Wheel_D003_Wheel_0-27_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 27,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 242
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "20292": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@20292",
+      "displayName": "",
+      "id": "20292",
+      "name": "Coupe Body_Body_0-7_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 7,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 2092
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
         ".json"
       ],
       "subMetas": {}
@@ -114,6 +180,50 @@
       "userData": {
         "gltfIndex": 32,
         "triangleCount": 542
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "29363": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@29363",
+      "displayName": "",
+      "id": "29363",
+      "name": "Wheel_D001_Wheel_0-25_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 25,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 228
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "30657": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@30657",
+      "displayName": "",
+      "id": "30657",
+      "name": "Wheel_E_Body_0-57_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 57,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 36
       },
       "ver": "1.1.1",
       "imported": true,
@@ -278,6 +388,28 @@
       ],
       "subMetas": {}
     },
+    "67459": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@67459",
+      "displayName": "",
+      "id": "67459",
+      "name": "Wheel_A001_Wheel_0-46_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 46,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 274
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
     "68138": {
       "importer": "gltf-material",
       "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@68138",
@@ -317,6 +449,28 @@
       ],
       "subMetas": {}
     },
+    "75439": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@75439",
+      "displayName": "",
+      "id": "75439",
+      "name": "SUV Body_Body_0-58_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 58,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 2577
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
     "76509": {
       "importer": "gltf-mesh",
       "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@76509",
@@ -335,6 +489,50 @@
       ],
       "subMetas": {}
     },
+    "77211": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@77211",
+      "displayName": "",
+      "id": "77211",
+      "name": "SUV Body_Body_0-58_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 58,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 2563
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "85671": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@85671",
+      "displayName": "",
+      "id": "85671",
+      "name": "Sport body_Glass_0-54_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 54,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 62
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
     "88637": {
       "importer": "gltf-mesh",
       "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@88637",
@@ -344,6 +542,50 @@
       "userData": {
         "gltfIndex": 74,
         "triangleCount": 32
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "91149": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@91149",
+      "displayName": "",
+      "id": "91149",
+      "name": "Coupe Body_Body_0-7_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 7,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 2088
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "97270": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@97270",
+      "displayName": "",
+      "id": "97270",
+      "name": "Wheel_G001_Wheel_0-33_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 33,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 208
       },
       "ver": "1.1.1",
       "imported": true,
@@ -372,6 +614,28 @@
       "ver": "1.0.22",
       "imported": true,
       "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "99624": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@99624",
+      "displayName": "",
+      "id": "99624",
+      "name": "Cylinder001__0-74_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 74,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 30
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
         ".json"
       ],
       "subMetas": {}
@@ -1555,6 +1819,3042 @@
       "userData": {
         "gltfIndex": 73,
         "triangleCount": 592
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "60a8a": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@60a8a",
+      "displayName": "",
+      "id": "60a8a",
+      "name": "Wheel_C_Wheel_0-0_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 211
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8c160": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@8c160",
+      "displayName": "",
+      "id": "8c160",
+      "name": "Wheel_C_Wheel_0-0_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 199
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9280e": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@9280e",
+      "displayName": "",
+      "id": "9280e",
+      "name": "Wheel_C001_Wheel_0-1_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 211
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ced52": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@ced52",
+      "displayName": "",
+      "id": "ced52",
+      "name": "Wheel_C001_Wheel_0-1_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 199
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6fd3e": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@6fd3e",
+      "displayName": "",
+      "id": "6fd3e",
+      "name": "Wheel_C002_Wheel_0-2_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 2,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 211
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d1f43": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d1f43",
+      "displayName": "",
+      "id": "d1f43",
+      "name": "Wheel_C002_Wheel_0-2_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 2,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 199
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "49fcc": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@49fcc",
+      "displayName": "",
+      "id": "49fcc",
+      "name": "Wheel_C003_Wheel_0-3_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 3,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 211
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "976ac": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@976ac",
+      "displayName": "",
+      "id": "976ac",
+      "name": "Wheel_C003_Wheel_0-3_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 3,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 199
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5f7bf": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@5f7bf",
+      "displayName": "",
+      "id": "5f7bf",
+      "name": "Compact Body_Body_0-4_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 4,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 1991
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f0e21": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@f0e21",
+      "displayName": "",
+      "id": "f0e21",
+      "name": "Compact Body_Body_0-4_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 4,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 1987
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "abd1e": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@abd1e",
+      "displayName": "",
+      "id": "abd1e",
+      "name": "Compact Body_Glass_0-5_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 5,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 118
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ab99a": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@ab99a",
+      "displayName": "",
+      "id": "ab99a",
+      "name": "Compact Body_Glass_0-5_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 5,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 118
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "043d5": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@043d5",
+      "displayName": "",
+      "id": "043d5",
+      "name": "Compact Body_Optics_0-6_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 6,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 186
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "142ee": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@142ee",
+      "displayName": "",
+      "id": "142ee",
+      "name": "Compact Body_Optics_0-6_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 6,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 186
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "de98d": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@de98d",
+      "displayName": "",
+      "id": "de98d",
+      "name": "Coupe Body_Glass_0-8_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 8,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 80
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9c4d1": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@9c4d1",
+      "displayName": "",
+      "id": "9c4d1",
+      "name": "Coupe Body_Glass_0-8_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 8,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 80
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d9cc5": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d9cc5",
+      "displayName": "",
+      "id": "d9cc5",
+      "name": "Coupe Body_Optics_0-9_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 9,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 148
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "fc939": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@fc939",
+      "displayName": "",
+      "id": "fc939",
+      "name": "Coupe Body_Optics_0-9_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 9,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 148
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "23d35": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@23d35",
+      "displayName": "",
+      "id": "23d35",
+      "name": "Wheel_F001_Wheel_0-10_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 10,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 205
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "fb4df": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@fb4df",
+      "displayName": "",
+      "id": "fb4df",
+      "name": "Wheel_F001_Wheel_0-10_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 10,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 193
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d6a8c": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d6a8c",
+      "displayName": "",
+      "id": "d6a8c",
+      "name": "Wheel_F002_Wheel_0-11_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 11,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 201
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ab565": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@ab565",
+      "displayName": "",
+      "id": "ab565",
+      "name": "Wheel_F002_Wheel_0-11_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 11,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 195
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "15b2a": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@15b2a",
+      "displayName": "",
+      "id": "15b2a",
+      "name": "Wheel_F003_Wheel_0-12_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 12,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 201
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1d2ff": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@1d2ff",
+      "displayName": "",
+      "id": "1d2ff",
+      "name": "Wheel_F003_Wheel_0-12_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 12,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 195
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "55edc": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@55edc",
+      "displayName": "",
+      "id": "55edc",
+      "name": "Wheel_F_Wheel_0-13_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 13,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 205
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a6674": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@a6674",
+      "displayName": "",
+      "id": "a6674",
+      "name": "Wheel_F_Wheel_0-13_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 13,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 193
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f08f9": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@f08f9",
+      "displayName": "",
+      "id": "f08f9",
+      "name": "Hatchback Body_Body_0-14_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 14,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 2012
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b6b36": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@b6b36",
+      "displayName": "",
+      "id": "b6b36",
+      "name": "Hatchback Body_Body_0-14_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 14,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 2006
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d2ca8": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d2ca8",
+      "displayName": "",
+      "id": "d2ca8",
+      "name": "Hatchback Body_Glass_0-15_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 15,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 92
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8c5d4": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@8c5d4",
+      "displayName": "",
+      "id": "8c5d4",
+      "name": "Hatchback Body_Glass_0-15_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 15,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 92
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "15efe": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@15efe",
+      "displayName": "",
+      "id": "15efe",
+      "name": "Hatchback Body_Optics_0-16_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 16,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 218
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "19be9": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@19be9",
+      "displayName": "",
+      "id": "19be9",
+      "name": "Hatchback Body_Optics_0-16_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 16,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 218
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d3e25": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d3e25",
+      "displayName": "",
+      "id": "d3e25",
+      "name": "Wheel_B_Wheek_0-17_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 17,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 281
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6a9ad": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@6a9ad",
+      "displayName": "",
+      "id": "6a9ad",
+      "name": "Wheel_B_Wheek_0-17_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 17,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 259
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e1bc0": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e1bc0",
+      "displayName": "",
+      "id": "e1bc0",
+      "name": "Wheel_B001_Wheek_0-18_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 18,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 281
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4a6bb": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@4a6bb",
+      "displayName": "",
+      "id": "4a6bb",
+      "name": "Wheel_B001_Wheek_0-18_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 18,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 259
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a03c7": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@a03c7",
+      "displayName": "",
+      "id": "a03c7",
+      "name": "Wheel_B002_Wheek_0-19_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 19,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 275
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "32b3d": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@32b3d",
+      "displayName": "",
+      "id": "32b3d",
+      "name": "Wheel_B002_Wheek_0-19_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 19,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 257
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "51b2e": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@51b2e",
+      "displayName": "",
+      "id": "51b2e",
+      "name": "Wheel_B003_Wheek_0-20_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 20,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 275
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "303d1": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@303d1",
+      "displayName": "",
+      "id": "303d1",
+      "name": "Wheel_B003_Wheek_0-20_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 20,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 257
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3f398": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@3f398",
+      "displayName": "",
+      "id": "3f398",
+      "name": "Wheel_D_Wheel_0-21_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 21,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 246
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e1b21": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e1b21",
+      "displayName": "",
+      "id": "e1b21",
+      "name": "Wheel_D_Wheel_0-21_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 21,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 228
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3542e": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@3542e",
+      "displayName": "",
+      "id": "3542e",
+      "name": "minivan body_Body_0-22_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 22,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 2241
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e134d": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e134d",
+      "displayName": "",
+      "id": "e134d",
+      "name": "minivan body_Body_0-22_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 22,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 2247
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "208c5": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@208c5",
+      "displayName": "",
+      "id": "208c5",
+      "name": "minivan body_Glass_0-23_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 23,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 133
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ba1ef": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@ba1ef",
+      "displayName": "",
+      "id": "ba1ef",
+      "name": "minivan body_Glass_0-23_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 23,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 133
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "03b95": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@03b95",
+      "displayName": "",
+      "id": "03b95",
+      "name": "minivan body_Optics_0-24_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 24,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 112
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e7913": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e7913",
+      "displayName": "",
+      "id": "e7913",
+      "name": "minivan body_Optics_0-24_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 24,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 112
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d1da4": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d1da4",
+      "displayName": "",
+      "id": "d1da4",
+      "name": "Wheel_D001_Wheel_0-25_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 25,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 246
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "daac4": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@daac4",
+      "displayName": "",
+      "id": "daac4",
+      "name": "Wheel_D002_Wheel_0-26_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 26,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 242
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c91ee": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@c91ee",
+      "displayName": "",
+      "id": "c91ee",
+      "name": "Wheel_D002_Wheel_0-26_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 26,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 230
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b41ac": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@b41ac",
+      "displayName": "",
+      "id": "b41ac",
+      "name": "Wheel_D003_Wheel_0-27_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 27,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 230
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7cf3c": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@7cf3c",
+      "displayName": "",
+      "id": "7cf3c",
+      "name": "Wheel_G_Wheel_0-28_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 28,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 230
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7bcab": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@7bcab",
+      "displayName": "",
+      "id": "7bcab",
+      "name": "Wheel_G_Wheel_0-28_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 28,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 210
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "23b35": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@23b35",
+      "displayName": "",
+      "id": "23b35",
+      "name": "Offroad Body_Body_0-29_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 29,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 1798
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b686c": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@b686c",
+      "displayName": "",
+      "id": "b686c",
+      "name": "Offroad Body_Body_0-29_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 29,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 1782
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "aabb3": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@aabb3",
+      "displayName": "",
+      "id": "aabb3",
+      "name": "Offroad Body_Glass_0-30_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 30,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 78
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "37faa": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@37faa",
+      "displayName": "",
+      "id": "37faa",
+      "name": "Offroad Body_Glass_0-30_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 30,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 78
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d632f": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d632f",
+      "displayName": "",
+      "id": "d632f",
+      "name": "Offroad Body_Optics_0-31_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 31,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 78
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "97ae6": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@97ae6",
+      "displayName": "",
+      "id": "97ae6",
+      "name": "Offroad Body_Optics_0-31_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 31,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 78
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "52ea1": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@52ea1",
+      "displayName": "",
+      "id": "52ea1",
+      "name": "Wheel_G001_Wheel_0-32_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 32,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 210
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1c861": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@1c861",
+      "displayName": "",
+      "id": "1c861",
+      "name": "Wheel_G001_Wheel_0-33_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 33,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 224
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c2979": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@c2979",
+      "displayName": "",
+      "id": "c2979",
+      "name": "Wheel_G002_Wheel_0-34_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 34,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 224
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1aaeb": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@1aaeb",
+      "displayName": "",
+      "id": "1aaeb",
+      "name": "Wheel_G002_Wheel_0-34_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 34,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 208
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "206b7": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@206b7",
+      "displayName": "",
+      "id": "206b7",
+      "name": "Wheel_E_Wheel_0-35_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 35,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 282
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6e453": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@6e453",
+      "displayName": "",
+      "id": "6e453",
+      "name": "Wheel_E_Wheel_0-35_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 35,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 266
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3ae90": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@3ae90",
+      "displayName": "",
+      "id": "3ae90",
+      "name": "Pickup Body_Body_0-36_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 36,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 2242
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e64c3": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e64c3",
+      "displayName": "",
+      "id": "e64c3",
+      "name": "Pickup Body_Body_0-36_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 36,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 2242
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0e146": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@0e146",
+      "displayName": "",
+      "id": "0e146",
+      "name": "Pickup Body_Glass_0-37_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 37,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 90
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3bf85": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@3bf85",
+      "displayName": "",
+      "id": "3bf85",
+      "name": "Pickup Body_Glass_0-37_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 37,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 90
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cb535": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@cb535",
+      "displayName": "",
+      "id": "cb535",
+      "name": "Pickup Body_Optics_0-38_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 38,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 84
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b7953": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@b7953",
+      "displayName": "",
+      "id": "b7953",
+      "name": "Pickup Body_Optics_0-38_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 38,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 84
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7d5af": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@7d5af",
+      "displayName": "",
+      "id": "7d5af",
+      "name": "Wheel_E001_Wheel_0-39_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 39,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 282
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f1b28": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@f1b28",
+      "displayName": "",
+      "id": "f1b28",
+      "name": "Wheel_E001_Wheel_0-39_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 39,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 266
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d025c": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d025c",
+      "displayName": "",
+      "id": "d025c",
+      "name": "Wheel_E002_Wheel_0-40_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 40,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 276
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "19a66": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@19a66",
+      "displayName": "",
+      "id": "19a66",
+      "name": "Wheel_E002_Wheel_0-40_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 40,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 268
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "933c2": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@933c2",
+      "displayName": "",
+      "id": "933c2",
+      "name": "Wheel_E003_Wheel_0-41_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 41,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 276
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b0fc5": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@b0fc5",
+      "displayName": "",
+      "id": "b0fc5",
+      "name": "Wheel_E003_Wheel_0-41_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 41,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 268
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ee47c": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@ee47c",
+      "displayName": "",
+      "id": "ee47c",
+      "name": "Sedan Body_Body_0-42_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 42,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 2454
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f5b07": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@f5b07",
+      "displayName": "",
+      "id": "f5b07",
+      "name": "Sedan Body_Body_0-42_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 42,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 2454
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ac0b0": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@ac0b0",
+      "displayName": "",
+      "id": "ac0b0",
+      "name": "Sedan Body_Glass_0-43_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 43,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 64
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "eb080": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@eb080",
+      "displayName": "",
+      "id": "eb080",
+      "name": "Sedan Body_Glass_0-43_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 43,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 64
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e4ee1": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e4ee1",
+      "displayName": "",
+      "id": "e4ee1",
+      "name": "Sedan Body_Optics_0-44_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 44,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 254
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "01e45": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@01e45",
+      "displayName": "",
+      "id": "01e45",
+      "name": "Sedan Body_Optics_0-44_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 44,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 254
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6a97e": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@6a97e",
+      "displayName": "",
+      "id": "6a97e",
+      "name": "Wheel_A_Wheel_0-45_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 45,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 274
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3ec38": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@3ec38",
+      "displayName": "",
+      "id": "3ec38",
+      "name": "Wheel_A_Wheel_0-45_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 45,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 256
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8102b": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@8102b",
+      "displayName": "",
+      "id": "8102b",
+      "name": "Wheel_A001_Wheel_0-46_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 46,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 256
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0ab70": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@0ab70",
+      "displayName": "",
+      "id": "0ab70",
+      "name": "Wheel_A002_Wheel_0-47_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 47,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 274
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "04255": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@04255",
+      "displayName": "",
+      "id": "04255",
+      "name": "Wheel_A002_Wheel_0-47_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 47,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 256
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3c896": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@3c896",
+      "displayName": "",
+      "id": "3c896",
+      "name": "Wheel_A003_Wheel_0-48_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 48,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 274
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "df872": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@df872",
+      "displayName": "",
+      "id": "df872",
+      "name": "Wheel_A003_Wheel_0-48_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 48,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 256
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0c293": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@0c293",
+      "displayName": "",
+      "id": "0c293",
+      "name": "Wheel_H_Wheel_0-49_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 49,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 383
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "76e80": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@76e80",
+      "displayName": "",
+      "id": "76e80",
+      "name": "Wheel_H_Wheel_0-49_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 49,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 365
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0a933": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@0a933",
+      "displayName": "",
+      "id": "0a933",
+      "name": "Wheel_H001_Wheel_0-50_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 50,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 383
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9d13": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@f9d13",
+      "displayName": "",
+      "id": "f9d13",
+      "name": "Wheel_H001_Wheel_0-50_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 50,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 365
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a9114": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@a9114",
+      "displayName": "",
+      "id": "a9114",
+      "name": "Wheel_H002_Wheel_0-51_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 51,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 375
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cc716": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@cc716",
+      "displayName": "",
+      "id": "cc716",
+      "name": "Wheel_H002_Wheel_0-51_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 51,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 371
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7633d": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@7633d",
+      "displayName": "",
+      "id": "7633d",
+      "name": "Wheel_H003_Wheel_0-52_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 52,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 375
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4eb29": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@4eb29",
+      "displayName": "",
+      "id": "4eb29",
+      "name": "Wheel_H003_Wheel_0-52_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 52,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 371
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9e212": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@9e212",
+      "displayName": "",
+      "id": "9e212",
+      "name": "Sport body_Body_0-53_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 53,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 1928
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "829e3": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@829e3",
+      "displayName": "",
+      "id": "829e3",
+      "name": "Sport body_Body_0-53_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 53,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 1918
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "dafb9": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@dafb9",
+      "displayName": "",
+      "id": "dafb9",
+      "name": "Sport body_Glass_0-54_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 54,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 62
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "70ccc": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@70ccc",
+      "displayName": "",
+      "id": "70ccc",
+      "name": "Sport body_Optics_0-55_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 55,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 108
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "25e02": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@25e02",
+      "displayName": "",
+      "id": "25e02",
+      "name": "Sport body_Optics_0-55_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 55,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 108
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d6542": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d6542",
+      "displayName": "",
+      "id": "d6542",
+      "name": "Wheel_E_Wheel_0-56_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 56,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 246
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d0b2f": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d0b2f",
+      "displayName": "",
+      "id": "d0b2f",
+      "name": "Wheel_E_Wheel_0-56_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 56,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 230
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8553a": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@8553a",
+      "displayName": "",
+      "id": "8553a",
+      "name": "Wheel_E_Body_0-57_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 57,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 36
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "29ce6": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@29ce6",
+      "displayName": "",
+      "id": "29ce6",
+      "name": "SUV Body_Glass_0-59_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 59,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 136
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f597d": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@f597d",
+      "displayName": "",
+      "id": "f597d",
+      "name": "SUV Body_Glass_0-59_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 59,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 136
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "de90c": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@de90c",
+      "displayName": "",
+      "id": "de90c",
+      "name": "SUV Body_Optics_0-60_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 60,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 198
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6e94b": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@6e94b",
+      "displayName": "",
+      "id": "6e94b",
+      "name": "SUV Body_Optics_0-60_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 60,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 198
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "036b5": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@036b5",
+      "displayName": "",
+      "id": "036b5",
+      "name": "Wheel_E001_Wheel_0-61_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 61,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 246
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ccec0": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@ccec0",
+      "displayName": "",
+      "id": "ccec0",
+      "name": "Wheel_E001_Wheel_0-61_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 61,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 230
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f5650": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@f5650",
+      "displayName": "",
+      "id": "f5650",
+      "name": "Wheel_E001_Body_0-62_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 62,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 36
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6e8ba": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@6e8ba",
+      "displayName": "",
+      "id": "6e8ba",
+      "name": "Wheel_E001_Body_0-62_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 62,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 36
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c8eca": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@c8eca",
+      "displayName": "",
+      "id": "c8eca",
+      "name": "Wheel_E002_Wheel_0-63_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 63,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 240
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e30a7": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e30a7",
+      "displayName": "",
+      "id": "e30a7",
+      "name": "Wheel_E002_Wheel_0-63_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 63,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 230
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cf199": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@cf199",
+      "displayName": "",
+      "id": "cf199",
+      "name": "Wheel_E002_Body_0-64_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 64,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 36
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cc2b6": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@cc2b6",
+      "displayName": "",
+      "id": "cc2b6",
+      "name": "Wheel_E002_Body_0-64_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 64,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 36
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4c1b2": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@4c1b2",
+      "displayName": "",
+      "id": "4c1b2",
+      "name": "Wheel_E003_Wheel_0-65_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 65,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 240
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0430d": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@0430d",
+      "displayName": "",
+      "id": "0430d",
+      "name": "Wheel_E003_Wheel_0-65_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 65,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 230
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "20d91": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@20d91",
+      "displayName": "",
+      "id": "20d91",
+      "name": "Wheel_E003_Body_0-66_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 66,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 36
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "35ac3": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@35ac3",
+      "displayName": "",
+      "id": "35ac3",
+      "name": "Wheel_E003_Body_0-66_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 66,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 36
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9fce4": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@9fce4",
+      "displayName": "",
+      "id": "9fce4",
+      "name": "Wagon Body_Body_0-67_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 67,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 2340
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8054f": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@8054f",
+      "displayName": "",
+      "id": "8054f",
+      "name": "Wagon Body_Body_0-67_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 67,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 2346
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c25e5": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@c25e5",
+      "displayName": "",
+      "id": "c25e5",
+      "name": "Wagon Body_Glass_0-68_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 68,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 104
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7ae7a": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@7ae7a",
+      "displayName": "",
+      "id": "7ae7a",
+      "name": "Wagon Body_Glass_0-68_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 68,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 104
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c117b": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@c117b",
+      "displayName": "",
+      "id": "c117b",
+      "name": "Wagon Body_Optics_0-69_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 69,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 178
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e1842": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e1842",
+      "displayName": "",
+      "id": "e1842",
+      "name": "Wagon Body_Optics_0-69_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 69,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 178
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c335a": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@c335a",
+      "displayName": "",
+      "id": "c335a",
+      "name": "Wheel_A_Wheel_0-70_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 70,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 274
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "26ab8": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@26ab8",
+      "displayName": "",
+      "id": "26ab8",
+      "name": "Wheel_A_Wheel_0-70_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 70,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 254
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a1297": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@a1297",
+      "displayName": "",
+      "id": "a1297",
+      "name": "Wheel_A001_Wheel_0-71_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 71,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 274
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "35bda": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@35bda",
+      "displayName": "",
+      "id": "35bda",
+      "name": "Wheel_A001_Wheel_0-71_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 71,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 254
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4f1c0": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@4f1c0",
+      "displayName": "",
+      "id": "4f1c0",
+      "name": "Wheel_A002_Wheel_0-72_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 72,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 274
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e7ee3": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e7ee3",
+      "displayName": "",
+      "id": "e7ee3",
+      "name": "Wheel_A002_Wheel_0-72_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 72,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 254
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "51e2c": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@51e2c",
+      "displayName": "",
+      "id": "51e2c",
+      "name": "Wheel_A003_Wheel_0-73_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 73,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 274
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f62cf": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@f62cf",
+      "displayName": "",
+      "id": "f62cf",
+      "name": "Wheel_A003_Wheel_0-73_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 73,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 254
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c9308": {
+      "importer": "gltf-mesh",
+      "uuid": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@c9308",
+      "displayName": "",
+      "id": "c9308",
+      "name": "Cylinder001__0-74_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 74,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 30
       },
       "ver": "1.1.1",
       "imported": true,
@@ -3047,7 +6347,7 @@
     ],
     "redirect": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d1932",
     "lods": {
-      "enable": false,
+      "enable": true,
       "hasBuiltinLOD": false,
       "options": [
         {
@@ -3140,7 +6440,157 @@
         "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@8c786",
         "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@03fde",
         "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@eff0d",
-        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@88637"
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@88637",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@60a8a",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@8c160",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@9280e",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@ced52",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@6fd3e",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d1f43",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@49fcc",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@976ac",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@5f7bf",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@f0e21",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@abd1e",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@ab99a",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@043d5",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@142ee",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@20292",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@91149",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@de98d",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@9c4d1",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d9cc5",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@fc939",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@23d35",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@fb4df",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d6a8c",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@ab565",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@15b2a",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@1d2ff",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@55edc",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@a6674",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@f08f9",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@b6b36",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d2ca8",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@8c5d4",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@15efe",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@19be9",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d3e25",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@6a9ad",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e1bc0",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@4a6bb",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@a03c7",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@32b3d",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@51b2e",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@303d1",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@3f398",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e1b21",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@3542e",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e134d",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@208c5",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@ba1ef",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@03b95",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e7913",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d1da4",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@29363",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@daac4",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@c91ee",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@18991",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@b41ac",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@7cf3c",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@7bcab",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@23b35",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@b686c",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@aabb3",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@37faa",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d632f",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@97ae6",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@11531",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@52ea1",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@1c861",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@97270",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@c2979",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@1aaeb",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@206b7",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@6e453",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@3ae90",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e64c3",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@0e146",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@3bf85",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@cb535",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@b7953",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@7d5af",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@f1b28",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d025c",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@19a66",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@933c2",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@b0fc5",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@ee47c",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@f5b07",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@ac0b0",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@eb080",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e4ee1",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@01e45",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@6a97e",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@3ec38",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@67459",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@8102b",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@0ab70",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@04255",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@3c896",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@df872",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@0c293",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@76e80",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@0a933",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@f9d13",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@a9114",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@cc716",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@7633d",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@4eb29",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@9e212",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@829e3",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@85671",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@dafb9",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@70ccc",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@25e02",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d6542",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d0b2f",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@8553a",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@30657",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@75439",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@77211",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@29ce6",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@f597d",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@de90c",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@6e94b",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@036b5",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@ccec0",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@f5650",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@6e8ba",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@c8eca",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e30a7",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@cf199",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@cc2b6",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@4c1b2",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@0430d",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@20d91",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@35ac3",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@9fce4",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@8054f",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@c25e5",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@7ae7a",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@c117b",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e1842",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@c335a",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@26ab8",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@a1297",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@35bda",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@4f1c0",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@e7ee3",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@51e2c",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@f62cf",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@99624",
+        "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@c9308"
       ],
       "skeletons": [],
       "textures": [
@@ -3312,14 +6762,112 @@
         ],
         "_props": [
           {
-            "occlusion": 1,
-            "roughness": 1,
+            "roughness": 0,
             "mainTexture": {
               "__uuid__": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@b36a3",
               "__expectedType__": "cc.Texture2D"
             },
             "pbrMap": {
               "__uuid__": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@f319c",
+              "__expectedType__": "cc.Texture2D"
+            }
+          },
+          {},
+          {},
+          {},
+          {},
+          {}
+        ]
+      },
+      "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@68138": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "__editorExtras__": {},
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "c8f66d17-351a-48da-a12c-0212d28575c4",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "USE_ALBEDO_MAP": true,
+            "USE_PBR_MAP": true
+          },
+          {},
+          {},
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "roughness": 0,
+            "metallic": 0.551,
+            "specularIntensity": 0.446,
+            "mainTexture": {
+              "__uuid__": "b315261e-4542-425f-aed7-bfa53f6088e4@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "pbrMap": {
+              "__uuid__": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@067c6",
               "__expectedType__": "cc.Texture2D"
             }
           },

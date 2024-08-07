@@ -23,6 +23,7 @@ export class MapControl extends Component {
     stage: number; // quãng đường mà mỗi fuel có thể đi
     fuelSize: number = 1500;
 
+    line: Node;
     nextView: Node = null;
     viewPools: ObjectPool<Node>[] = [];
     viewMax: number = 10;
@@ -53,11 +54,13 @@ export class MapControl extends Component {
         // this.calculateFuel(deltaTime);
 
         if (this.viewAmount == this.viewMax) {
-            const line = instantiate(this.finishLine);
-            this.nextView.addChild(line);
             if (this.nextView.position.z <= -1100) {
                 UIManager.instance.onWin();
                 GameManager.instance.onWin();
+            }
+            else if (!this.line) {
+                this.line = instantiate(this.finishLine);
+                this.nextView.addChild(this.line);
             }
         }
         else {
@@ -74,7 +77,6 @@ export class MapControl extends Component {
                 }
                 this.instatiateNextView(this.viewIndex);
             }
-
         }
 
         this.runMap(this.view, deltaTime);

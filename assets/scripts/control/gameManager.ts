@@ -1,4 +1,4 @@
-import { _decorator, Camera, CCInteger, Component, director, EventKeyboard, EventMouse, EventTouch, Input, input, instantiate, KeyCode, lerp, Prefab, profiler, sys, TextureCube, Vec3 } from 'cc';
+import { _decorator, Camera, CCInteger, Component, debug, director, EventKeyboard, EventMouse, EventTouch, Input, input, instantiate, KeyCode, lerp, Node, Prefab, profiler, sys, TextureCube, Vec3 } from 'cc';
 import { Player } from '../player';
 import { CameraFollow } from '../cameraFollow';
 import { MapControl } from './mapControl';
@@ -6,6 +6,7 @@ import { UIManager } from './uiManager';
 import { InputKey } from '../enum';
 import { HandleInput } from './handlerInput';
 import { config } from '../utils/config';
+import { ObjectPool } from '../utils/patern/objectPool';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameManager')
@@ -26,9 +27,11 @@ export class GameManager extends Component {
     nightSkyBox: TextureCube;
 
     map: MapControl;
+    viewPools: ObjectPool<Node>[];
 
     maxTilt = 35; // Độ nghiêng tối đa (độ)
     speedTilt = 4; // Tốc độ nghiêng
+    targetTilt = 0;
 
     fuelPercent: number;
     tiltAngle: number = 0;
@@ -46,8 +49,7 @@ export class GameManager extends Component {
     }
 
     onLoad() {
-        // console.log(skybox);
-        // skybox.setSkyboxMaterial()
+        // const skybox = director.root.pipeline.pipelineSceneData.skybox;
         // skybox.envmap = 
         if (!GameManager._instance) {
             GameManager._instance = this;
@@ -61,27 +63,26 @@ export class GameManager extends Component {
     }
 
     start() {
-        // const skybox = director.root.pipeline.pipelineSceneData.skybox;
         this.nextLevel();
     }
 
     update(deltaTime: number) {
-        let targetTilt = this.calculateTilt();
+        // let targetTilt = this.calculateTilt();
 
         const speed = this.map.speed * this.speedTilt * deltaTime;
-        this.tiltAngle = lerp(this.tiltAngle, targetTilt, speed * deltaTime);
+        this.tiltAngle = lerp(this.tiltAngle, this.targetTilt, speed * deltaTime);
 
-        this.player.steer(this.tiltAngle, targetTilt * 0.02);
+        this.player.steer(this.tiltAngle, this.targetTilt * 0.02);
     }
 
     calculateTilt() {
         if (this.inputKey == InputKey.Key_Up) {
-            return 0;
+            this.targetTilt = 0;
         }
         else if (this.inputKey == InputKey.Press_Left) {
-            return this.maxTilt;
+            this.targetTilt = this.maxTilt;
         } else if (this.inputKey == InputKey.Press_Right) {
-            return -this.maxTilt;
+            this.targetTilt = -this.maxTilt;
         }
     }
 
@@ -102,12 +103,6 @@ export class GameManager extends Component {
         this.map.hitObstacle();
     }
 
-    addCoin() {
-        this.player.coin++;
-        //audio.play(coin)...
-        UIManager.instance.coinAmount.string = this.player.coin.toString();
-    }
-
     onWin() {
         // play hiệu ứng pháo hoa
         // ..
@@ -115,7 +110,7 @@ export class GameManager extends Component {
         this.gamePause();
 
         // lưu best score
-        if (this.mapIndex == 3) {
+        if (this.mapIndex == 3 /* && bestScore < this.player.coin */) {
             sys.localStorage.setItem("playerCoins", this.player.coin);
         }
     }

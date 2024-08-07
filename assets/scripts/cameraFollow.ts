@@ -1,4 +1,4 @@
-import { _decorator, CCFloat, Component, game, lerp, Node, tween, Vec3 } from 'cc';
+import { _decorator, CCFloat, Component, game, lerp, Mesh, Node, tween, Vec3 } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('CameraFollow')
@@ -14,6 +14,8 @@ export class CameraFollow extends Component {
 
     isMoving: boolean = false;
     currentTargetPos: Vec3;
+
+    meshes: Mesh = new Mesh();
 
     start() {
         this.offset = this.node.getPosition();

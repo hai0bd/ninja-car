@@ -4,20 +4,6 @@ const { ccclass, property } = _decorator;
 
 @ccclass('gasPump')
 export class gasPump extends Component {
-    @property(BoxCollider)
-    collider: BoxCollider;
-
-    start() {
-        this.collider.on('onTriggerEnter', this.onTriggerEnter, this);
-    }
-
-    onTriggerEnter(event: ITriggerEvent) {
-        GameManager.instance.map.refuel();
-        this.node.active = false;
-    }
-    onDestroy() {
-        this.collider.off('onTriggerEnter');
-    }
 }
 
 

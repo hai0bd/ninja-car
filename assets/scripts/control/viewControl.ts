@@ -52,7 +52,7 @@ export class ViewControl extends Component {
             this.genCoin.generateCoin(coinType);
         }
 
-        this.listNode = this.genCoin.listCoin;
+        // this.listNode = this.genCoin.listCoin;
         this.listCoin = this.genCoin.listCoin;
         this.coinPool = this.genCoin.coinPool;
         this.genFuel();
@@ -110,14 +110,14 @@ export class ViewControl extends Component {
             this.listNode[i].removeFromParent();
             this.listNode[i].destroy();
         } */
-        /* this.listNode.forEach((node) => {
+        this.listNode.forEach((node) => {
             if (node) {
                 // if (node.name == 'gasPump') console.log('is not destroy?');
                 console.log(`${node.name} is destroy`);
                 node.removeFromParent();
                 node.destroy();
             }
-        }) */
+        })
 
         this.listNode = [];
     }

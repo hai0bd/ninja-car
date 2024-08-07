@@ -2,7 +2,7 @@
   "ver": "1.0.26",
   "importer": "image",
   "imported": true,
-  "uuid": "2f9c07f8-5dd6-4305-891e-b86efbf6d1be",
+  "uuid": "b315261e-4542-425f-aed7-bfa53f6088e4",
   "files": [
     ".json",
     ".png"
@@ -10,7 +10,7 @@
   "subMetas": {
     "6c48a": {
       "importer": "texture",
-      "uuid": "2f9c07f8-5dd6-4305-891e-b86efbf6d1be@6c48a",
+      "uuid": "b315261e-4542-425f-aed7-bfa53f6088e4@6c48a",
       "displayName": "Wheel_5_baseColor",
       "id": "6c48a",
       "name": "texture",
@@ -22,7 +22,7 @@
         "mipfilter": "none",
         "anisotropy": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "2f9c07f8-5dd6-4305-891e-b86efbf6d1be",
+        "imageUuidOrDatabaseUri": "b315261e-4542-425f-aed7-bfa53f6088e4",
         "visible": false
       },
       "ver": "1.0.22",
@@ -37,6 +37,6 @@
     "hasAlpha": false,
     "type": "texture",
     "fixAlphaTransparencyArtifacts": false,
-    "redirect": "2f9c07f8-5dd6-4305-891e-b86efbf6d1be@6c48a"
+    "redirect": "b315261e-4542-425f-aed7-bfa53f6088e4@6c48a"
   }
 }

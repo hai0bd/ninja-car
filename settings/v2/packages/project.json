@@ -12,6 +12,22 @@
     {
       "name": "Player",
       "value": 1
+    },
+    {
+      "name": "Coin",
+      "value": 2
+    },
+    {
+      "name": "Obstable",
+      "value": 4
+    },
+    {
+      "name": "Gas",
+      "value": 8
+    },
+    {
+      "name": "Shield",
+      "value": 16
     }
   ],
   "custom_joint_texture_layouts": []

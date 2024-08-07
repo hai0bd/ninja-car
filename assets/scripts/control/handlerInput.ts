@@ -16,13 +16,18 @@ export class HandleInput {
     onKeyDown(event: EventKeyboard) {
         if (event.keyCode == KeyCode.ARROW_RIGHT || event.keyCode == KeyCode.KEY_D) {
             GameManager.instance.inputKey = InputKey.Press_Right;
+            // GameManager.instance.targetTilt = -GameManager.instance.maxTilt;
         }
         else if (event.keyCode == KeyCode.ARROW_LEFT || event.keyCode == KeyCode.KEY_A) {
             GameManager.instance.inputKey = InputKey.Press_Left;
+            // GameManager.instance.targetTilt = GameManager.instance.maxTilt;
         }
+        GameManager.instance.calculateTilt();
     }
     onKeyUp() {
         GameManager.instance.inputKey = InputKey.Key_Up;
+        // GameManager.instance.targetTilt = 0;
+        GameManager.instance.calculateTilt();
     }
 
     onTouchStart(event: EventTouch) {
@@ -30,6 +35,7 @@ export class HandleInput {
             GameManager.instance.inputKey = InputKey.Press_Right;
         }
         else GameManager.instance.inputKey = InputKey.Press_Left;
+        GameManager.instance.calculateTilt();
     }
 
     onMouseDown(event: EventMouse) {
@@ -39,5 +45,6 @@ export class HandleInput {
         else if (event.getButton() == EventMouse.BUTTON_LEFT) {
             GameManager.instance.inputKey = InputKey.Press_Left;
         }
+        GameManager.instance.calculateTilt();
     }
 }

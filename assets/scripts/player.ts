@@ -1,5 +1,8 @@
-import { _decorator, BoxCollider, CCFloat, Component, EventKeyboard, game, Input, input, KeyCode, Node } from 'cc';
-import { InputKey } from './enum';
+import { _decorator, BoxCollider, CCFloat, Component, EventKeyboard, game, Input, input, ITriggerEvent, KeyCode, Node } from 'cc';
+import { InputKey, Layer } from './enum';
+import { Coin } from './element/coin';
+import { UIManager } from './control/uiManager';
+import { GameManager } from './control/gameManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('Player')
@@ -20,9 +23,31 @@ export class Player extends Component {
     isBlinking: boolean = false;
     // originalVisibility: boolean = true;
 
+    start() {
+        this.collider.on('onTriggerEnter', this.onTriggerEnter, this);
+    }
+
+    onTriggerEnter(event: ITriggerEvent) {
+        const otherLayer = event.otherCollider.node.layer;
+        if (otherLayer == Layer.Coin) {
+            const coin = event.otherCollider.node.getComponent(Coin).release();
+            this.coin++;
+            UIManager.instance.coinAmount.string = this.coin.toString();
+        }
+        else if (otherLayer == Layer.Gas) {
+            event.otherCollider.node.active = false;
+            GameManager.instance.map.refuel();
+        }
+        else if (otherLayer == Layer.Obstacle) {
+            GameManager.instance.hitObstacle();
+        }
+        else if (otherLayer == Layer.Shield) {
+            event.otherCollider.node.active = false;
+            GameManager.instance.onShield();
+        }
+    }
+
     steer(angle: number, deviation: number) {
-        // direction = Math sign (vec2.dot(velocity, getRelativeVector(Vector2.up)))
-        // rotation += steeringAmount * steeringPower * velocity * direction
         this.node.setRotationFromEuler(0, angle, 0);
         const pos = this.node.getPosition();
         pos.x += deviation;

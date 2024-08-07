@@ -5,22 +5,13 @@ const { ccclass, property } = _decorator;
 
 @ccclass('Coin')
 export class Coin extends Component {
-    @property(CylinderCollider)
-    collider: CylinderCollider;
-
     private pool: CoinPool | null = null;
 
     setPool(pool: CoinPool) {
         this.pool = pool;
     }
 
-    start() {
-        this.collider.on('onTriggerEnter', this.onTriggerEnter, this)
-    }
-
-    onTriggerEnter(event: ITriggerEvent) {
-        GameManager.instance.addCoin();
-
+    release() {
         if (this.pool) {
             this.pool.releaseCoin(this.node);
         } else {
@@ -28,11 +19,6 @@ export class Coin extends Component {
             this.node.removeFromParent();
         }
     }
-
-    onDestroy() {
-        this.collider.off('onTriggerEnter');
-    }
-
 }
 
 
