@@ -835,7 +835,7 @@
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": 100,
+      "x": 60,
       "y": 1,
       "z": 120
     },
@@ -3485,7 +3485,7 @@
         "__id__": 487
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [],
     "_prefab": {
       "__id__": 501

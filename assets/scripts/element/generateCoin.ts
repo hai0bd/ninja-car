@@ -4,6 +4,7 @@ import { randomChoice } from "../utils/utils";
 import { config } from "../utils/config";
 import { ObjectPool } from "../utils/patern/objectPool";
 import { Coin } from "./coin";
+import { GameManager } from "../control/gameManager";
 
 export class GenerateCoin {
     coins: Node;
@@ -16,10 +17,10 @@ export class GenerateCoin {
     distance: number = 0;
     currentCoinGroup: CoinGroup = CoinGroup.Null;
 
-    coinPool: CoinPool;
+    coinPools: CoinPool = GameManager.instance.coinPools;
 
     constructor(prefab: Prefab, testNull: Prefab, coinParent: Node) {
-        this.coinPool = new CoinPool(prefab);
+        // if (!this.coinPool) this.coinPool = new CoinPool(prefab);
         // this.prefab = prefab;
         this.testNull = testNull;
         this.coins = coinParent;
@@ -171,7 +172,7 @@ export class GenerateCoin {
 
     instantiateCoin(name: string) {
         // const coin = instantiate(this.prefab);
-        const coin = this.coinPool.acquireCoin();
+        const coin = this.coinPools.acquireCoin();
         coin.name = name;
         coin.setPosition(new Vec3(this.posX, coin.position.y, this.posZ));
         this.coins.addChild(coin);
@@ -179,15 +180,23 @@ export class GenerateCoin {
         return coin;
     }
 
+    clearCoin() {
+        console.log(this.listCoin);
+        for (let i = 0; i < this.listCoin.length; i++) {
+            this.coinPools.releaseCoin(this.listCoin[i]);
+        }
+        console.log(this.coinPools);
+    }
+
     destroyList(list: Node[]) {
         for (let i = 0; i < list.length; i++) {
-            list[i].active = false;
+            this.coinPools.releaseCoin(list[i]);
         }
     }
 }
 
 export class CoinPool {
-    private pool: ObjectPool<Node>;
+    pool: ObjectPool<Node>;
 
     constructor(coinPrefab: Prefab) {
         this.pool = new ObjectPool<Node>(
@@ -204,9 +213,11 @@ export class CoinPool {
                 coin.active = false;
             }
         );
+        this.pool.preload(100);
     }
 
     acquireCoin(): Node {
+        console.log(this.pool.size);
         const coin = this.pool.acquire();
         coin.active = true;
         return coin;
@@ -214,5 +225,6 @@ export class CoinPool {
 
     releaseCoin(coin: Node) {
         this.pool.release(coin);
+        // console.log(this.pool.size);
     }
 }

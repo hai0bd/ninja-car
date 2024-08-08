@@ -54,7 +54,7 @@ export class ViewControl extends Component {
 
         // this.listNode = this.genCoin.listCoin;
         this.listCoin = this.genCoin.listCoin;
-        this.coinPool = this.genCoin.coinPool;
+        this.coinPool = this.genCoin.coinPools;
         this.genFuel();
 
         const listMine = this.genCoin.minePos;
@@ -78,7 +78,6 @@ export class ViewControl extends Component {
         const gas = instantiate(this.gasPump);
         this.node.addChild(gas);
         this.listNode.push(gas);
-        console.log('gas index: ', this.listNode.length - 1);
     }
 
     genMine(listMine, i) {
@@ -96,13 +95,20 @@ export class ViewControl extends Component {
     }
 
     clearNode() {
+        console.log('clear');
         // console.log(this.listNode.length);
+        if (this.genCoin) {
+            console.log(this.genCoin.coinPools);
+            this.genCoin.clearCoin();
+        }
 
-        this.listCoin.forEach((coin) => {
+        /* this.listCoin.forEach((coin) => {
             this.coinPool.releaseCoin(coin);
+            console.log(coin.name);
         })
+        console.log(this.coinPool);
         this.listCoin = [];
-
+ */
         /* console.log('fist index: ', this.listNode[0]);
         for (let i = 0; i < this.listNode.length; i++) {
             // if (this.listNode[i].name == 'gasPump') console.log('is not destroy?');
@@ -113,7 +119,6 @@ export class ViewControl extends Component {
         this.listNode.forEach((node) => {
             if (node) {
                 // if (node.name == 'gasPump') console.log('is not destroy?');
-                console.log(`${node.name} is destroy`);
                 node.removeFromParent();
                 node.destroy();
             }

@@ -7,6 +7,8 @@ import { InputKey } from '../enum';
 import { HandleInput } from './handlerInput';
 import { config } from '../utils/config';
 import { ObjectPool } from '../utils/patern/objectPool';
+import { tiltLerp } from '../utils/utils';
+import { CoinPool } from '../element/generateCoin';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameManager')
@@ -20,6 +22,9 @@ export class GameManager extends Component {
     @property(Prefab)
     mapPrefab: Prefab;
 
+    @property(Prefab)
+    coinPrefab: Prefab;
+
     @property(CCInteger)
     mapIndex: number = 0;
 
@@ -28,6 +33,7 @@ export class GameManager extends Component {
 
     map: MapControl;
     viewPools: ObjectPool<Node>[];
+    coinPools: CoinPool;
 
     maxTilt = 35; // Độ nghiêng tối đa (độ)
     speedTilt = 4; // Tốc độ nghiêng
@@ -57,20 +63,22 @@ export class GameManager extends Component {
             this.destroy();
         }
 
-        const handleInput = new HandleInput();
-        profiler.showStats();
-        console.log("version 1.0.4");
+        this.coinPools = new CoinPool(this.coinPrefab);
     }
 
     start() {
+        console.log(this.viewPools);
+        const handleInput = new HandleInput();
+        profiler.showStats();
+        console.log("version 1.0.4");
         this.nextLevel();
     }
 
     update(deltaTime: number) {
         // let targetTilt = this.calculateTilt();
 
-        const speed = this.map.speed * this.speedTilt * deltaTime;
-        this.tiltAngle = lerp(this.tiltAngle, this.targetTilt, speed * deltaTime);
+        const speed = this.map.speed * this.speedTilt * 0.0165;
+        this.tiltAngle = tiltLerp(this.tiltAngle, this.targetTilt, speed * 0.0165);
 
         this.player.steer(this.tiltAngle, this.targetTilt * 0.02);
     }
@@ -128,7 +136,6 @@ export class GameManager extends Component {
     nextLevel() {
         this.mapIndex++;
         this.resetMap()
-
     }
 
     resetMap() {

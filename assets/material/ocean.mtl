@@ -12,8 +12,7 @@
   "_defines": [
     {
       "USE_NORMAL_MAP": true,
-      "USE_ALBEDO_MAP": true,
-      "USE_PBR_MAP": true
+      "USE_ALBEDO_MAP": true
     },
     {},
     {},
@@ -98,7 +97,7 @@
         "__expectedType__": "cc.Texture2D"
       },
       "pbrMap": {
-        "__uuid__": "df7f0f59-c2c8-4d82-8d6d-c62608910214@6c48a",
+        "__uuid__": "0d77a411-7632-4331-b743-cf702c510e18@6c48a",
         "__expectedType__": "cc.Texture2D"
       }
     },

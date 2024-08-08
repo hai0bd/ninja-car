@@ -29,8 +29,9 @@ export class MapControl extends Component {
     viewMax: number = 10;
     viewAmount: number = 0;
     viewIndex: number = 0;
+    currentIndex: number = -1;
 
-    start() {
+    onLoad() {
         // khởi tạo object pool cho mỗi dạng vỉew
         this.viewPrefabs.forEach(prefab => {
             const pool = new ObjectPool<Node>(
@@ -40,16 +41,20 @@ export class MapControl extends Component {
                     node.active = false;
                 }
             );
+            pool.preload(3);
             this.viewPools.push(pool);
         })
+    }
 
+    start() {
+        console.log("start");
         this.instatiateNextView(0);
 
         this.stage = this.fuelSize;
     }
 
     update(deltaTime: number) {
-        this.speed += 2 * deltaTime;
+        /* this.speed += 2 * deltaTime;
 
         // this.calculateFuel(deltaTime);
 
@@ -63,21 +68,20 @@ export class MapControl extends Component {
                 this.nextView.addChild(this.line);
             }
         }
-        else {
-            if (this.nextView && this.nextView.position.z <= 0) {
-                if (this.view) {
-                    this.releaseView(this.view);
-                }
-                this.view = this.nextView;
-                // console.log(this.viewAmount);
-                this.viewAmount++;
-                if (this.viewAmount % 3 == 0) {
-                    this.viewIndex++;
-                    if (this.viewIndex >= this.viewPrefabs.length) this.viewIndex = 0;
-                }
-                this.instatiateNextView(this.viewIndex);
+        else { */
+        if (this.nextView && this.nextView.position.z <= 0) {
+            console.log("next view");
+            this.releaseView(this.view);
+            this.view = this.nextView;
+            // console.log(this.viewAmount);
+            this.viewAmount++;
+            if (this.viewAmount % 5 == 0) {
+                this.viewIndex++;
+                if (this.viewIndex >= this.viewPrefabs.length) this.viewIndex = 0;
             }
+            this.instatiateNextView(this.viewIndex);
         }
+        // }
 
         this.runMap(this.view, deltaTime);
         this.runMap(this.nextView, deltaTime);
@@ -101,7 +105,7 @@ export class MapControl extends Component {
 
     private instatiateNextView(nextIndex: number) {
         this.nextView = this.acquireView(nextIndex);
-        const pos = this.view!.getPosition()
+        const pos = this.view.getPosition();
         pos.z += 1200;
         this.nextView.setPosition(pos);
         this.node.addChild(this.nextView);
@@ -128,11 +132,17 @@ export class MapControl extends Component {
         if (viewControl) {
             viewControl.clearNode();
         } */
-        const index = this.viewPrefabs.findIndex(prefab => prefab.name === view.name);
-        if (index != -1) {
-            this.viewPools[index].release(view);
+        // console.log(this.viewPools);
+        if (this.currentIndex == -1) {
+            view.active = false;
+            view.removeFromParent()
+            this.currentIndex = 0;
+            return;
         }
-        else view.destroy();
+        view.active = false;
+        console.log(this.currentIndex, ' ', this.viewIndex);
+        this.viewPools[this.currentIndex].release(view);
+        this.currentIndex = this.viewIndex;
     }
 
     refuel() {

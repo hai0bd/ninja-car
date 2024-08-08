@@ -9,6 +9,6 @@ export function randomChoice(amount: number, a: number, b: number, c: number, d?
     return a;
 }
 
-export function lerp(start: number, end: number, t: number): number {
+export function tiltLerp(start: number, end: number, t: number): number {
     return start * (1 - t) + end * t;
 }

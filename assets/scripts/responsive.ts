@@ -1,6 +1,6 @@
-import {_decorator, Component, size, UITransform, view,} from "cc";
+import { _decorator, Component, size, UITransform, view, } from "cc";
 
-const {ccclass, property} = _decorator;
+const { ccclass, property } = _decorator;
 
 @ccclass("responsive")
 export class responsive extends Component {

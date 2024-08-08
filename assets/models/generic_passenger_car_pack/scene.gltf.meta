@@ -4551,7 +4551,6 @@
       "ver": "1.1.1",
       "imported": true,
       "files": [
-        ".bin",
         ".json"
       ],
       "subMetas": {}
@@ -6763,6 +6762,7 @@
         "_props": [
           {
             "roughness": 0,
+            "specularIntensity": 0,
             "mainTexture": {
               "__uuid__": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@b36a3",
               "__expectedType__": "cc.Texture2D"
