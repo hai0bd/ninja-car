@@ -66,7 +66,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 93
+      "__id__": 99
     },
     "_id": "77da9c1a-2d64-407e-9652-6fa6e447619b"
   },
@@ -3219,6 +3219,12 @@
     "targetOverrides": [
       {
         "__id__": 91
+      },
+      {
+        "__id__": 93
+      },
+      {
+        "__id__": 96
       }
     ],
     "nestedPrefabInstanceRoots": [
@@ -3250,30 +3256,90 @@
     ]
   },
   {
-    "__type__": "cc.SceneGlobals",
-    "ambient": {
+    "__type__": "cc.TargetOverrideInfo",
+    "source": {
+      "__id__": 8
+    },
+    "sourceInfo": {
       "__id__": 94
     },
-    "shadows": {
+    "propertyPath": [
+      "carModel"
+    ],
+    "target": {
+      "__id__": 8
+    },
+    "targetInfo": {
       "__id__": 95
+    }
+  },
+  {
+    "__type__": "cc.TargetInfo",
+    "localID": [
+      "8dg2QH7kpBFaPrLqKnc3Tc"
+    ]
+  },
+  {
+    "__type__": "cc.TargetInfo",
+    "localID": [
+      "af69D213lHX7GPgdUGQ3jI"
+    ]
+  },
+  {
+    "__type__": "cc.TargetOverrideInfo",
+    "source": {
+      "__id__": 8
     },
-    "_skybox": {
-      "__id__": 96
-    },
-    "fog": {
+    "sourceInfo": {
       "__id__": 97
     },
-    "octree": {
+    "propertyPath": [
+      "collider"
+    ],
+    "target": {
+      "__id__": 8
+    },
+    "targetInfo": {
       "__id__": 98
-    },
-    "skin": {
-      "__id__": 99
-    },
-    "lightProbeInfo": {
+    }
+  },
+  {
+    "__type__": "cc.TargetInfo",
+    "localID": [
+      "8dg2QH7kpBFaPrLqKnc3Tc"
+    ]
+  },
+  {
+    "__type__": "cc.TargetInfo",
+    "localID": [
+      "f7dYLVLpNIhLSweQnF5i5/"
+    ]
+  },
+  {
+    "__type__": "cc.SceneGlobals",
+    "ambient": {
       "__id__": 100
     },
-    "postSettings": {
+    "shadows": {
       "__id__": 101
+    },
+    "_skybox": {
+      "__id__": 102
+    },
+    "fog": {
+      "__id__": 103
+    },
+    "octree": {
+      "__id__": 104
+    },
+    "skin": {
+      "__id__": 105
+    },
+    "lightProbeInfo": {
+      "__id__": 106
+    },
+    "postSettings": {
+      "__id__": 107
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false

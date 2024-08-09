@@ -3,6 +3,7 @@ import { GameManager } from './gameManager';
 import { UIManager } from './uiManager';
 import { ObjectPool } from '../utils/patern/objectPool';
 import { ViewControl } from './viewControl';
+import { PoolManager } from '../utils/patern/poolManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('MapControl')
@@ -33,17 +34,17 @@ export class MapControl extends Component {
 
     onLoad() {
         // khởi tạo object pool cho mỗi dạng vỉew
-        this.viewPrefabs.forEach(prefab => {
-            const pool = new ObjectPool<Node>(
+        for (let i = 0; i < this.viewPrefabs.length; i++) {
+            const prefab = this.viewPrefabs[i];
+            const pool = PoolManager.getInstance().getPool(`view_${i}`, 3,
                 () => instantiate(prefab),
                 (node: Node) => {
                     node.removeFromParent();
                     node.active = false;
-                }
-            );
-            pool.preload(3);
+                });
+            // pool.preload(3);
             this.viewPools.push(pool);
-        })
+        }
     }
 
     start() {
@@ -54,12 +55,13 @@ export class MapControl extends Component {
     }
 
     update(deltaTime: number) {
-        /* this.speed += 2 * deltaTime;
+        this.speed += 2 * deltaTime;
 
         // this.calculateFuel(deltaTime);
 
         if (this.viewAmount == this.viewMax) {
             if (this.nextView.position.z <= -1100) {
+                this.line.destroy();
                 UIManager.instance.onWin();
                 GameManager.instance.onWin();
             }
@@ -68,20 +70,19 @@ export class MapControl extends Component {
                 this.nextView.addChild(this.line);
             }
         }
-        else { */
-        if (this.nextView && this.nextView.position.z <= 0) {
-            console.log("next view");
-            this.releaseView(this.view);
-            this.view = this.nextView;
-            // console.log(this.viewAmount);
-            this.viewAmount++;
-            if (this.viewAmount % 5 == 0) {
-                this.viewIndex++;
-                if (this.viewIndex >= this.viewPrefabs.length) this.viewIndex = 0;
+        else {
+            if (this.nextView && this.nextView.position.z <= 0) {
+                this.releaseView(this.view);
+                this.view = this.nextView;
+                // console.log(this.viewAmount);
+                this.viewAmount++;
+                if (this.viewAmount % 5 == 0) {
+                    this.viewIndex++;
+                    if (this.viewIndex >= this.viewPrefabs.length) this.viewIndex = 0;
+                }
+                this.instatiateNextView(this.viewIndex);
             }
-            this.instatiateNextView(this.viewIndex);
         }
-        // }
 
         this.runMap(this.view, deltaTime);
         this.runMap(this.nextView, deltaTime);
@@ -128,10 +129,10 @@ export class MapControl extends Component {
     }
 
     private releaseView(view: Node) {
-        /* const viewControl = view.getComponent(ViewControl);
+        const viewControl = view.getComponent(ViewControl);
         if (viewControl) {
             viewControl.clearNode();
-        } */
+        }
         // console.log(this.viewPools);
         if (this.currentIndex == -1) {
             view.active = false;
@@ -140,7 +141,6 @@ export class MapControl extends Component {
             return;
         }
         view.active = false;
-        console.log(this.currentIndex, ' ', this.viewIndex);
         this.viewPools[this.currentIndex].release(view);
         this.currentIndex = this.viewIndex;
     }

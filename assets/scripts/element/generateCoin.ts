@@ -5,23 +5,24 @@ import { config } from "../utils/config";
 import { ObjectPool } from "../utils/patern/objectPool";
 import { Coin } from "./coin";
 import { GameManager } from "../control/gameManager";
+import { PoolManager } from "../utils/patern/poolManager";
 
 export class GenerateCoin {
     coins: Node;
     listCoin: Node[] = [];
     minePos: Vec3[] = [];
-    // prefab: Prefab;
+    prefab: Prefab;
     testNull: Prefab;
     posX: number = 0;
     posZ: number = -100;
     distance: number = 0;
     currentCoinGroup: CoinGroup = CoinGroup.Null;
 
-    coinPools: CoinPool = GameManager.instance.coinPools;
+    coinPools: CoinPool;
 
     constructor(prefab: Prefab, testNull: Prefab, coinParent: Node) {
-        // if (!this.coinPool) this.coinPool = new CoinPool(prefab);
-        // this.prefab = prefab;
+        if (!this.coinPools) this.coinPools = new CoinPool(prefab);
+        this.prefab = prefab;
         this.testNull = testNull;
         this.coins = coinParent;
         this.posZ = config.startGenPoint;
@@ -29,28 +30,28 @@ export class GenerateCoin {
     }
 
     generateCoin(cointType: CoinType) {
-        if (cointType == CoinType.Null || cointType == CoinType.Zikzak) {
+        if (cointType == CoinType.Null/*  || cointType == CoinType.Zikzak */) {
             for (let i = 0; i < 5; i++) {
-                this.coinNull();
+                // this.coinNull();
             }
         }
-        /* else if (cointType == CoinType.Zikzak) {
-            this.coinZikZak();
-        } */
+        else if (cointType == CoinType.Zikzak) {
+            // this.coinZikZak();
+        }
         else if (cointType == CoinType.Straight) {
             for (let i = 0; i < 5; i++) {
                 this.coinStraight();
             }
         }
         else if (cointType == CoinType.Mix) {
-            for (let i = 0; i < 5; i++) {
+            /* for (let i = 0; i < 5; i++) {
                 const mixType = randomChoice(4, CoinGroup.Null, CoinGroup.Straight, CoinGroup.Left, CoinGroup.Right);
 
                 if (mixType == CoinGroup.Null) this.coinNull();
                 else if (mixType == CoinGroup.Straight) this.coinStraight();
                 else if (mixType == CoinGroup.Right) this.coinRight();
                 else if (mixType == CoinGroup.Left) this.coinLeft();
-            }
+            } */
         }
     }
 
@@ -181,16 +182,20 @@ export class GenerateCoin {
     }
 
     clearCoin() {
-        console.log(this.listCoin);
         for (let i = 0; i < this.listCoin.length; i++) {
-            this.coinPools.releaseCoin(this.listCoin[i]);
+            this.coinPools.releaseCoin(this.listCoin.pop());
+            // console.log(this.listCoin[i].name);
+            // this.listCoin[i].destroy();
         }
-        console.log(this.coinPools);
+        this.listCoin = [];
+        // console.log(this.coinPools.pool.size);
     }
 
     destroyList(list: Node[]) {
         for (let i = 0; i < list.length; i++) {
-            this.coinPools.releaseCoin(list[i]);
+            // this.coinPools.releaseCoin(list[i]);
+            list[i].active = false;
+            // list[i].destroy();
         }
     }
 }
@@ -199,7 +204,7 @@ export class CoinPool {
     pool: ObjectPool<Node>;
 
     constructor(coinPrefab: Prefab) {
-        this.pool = new ObjectPool<Node>(
+        this.pool = PoolManager.getInstance().getPool('coin', 90,
             () => {
                 const coin = instantiate(coinPrefab);
                 const coinComponent = coin.getComponent(Coin);
@@ -213,11 +218,10 @@ export class CoinPool {
                 coin.active = false;
             }
         );
-        this.pool.preload(100);
+        // this.pool.preload(100);
     }
 
     acquireCoin(): Node {
-        console.log(this.pool.size);
         const coin = this.pool.acquire();
         coin.active = true;
         return coin;

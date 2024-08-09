@@ -12,12 +12,14 @@ export class Coin extends Component {
     }
 
     release() {
-        if (this.pool) {
+        // this.node.destroy();
+        this.node.active = false;
+        /* if (this.pool) {
             this.pool.releaseCoin(this.node);
         } else {
             console.warn('Coin pool not set!');
             this.node.removeFromParent();
-        }
+        } */
     }
 }
 

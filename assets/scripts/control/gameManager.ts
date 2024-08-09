@@ -32,8 +32,6 @@ export class GameManager extends Component {
     nightSkyBox: TextureCube;
 
     map: MapControl;
-    viewPools: ObjectPool<Node>[];
-    coinPools: CoinPool;
 
     maxTilt = 35; // Độ nghiêng tối đa (độ)
     speedTilt = 4; // Tốc độ nghiêng
@@ -62,12 +60,9 @@ export class GameManager extends Component {
         } else {
             this.destroy();
         }
-
-        this.coinPools = new CoinPool(this.coinPrefab);
     }
 
     start() {
-        console.log(this.viewPools);
         const handleInput = new HandleInput();
         profiler.showStats();
         console.log("version 1.0.4");
