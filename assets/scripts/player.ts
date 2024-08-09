@@ -8,7 +8,7 @@ const { ccclass, property } = _decorator;
 @ccclass('Player')
 export class Player extends Component {
     @property(Node)
-    carAnim: Node;
+    carModel: Node;
 
     @property(BoxCollider)
     collider: BoxCollider;
@@ -30,7 +30,8 @@ export class Player extends Component {
     onTriggerEnter(event: ITriggerEvent) {
         const otherLayer = event.otherCollider.node.layer;
         if (otherLayer == Layer.Coin) {
-            const coin = event.otherCollider.node.getComponent(Coin).release();
+            event.otherCollider.node.getComponent(Coin).release();
+            // event.otherCollider.node.active = false;
             this.coin++;
             UIManager.instance.coinAmount.string = this.coin.toString();
         }
@@ -62,12 +63,12 @@ export class Player extends Component {
         let blinkCount = 0;
 
         const blinkInterval = setInterval(() => {
-            this.node.active = !this.node.active;
+            this.carModel.active = !this.carModel.active;
             blinkCount++;
 
             if (blinkCount >= this.blinkTimes * 2) {
                 clearInterval(blinkInterval);
-                this.node.active = true;
+                this.carModel.active = true;
                 this.isBlinking = false;
             }
         }, this.blinkDuration * 1000);

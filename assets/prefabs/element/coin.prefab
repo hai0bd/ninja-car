@@ -68,7 +68,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Coin_Material_0",
+    "_name": "Cylinder",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -87,27 +87,27 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -7.999,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
       "__type__": "cc.Quat",
-      "x": 0,
+      "x": 0.7071067811865475,
       "y": 0,
       "z": 0,
-      "w": 1
+      "w": 0.7071067811865476
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": 10,
-      "y": 10,
-      "z": 10
+      "x": 8,
+      "y": 1,
+      "z": 8
     },
     "_mobility": 0,
     "_layer": 2,
     "_euler": {
       "__type__": "cc.Vec3",
-      "x": 0,
+      "x": 90,
       "y": 0,
       "z": 0
     },
@@ -115,7 +115,7 @@
   },
   {
     "__type__": "cc.MeshRenderer",
-    "_name": "",
+    "_name": "Cylinder<ModelComponent>",
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
@@ -136,7 +136,7 @@
       "__id__": 5
     },
     "_mesh": {
-      "__uuid__": "1a121859-c11c-48ac-9deb-f0ba0933e22c@91085",
+      "__uuid__": "1263d74c-8167-4928-91a6-4e2672411f47@8abdc",
       "__expectedType__": "cc.Mesh"
     },
     "_shadowCastingMode": 0,
@@ -152,7 +152,7 @@
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "c3cFY89jxHp7S8/HuF6gb9"
+    "fileId": "bdfsKOfA1NqpenCLdxBdfJ"
   },
   {
     "__type__": "cc.ModelBakeSettings",
@@ -182,7 +182,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "53pkHuQrlIbZ1To++BB4qb",
+    "fileId": "2eth7RYBFLZKCPnxmJ54pU",
     "instance": null,
     "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
@@ -207,7 +207,7 @@
       "y": 0,
       "z": 0
     },
-    "_radius": 3.808,
+    "_radius": 4,
     "_height": 2,
     "_direction": 2,
     "_id": ""
@@ -248,9 +248,6 @@
     "_enabled": true,
     "__prefab": {
       "__id__": 12
-    },
-    "collider": {
-      "__id__": 7
     },
     "_id": ""
   },

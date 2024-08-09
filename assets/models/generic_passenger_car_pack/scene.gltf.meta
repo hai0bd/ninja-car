@@ -4551,6 +4551,7 @@
       "ver": "1.1.1",
       "imported": true,
       "files": [
+        ".bin",
         ".json"
       ],
       "subMetas": {}
