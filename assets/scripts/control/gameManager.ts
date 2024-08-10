@@ -146,12 +146,12 @@ export class GameManager extends Component {
         switch (this.mapIndex) {
             case 1: {
                 this.map.viewMax = config.map1.maxView;
-                this.map.speed = 100;
+                this.map.speed = 200;
                 return;
             }
             case 2: {
                 this.map.viewMax = config.map2.maxView;
-                this.map.speed = 200;
+                this.map.speed = 250;
                 return;
             }
             case 3: {
