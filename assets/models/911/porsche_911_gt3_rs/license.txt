@@ -1,0 +1,8 @@
+Model Information:
+* title:	Porsche 911 Gt3 Rs
+* source:	https://sketchfab.com/3d-models/porsche-911-gt3-rs-f0e88631440c4aeb810c2b71a4046ee5
+* author:	3d cars (https://sketchfab.com/3d_livery_studios)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

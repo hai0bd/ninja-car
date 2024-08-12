@@ -79,9 +79,9 @@ export class ViewControl extends Component {
     }
 
     genFuel() {
-        /* const gas = instantiate(this.gasPump);
+        const gas = instantiate(this.gasPump);
         this.node.addChild(gas);
-        this.listNode.push(gas); */
+        this.listNode.push(gas);
     }
 
     genMine(listMine, i) {

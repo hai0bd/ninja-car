@@ -75,7 +75,7 @@ export class GameManager extends Component {
         const speed = this.map.speed * this.speedTilt * 0.0165;
         this.tiltAngle = tiltLerp(this.tiltAngle, this.targetTilt, speed * 0.0165);
 
-        this.player.steer(this.tiltAngle, this.targetTilt * 0.02);
+        this.player.steer(this.tiltAngle, this.targetTilt * 0.03);
     }
 
     calculateTilt() {

@@ -29,9 +29,13 @@
       }
     ],
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 17
+      }
+    ],
     "_prefab": {
-      "__id__": 17
+      "__id__": 20
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -64,7 +68,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Circle_Material.004_0",
+    "_name": "goc cay",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -185,7 +189,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Circle_Material.003_0",
+    "_name": "tan cay 1",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -306,7 +310,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Circle_Material.002_0",
+    "_name": "tan cay 2",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -424,6 +428,51 @@
     "instance": null,
     "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
+  },
+  {
+    "__type__": "cc.LODGroup",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "__prefab": {
+      "__id__": 18
+    },
+    "_localBoundaryCenter": {
+      "__type__": "cc.Vec3",
+      "x": -1.1072500944137573,
+      "y": 0.5303779244422901,
+      "z": 5.540705680847168
+    },
+    "_objectSize": 3,
+    "_LODs": [
+      {
+        "__id__": 19
+      }
+    ],
+    "_id": ""
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "9bhz8G29dFoKB5aIHXXNyy"
+  },
+  {
+    "__type__": "cc.LOD",
+    "_screenUsagePercentage": 0.02,
+    "_renderers": [
+      {
+        "__id__": 3
+      },
+      {
+        "__id__": 8
+      },
+      {
+        "__id__": 13
+      }
+    ]
   },
   {
     "__type__": "cc.PrefabInfo",

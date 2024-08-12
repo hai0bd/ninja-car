@@ -26,9 +26,13 @@
       }
     ],
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 12
+      }
+    ],
     "_prefab": {
-      "__id__": 12
+      "__id__": 15
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -38,10 +42,10 @@
     },
     "_lrot": {
       "__type__": "cc.Quat",
-      "x": 0.7071068387877038,
+      "x": -0.7071068387877039,
       "y": 0,
       "z": 0,
-      "w": -0.7071067235853865
+      "w": 0.7071067235853865
     },
     "_lscale": {
       "__type__": "cc.Vec3",
@@ -53,7 +57,7 @@
     "_layer": 1073741824,
     "_euler": {
       "__type__": "cc.Vec3",
-      "x": -90.00000933466734,
+      "x": -90.00000933466735,
       "y": 0,
       "z": 0
     },
@@ -61,7 +65,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Circle.007_Material.018_0",
+    "_name": "goc cay",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -182,7 +186,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Circle.007_Material.019_0",
+    "_name": "tan cay",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -302,6 +306,48 @@
     "nestedPrefabInstanceRoots": null
   },
   {
+    "__type__": "cc.LODGroup",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "__prefab": {
+      "__id__": 13
+    },
+    "_localBoundaryCenter": {
+      "__type__": "cc.Vec3",
+      "x": 1.1102230246251565e-16,
+      "y": 0,
+      "z": 1.51155424118042
+    },
+    "_objectSize": 3,
+    "_LODs": [
+      {
+        "__id__": 14
+      }
+    ],
+    "_id": ""
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "55QTnzheJCDbHgyoiLmqdW"
+  },
+  {
+    "__type__": "cc.LOD",
+    "_screenUsagePercentage": 0.02,
+    "_renderers": [
+      {
+        "__id__": 3
+      },
+      {
+        "__id__": 8
+      }
+    ]
+  },
+  {
     "__type__": "cc.PrefabInfo",
     "root": {
       "__id__": 1
@@ -310,6 +356,7 @@
       "__id__": 0
     },
     "fileId": "ed7rVc0M5FLLDWyeIoupWQ",
+    "instance": null,
     "targetOverrides": null
   }
 ]

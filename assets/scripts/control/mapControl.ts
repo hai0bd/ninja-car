@@ -48,7 +48,6 @@ export class MapControl extends Component {
     }
 
     start() {
-        console.log("start");
         this.instatiateNextView(0);
 
         this.stage = this.fuelSize;
@@ -59,8 +58,8 @@ export class MapControl extends Component {
 
         // this.calculateFuel(deltaTime);
 
-        if (this.viewAmount == this.viewMax) {
-            if (this.nextView.position.z <= -1100) {
+        if (this.viewAmount > this.viewMax) {
+            if (this.nextView.position.z <= -110) {
                 this.line.destroy();
                 UIManager.instance.onWin();
                 GameManager.instance.onWin();
@@ -68,6 +67,7 @@ export class MapControl extends Component {
             else if (!this.line) {
                 this.line = instantiate(this.finishLine);
                 this.nextView.addChild(this.line);
+                this.nextView.getComponent(ViewControl).clearNode();
             }
         }
         else {

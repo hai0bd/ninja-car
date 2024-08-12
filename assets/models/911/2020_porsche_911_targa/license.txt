@@ -1,0 +1,11 @@
+Model Information:
+* title:	2020 Porsche 911 Targa
+* source:	https://sketchfab.com/3d-models/2020-porsche-911-targa-212107e5328940ae9bfc0bd74ad428ad
+* author:	supercarmodels (https://sketchfab.com/supercarmodels)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "2020 Porsche 911 Targa" (https://sketchfab.com/3d-models/2020-porsche-911-targa-212107e5328940ae9bfc0bd74ad428ad) by supercarmodels (https://sketchfab.com/supercarmodels) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

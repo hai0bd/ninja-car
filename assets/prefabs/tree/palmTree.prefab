@@ -26,9 +26,13 @@
       }
     ],
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 12
+      }
+    ],
     "_prefab": {
-      "__id__": 14
+      "__id__": 15
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -61,7 +65,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Circle.003_Material.011_0",
+    "_name": "goc cay",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -182,78 +186,31 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Circle.004",
+    "_name": "tan cay",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
       "__id__": 1
     },
-    "_children": [
-      {
-        "__id__": 8
-      }
-    ],
-    "_active": true,
-    "_components": [],
-    "_prefab": {
-      "__id__": 13
-    },
-    "_lpos": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": -2.6469779601696886e-23,
-      "z": 0
-    },
-    "_lrot": {
-      "__type__": "cc.Quat",
-      "x": 1.1102230246251563e-16,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_lscale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1.0000000000000002,
-      "z": 1.0000000000000002
-    },
-    "_mobility": 0,
-    "_layer": 1073741824,
-    "_euler": {
-      "__type__": "cc.Vec3",
-      "x": 1.2722218725854064e-14,
-      "y": 0,
-      "z": 0
-    },
-    "_id": ""
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "Circle.004_Material.012_0",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "_parent": {
-      "__id__": 7
-    },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 9
+        "__id__": 8
       }
     ],
     "_prefab": {
-      "__id__": 12
+      "__id__": 11
     },
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 0,
+      "y": -5.293955920339377e-23,
       "z": 0
     },
     "_lrot": {
       "__type__": "cc.Quat",
-      "x": 0,
+      "x": 1.110223156974054e-16,
       "y": 0,
       "z": 0,
       "w": 1
@@ -261,14 +218,14 @@
     "_lscale": {
       "__type__": "cc.Vec3",
       "x": 1,
-      "y": 1,
-      "z": 1
+      "y": 1.0000000000000004,
+      "z": 1.0000000000000004
     },
     "_mobility": 0,
     "_layer": 1073741824,
     "_euler": {
       "__type__": "cc.Vec3",
-      "x": 0,
+      "x": 1.2722220242460717e-14,
       "y": 0,
       "z": 0
     },
@@ -280,11 +237,11 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 8
+      "__id__": 7
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 10
+      "__id__": 9
     },
     "_materials": [
       {
@@ -294,7 +251,7 @@
     ],
     "_visFlags": 0,
     "bakeSettings": {
-      "__id__": 11
+      "__id__": 10
     },
     "_mesh": {
       "__uuid__": "bfeadfe2-4cd4-417d-803f-af628b6c99d0@7ec59",
@@ -349,17 +306,46 @@
     "nestedPrefabInstanceRoots": null
   },
   {
-    "__type__": "cc.PrefabInfo",
-    "root": {
+    "__type__": "cc.LODGroup",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
       "__id__": 1
     },
-    "asset": {
-      "__id__": 0
+    "_enabled": true,
+    "__prefab": {
+      "__id__": 13
     },
-    "fileId": "b6o5zEsu1CH4Q7GkDAkyyD",
-    "instance": null,
-    "targetOverrides": null,
-    "nestedPrefabInstanceRoots": null
+    "_localBoundaryCenter": {
+      "__type__": "cc.Vec3",
+      "x": -0.2703782320022583,
+      "y": 0.017204344272613747,
+      "z": 3.3295664787292485
+    },
+    "_objectSize": 3,
+    "_LODs": [
+      {
+        "__id__": 14
+      }
+    ],
+    "_id": ""
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "a9B4jcuARCe4v6TQkTJzgU"
+  },
+  {
+    "__type__": "cc.LOD",
+    "_screenUsagePercentage": 0.02,
+    "_renderers": [
+      {
+        "__id__": 3
+      },
+      {
+        "__id__": 8
+      }
+    ]
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -370,6 +356,7 @@
       "__id__": 0
     },
     "fileId": "748VM+BjJEG6s2XJA40lu3",
+    "instance": null,
     "targetOverrides": null
   }
 ]

@@ -1,11 +1,11 @@
 import { instantiate, Node, Prefab, random, Vec3 } from "cc";
-import { CoinGroup, CoinType } from "../enum";
-import { randomChoice } from "../utils/utils";
-import { config } from "../utils/config";
-import { ObjectPool } from "../utils/patern/objectPool";
 import { Coin } from "./coin";
-import { GameManager } from "../control/gameManager";
+import { config } from "../utils/config";
+import { randomChoice } from "../utils/utils";
+import { CoinGroup, CoinType } from "../enum";
+import { ObjectPool } from "../utils/patern/objectPool";
 import { PoolManager } from "../utils/patern/poolManager";
+import { FloatingItem } from "../floatingItem";
 
 export class GenerateCoin {
     coins: Node;
@@ -16,7 +16,9 @@ export class GenerateCoin {
     posX: number = 0;
     posZ: number = -100;
     distance: number = 0;
+
     currentCoinGroup: CoinGroup = CoinGroup.Null;
+    currentCoinAngle: number = 0;
 
     coinPools: CoinPool;
 
@@ -45,6 +47,10 @@ export class GenerateCoin {
         }
         else if (cointType == CoinType.Mix) {
             for (let i = 0; i < 5; i++) {
+                if (i % 2) {
+                    this.coinNull();
+                    continue;
+                }
                 const mixType = randomChoice(4, CoinGroup.Null, CoinGroup.Straight, CoinGroup.Left, CoinGroup.Right);
 
                 if (mixType == CoinGroup.Null) this.coinNull();
@@ -90,10 +96,9 @@ export class GenerateCoin {
         const listCoin: Node[] = [];
         let isOverride = false;
 
-        this.posX = randomChoice(3, 25, 0, -25);
         for (let i = 0; i < 3; i++) {
             if (this.posX == 0 && (this.posZ == 10 || this.posZ == -10)) isOverride = true;
-            const coin = this.instantiateCoin("coinStraight");
+            const coin = this.instantiateCoin("coinStraight", i);
             this.posZ += this.distance;
             listCoin.push(coin);
         }
@@ -115,17 +120,17 @@ export class GenerateCoin {
         let isOverride = false;
 
         if (this.currentCoinGroup == CoinGroup.Right) this.minePos.push(new Vec3(this.posX, 0, this.posZ));
-        this.currentCoinGroup = CoinGroup.Left;
 
         for (let i = 0; i < 3; i++) {
-            const coin = this.instantiateCoin("coinLeft");
+            const coin = this.instantiateCoin("coinLeft", i);
             if (this.posX == 0 && this.posZ == 0) isOverride = true;
             this.posX += 12.5;
             this.posZ += this.distance;
             listCoin.push(coin)
         }
-
         this.posX -= 12.5;
+
+        this.currentCoinGroup = CoinGroup.Left;
         if (isOverride) {
             this.destroyList(listCoin);
             this.currentCoinGroup = CoinGroup.Override;
@@ -142,18 +147,18 @@ export class GenerateCoin {
         let isOverride = false;
 
         if (this.currentCoinGroup == CoinGroup.Left) this.minePos.push(new Vec3(this.posX, 0, this.posZ));
-        this.currentCoinGroup = CoinGroup.Right;
 
         for (let i = 0; i < 3; i++) {
             if (this.posX == 0 && this.posZ == 0) isOverride = true;
 
-            const coin = this.instantiateCoin("coinRight");
+            const coin = this.instantiateCoin("coinRight", i);
             this.posX -= 12.5;
             this.posZ += this.distance;
             listCoin.push(coin);
         }
-
         this.posX += 12.5;
+
+        this.currentCoinGroup = CoinGroup.Right;
         if (isOverride) {
             this.destroyList(listCoin);
             this.currentCoinGroup = CoinGroup.Override;
@@ -164,15 +169,17 @@ export class GenerateCoin {
     coinZikZak() {
         let direction = (this.posX / Math.abs(this.posX)); // 1 || -1
         for (let i = 0; i < 15; i++) {
-            this.instantiateCoin(`coinZikZak ${direction}`);
+            this.instantiateCoin(`coinZikZak ${direction}`, i % 3);
             if (Math.abs(this.posX) >= 25) direction = -direction;
             this.posX += 12.5 * direction;
             this.posZ += this.distance;
         }
     }
 
-    instantiateCoin(name: string) {
+    instantiateCoin(name: string, index: number) {
         const coin = instantiate(this.prefab);
+        coin.setRotationFromEuler(new Vec3(0, this.currentCoinAngle += 10, 0));
+        if (this.currentCoinAngle >= 180) this.currentCoinAngle = 0;
         // const coin = this.coinPools.acquireCoin();
         coin.name = name;
         coin.setPosition(new Vec3(this.posX, coin.position.y, this.posZ));
@@ -207,6 +214,7 @@ export class CoinPool {
         this.pool = PoolManager.getInstance().getPool('coin', 90,
             () => {
                 const coin = instantiate(coinPrefab);
+                const coinFloating = coin.getComponent(FloatingItem);
                 const coinComponent = coin.getComponent(Coin);
                 if (coinComponent) {
                     coinComponent.setPool(this);

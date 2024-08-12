@@ -13,7 +13,13 @@ export class FloatingItem extends Component {
     rotationSpeed: number = 30;
 
     start() {
-        this.startFloating()
+        this.startFloating();
+    }
+
+    init(delay: number) {
+        this.scheduleOnce(() => {
+            this.startFloating();
+        }, delay / 4);
     }
 
     startFloating() {

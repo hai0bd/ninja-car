@@ -29,9 +29,13 @@
       }
     ],
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 17
+      }
+    ],
     "_prefab": {
-      "__id__": 17
+      "__id__": 20
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -41,10 +45,10 @@
     },
     "_lrot": {
       "__type__": "cc.Quat",
-      "x": 0.70705785352799,
-      "y": -0.008323052454439338,
-      "z": -0.00832305497161349,
-      "w": -0.7070577383199844
+      "x": -0.70705785352799,
+      "y": 0.008323052454439334,
+      "z": 0.008323054971613486,
+      "w": 0.7070577383199844
     },
     "_lscale": {
       "__type__": "cc.Vec3",
@@ -57,14 +61,14 @@
     "_euler": {
       "__type__": "cc.Vec3",
       "x": -90.00000933688231,
-      "y": 1.348839737837575,
-      "z": 9.406880535642333e-8
+      "y": 1.3488397378375747,
+      "z": 9.406880545581565e-8
     },
     "_id": ""
   },
   {
     "__type__": "cc.Node",
-    "_name": "Circle.002_Material.008_0",
+    "_name": "than cay",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -424,6 +428,51 @@
     "instance": null,
     "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
+  },
+  {
+    "__type__": "cc.LODGroup",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "__prefab": {
+      "__id__": 18
+    },
+    "_localBoundaryCenter": {
+      "__type__": "cc.Vec3",
+      "x": 2.384185791015625e-7,
+      "y": 0.13111758232116721,
+      "z": 7.180404663085939
+    },
+    "_objectSize": 3,
+    "_LODs": [
+      {
+        "__id__": 19
+      }
+    ],
+    "_id": ""
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "770nKsWfJNxoH3pSNpW3Cq"
+  },
+  {
+    "__type__": "cc.LOD",
+    "_screenUsagePercentage": 0.02,
+    "_renderers": [
+      {
+        "__id__": 3
+      },
+      {
+        "__id__": 8
+      },
+      {
+        "__id__": 13
+      }
+    ]
   },
   {
     "__type__": "cc.PrefabInfo",
