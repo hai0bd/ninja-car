@@ -2,6 +2,7 @@ import { _decorator, Component, instantiate, Node, Prefab, Vec2, Vec3 } from 'cc
 import { randomChoice } from '../utils/utils';
 import { CoinGroup, CoinType } from '../enum';
 import { CoinPool, GenerateCoin } from '../element/generateCoin';
+import { GenerateObstacle } from '../element/generateObstacle';
 const { ccclass, property } = _decorator;
 
 @ccclass('ViewControl')
@@ -10,13 +11,13 @@ export class ViewControl extends Component {
     roads: Node[] = [];
 
     @property(Node)
-    coins: Node;
+    coinParent: Node;
 
     @property(Node)
-    mines: Node;
+    mineParent: Node;
 
     @property(Node)
-    shields: Node;
+    shieldParent: Node;
 
     @property(Prefab)
     coinPrefab: Prefab;
@@ -37,6 +38,7 @@ export class ViewControl extends Component {
     listCoin: Node[] = [];
     coinPool: CoinPool;
     genCoin: GenerateCoin;
+    genObstacle: GenerateObstacle;
 
     /* start() {
         this.init();
@@ -45,11 +47,13 @@ export class ViewControl extends Component {
     onEnable() {
         this.clearNode();
 
-        this.genCoin = new GenerateCoin(this.coinPrefab, this.conePrefab, this.coins);
+        this.genCoin = new GenerateCoin(this.coinPrefab, this.conePrefab, this.coinParent);
         // const genMine = ...
         for (let i = 0; i < this.roads.length; i++) {
             const coinType = randomChoice(4, CoinType.Null, CoinType.Straight, CoinType.Mix, CoinType.Zikzak);
             this.genCoin.generateCoin(coinType);
+
+            // const 
         }
 
         // this.listNode = this.genCoin.listCoin;
@@ -83,14 +87,14 @@ export class ViewControl extends Component {
     genMine(listMine, i) {
         const mine = instantiate(this.minePrefab);
         mine.setPosition(new Vec3(0, mine.position.y, listMine[i].z));
-        this.mines.addChild(mine);
+        this.mineParent.addChild(mine);
         this.listNode.push(mine);
     }
 
     genShield(listMine, i) {
         const shield = instantiate(this.shieldPrefab);
         shield.setPosition(new Vec3(0, shield.position.y, listMine[i].z));
-        this.shields.addChild(shield);
+        this.shieldParent.addChild(shield);
         this.listNode.push(shield);
     }
 

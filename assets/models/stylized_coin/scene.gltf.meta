@@ -23,6 +23,50 @@
       ],
       "subMetas": {}
     },
+    "bab90": {
+      "importer": "gltf-mesh",
+      "uuid": "1a121859-c11c-48ac-9deb-f0ba0933e22c@bab90",
+      "displayName": "",
+      "id": "bab90",
+      "name": "Coin_Material_0_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 108
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cd9e8": {
+      "importer": "gltf-mesh",
+      "uuid": "1a121859-c11c-48ac-9deb-f0ba0933e22c@cd9e8",
+      "displayName": "",
+      "id": "cd9e8",
+      "name": "Coin_Material_0_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 42
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
     "e39f7": {
       "importer": "texture",
       "uuid": "1a121859-c11c-48ac-9deb-f0ba0933e22c@e39f7",
@@ -87,7 +131,7 @@
     ],
     "redirect": "1a121859-c11c-48ac-9deb-f0ba0933e22c@d1932",
     "lods": {
-      "enable": false,
+      "enable": true,
       "hasBuiltinLOD": false,
       "options": [
         {
@@ -106,7 +150,9 @@
     },
     "assetFinder": {
       "meshes": [
-        "1a121859-c11c-48ac-9deb-f0ba0933e22c@91085"
+        "1a121859-c11c-48ac-9deb-f0ba0933e22c@91085",
+        "1a121859-c11c-48ac-9deb-f0ba0933e22c@bab90",
+        "1a121859-c11c-48ac-9deb-f0ba0933e22c@cd9e8"
       ],
       "skeletons": [],
       "textures": [

@@ -59,6 +59,138 @@
       ],
       "subMetas": {}
     },
+    "6e89f": {
+      "importer": "gltf-mesh",
+      "uuid": "16adea53-2fd6-4ac4-beca-b5386398e9fe@6e89f",
+      "displayName": "",
+      "id": "6e89f",
+      "name": "Cube_Gray_0_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 118
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "dac3f": {
+      "importer": "gltf-mesh",
+      "uuid": "16adea53-2fd6-4ac4-beca-b5386398e9fe@dac3f",
+      "displayName": "",
+      "id": "dac3f",
+      "name": "Cube_Gray_0_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 118
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6df2b": {
+      "importer": "gltf-mesh",
+      "uuid": "16adea53-2fd6-4ac4-beca-b5386398e9fe@6df2b",
+      "displayName": "",
+      "id": "6df2b",
+      "name": "Cube_White.001_0_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 16
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e6eec": {
+      "importer": "gltf-mesh",
+      "uuid": "16adea53-2fd6-4ac4-beca-b5386398e9fe@e6eec",
+      "displayName": "",
+      "id": "e6eec",
+      "name": "Cube_White.001_0_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 16
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4f18b": {
+      "importer": "gltf-mesh",
+      "uuid": "16adea53-2fd6-4ac4-beca-b5386398e9fe@4f18b",
+      "displayName": "",
+      "id": "4f18b",
+      "name": "Cube_Yellow_0_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 2,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 16
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7c767": {
+      "importer": "gltf-mesh",
+      "uuid": "16adea53-2fd6-4ac4-beca-b5386398e9fe@7c767",
+      "displayName": "",
+      "id": "7c767",
+      "name": "Cube_Yellow_0_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 2,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 16
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
     "caf43": {
       "importer": "gltf-material",
       "uuid": "16adea53-2fd6-4ac4-beca-b5386398e9fe@caf43",
@@ -128,7 +260,7 @@
     "imageMetas": [],
     "redirect": "16adea53-2fd6-4ac4-beca-b5386398e9fe@d1932",
     "lods": {
-      "enable": false,
+      "enable": true,
       "hasBuiltinLOD": false,
       "options": [
         {
@@ -149,7 +281,13 @@
       "meshes": [
         "16adea53-2fd6-4ac4-beca-b5386398e9fe@d8458",
         "16adea53-2fd6-4ac4-beca-b5386398e9fe@b6913",
-        "16adea53-2fd6-4ac4-beca-b5386398e9fe@a75c1"
+        "16adea53-2fd6-4ac4-beca-b5386398e9fe@a75c1",
+        "16adea53-2fd6-4ac4-beca-b5386398e9fe@6e89f",
+        "16adea53-2fd6-4ac4-beca-b5386398e9fe@dac3f",
+        "16adea53-2fd6-4ac4-beca-b5386398e9fe@6df2b",
+        "16adea53-2fd6-4ac4-beca-b5386398e9fe@e6eec",
+        "16adea53-2fd6-4ac4-beca-b5386398e9fe@4f18b",
+        "16adea53-2fd6-4ac4-beca-b5386398e9fe@7c767"
       ],
       "skeletons": [],
       "textures": [],

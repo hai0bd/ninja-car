@@ -2364,13 +2364,13 @@
         "__id__": 31
       }
     ],
-    "coins": {
+    "coinParent": {
       "__id__": 126
     },
-    "mines": {
+    "mineParent": {
       "__id__": 124
     },
-    "shields": {
+    "shieldParent": {
       "__id__": 128
     },
     "coinPrefab": {

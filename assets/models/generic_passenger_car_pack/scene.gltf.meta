@@ -6879,6 +6879,8 @@
           {}
         ]
       }
-    }
+    },
+    "addVertexColor": true,
+    "promoteSingleRootNode": true
   }
 }

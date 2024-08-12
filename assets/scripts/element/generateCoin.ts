@@ -30,28 +30,28 @@ export class GenerateCoin {
     }
 
     generateCoin(cointType: CoinType) {
-        if (cointType == CoinType.Null/*  || cointType == CoinType.Zikzak */) {
+        if (cointType == CoinType.Null || cointType == CoinType.Zikzak) {
             for (let i = 0; i < 5; i++) {
-                // this.coinNull();
+                this.coinNull();
             }
         }
-        else if (cointType == CoinType.Zikzak) {
-            // this.coinZikZak();
-        }
+        /* else if (cointType == CoinType.Zikzak) {
+            this.coinZikZak();
+        } */
         else if (cointType == CoinType.Straight) {
             for (let i = 0; i < 5; i++) {
                 this.coinStraight();
             }
         }
         else if (cointType == CoinType.Mix) {
-            /* for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 5; i++) {
                 const mixType = randomChoice(4, CoinGroup.Null, CoinGroup.Straight, CoinGroup.Left, CoinGroup.Right);
 
                 if (mixType == CoinGroup.Null) this.coinNull();
                 else if (mixType == CoinGroup.Straight) this.coinStraight();
                 else if (mixType == CoinGroup.Right) this.coinRight();
                 else if (mixType == CoinGroup.Left) this.coinLeft();
-            } */
+            }
         }
     }
 
@@ -172,8 +172,8 @@ export class GenerateCoin {
     }
 
     instantiateCoin(name: string) {
-        // const coin = instantiate(this.prefab);
-        const coin = this.coinPools.acquireCoin();
+        const coin = instantiate(this.prefab);
+        // const coin = this.coinPools.acquireCoin();
         coin.name = name;
         coin.setPosition(new Vec3(this.posX, coin.position.y, this.posZ));
         this.coins.addChild(coin);
@@ -183,9 +183,9 @@ export class GenerateCoin {
 
     clearCoin() {
         for (let i = 0; i < this.listCoin.length; i++) {
-            this.coinPools.releaseCoin(this.listCoin.pop());
+            // this.coinPools.releaseCoin(this.listCoin.pop());
             // console.log(this.listCoin[i].name);
-            // this.listCoin[i].destroy();
+            this.listCoin[i].destroy();
         }
         this.listCoin = [];
         // console.log(this.coinPools.pool.size);

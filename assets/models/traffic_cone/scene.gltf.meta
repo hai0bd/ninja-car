@@ -5,6 +5,28 @@
   "uuid": "4db9b6c4-9157-4bed-99cc-d0803965707f",
   "files": [],
   "subMetas": {
+    "53286": {
+      "importer": "gltf-mesh",
+      "uuid": "4db9b6c4-9157-4bed-99cc-d0803965707f@53286",
+      "displayName": "",
+      "id": "53286",
+      "name": "Cube_Orange_0_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 172
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
     "65699": {
       "importer": "gltf-mesh",
       "uuid": "4db9b6c4-9157-4bed-99cc-d0803965707f@65699",
@@ -32,6 +54,72 @@
       "userData": {
         "gltfIndex": 0,
         "triangleCount": 172
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6b61b": {
+      "importer": "gltf-mesh",
+      "uuid": "4db9b6c4-9157-4bed-99cc-d0803965707f@6b61b",
+      "displayName": "",
+      "id": "6b61b",
+      "name": "Cube_Orange_0_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 172
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cd0aa": {
+      "importer": "gltf-mesh",
+      "uuid": "4db9b6c4-9157-4bed-99cc-d0803965707f@cd0aa",
+      "displayName": "",
+      "id": "cd0aa",
+      "name": "Cube_White_0_LOD1.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "lodLevel": 1,
+        "lodOptions": {
+          "faceCount": 0.25
+        },
+        "triangleCount": 64
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f687f": {
+      "importer": "gltf-mesh",
+      "uuid": "4db9b6c4-9157-4bed-99cc-d0803965707f@f687f",
+      "displayName": "",
+      "id": "f687f",
+      "name": "Cube_White_0_LOD2.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 64
       },
       "ver": "1.1.1",
       "imported": true,
@@ -94,7 +182,7 @@
     "imageMetas": [],
     "redirect": "4db9b6c4-9157-4bed-99cc-d0803965707f@d1932",
     "lods": {
-      "enable": false,
+      "enable": true,
       "hasBuiltinLOD": false,
       "options": [
         {
@@ -114,7 +202,11 @@
     "assetFinder": {
       "meshes": [
         "4db9b6c4-9157-4bed-99cc-d0803965707f@a1bc6",
-        "4db9b6c4-9157-4bed-99cc-d0803965707f@65699"
+        "4db9b6c4-9157-4bed-99cc-d0803965707f@65699",
+        "4db9b6c4-9157-4bed-99cc-d0803965707f@53286",
+        "4db9b6c4-9157-4bed-99cc-d0803965707f@6b61b",
+        "4db9b6c4-9157-4bed-99cc-d0803965707f@cd0aa",
+        "4db9b6c4-9157-4bed-99cc-d0803965707f@f687f"
       ],
       "skeletons": [],
       "textures": [],
