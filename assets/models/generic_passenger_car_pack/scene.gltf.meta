@@ -6345,7 +6345,6 @@
         "uri": "db://assets/models/generic_passenger_car_pack/textures/Body_8_metallicRoughness.png"
       }
     ],
-    "redirect": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d1932",
     "lods": {
       "enable": true,
       "hasBuiltinLOD": false,
@@ -6881,6 +6880,7 @@
       }
     },
     "addVertexColor": true,
-    "promoteSingleRootNode": true
+    "promoteSingleRootNode": true,
+    "redirect": "e9d1ef10-d3e8-45a3-81a1-fdf7171d7788@d1932"
   }
 }

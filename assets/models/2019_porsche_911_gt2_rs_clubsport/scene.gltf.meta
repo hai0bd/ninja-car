@@ -1,0 +1,1659 @@
+{
+  "ver": "2.3.12",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb",
+  "files": [],
+  "subMetas": {
+    "10486": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@10486",
+      "displayName": "",
+      "id": "10486",
+      "name": "UnnamedTexture-16.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Meshpart3Mtl_normal.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "14738": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@14738",
+      "displayName": "",
+      "id": "14738",
+      "name": "UnnamedTexture-20.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Misc1Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "15557": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@15557",
+      "displayName": "",
+      "id": "15557",
+      "name": "Hub1Mtl.material",
+      "userData": {
+        "gltfIndex": 10
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "43063": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@43063",
+      "displayName": "",
+      "id": "43063",
+      "name": "Object_19.mesh",
+      "userData": {
+        "gltfIndex": 19,
+        "triangleCount": 320
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "50743": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@50743",
+      "displayName": "",
+      "id": "50743",
+      "name": "UnnamedTexture-5.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/BodyworkL21Mtl_emissive.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "55257": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@55257",
+      "displayName": "",
+      "id": "55257",
+      "name": "UnnamedTexture-12.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Glass1Mtl_emissive.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "60369": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@60369",
+      "displayName": "",
+      "id": "60369",
+      "name": "Caliper1Mtl.material",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "85325": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@85325",
+      "displayName": "",
+      "id": "85325",
+      "name": "Meshpart1Mtl.material",
+      "userData": {
+        "gltfIndex": 12
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "96630": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@96630",
+      "displayName": "",
+      "id": "96630",
+      "name": "Meshpart2Mtl.material",
+      "userData": {
+        "gltfIndex": 13
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "98962": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@98962",
+      "displayName": "",
+      "id": "98962",
+      "name": "UnnamedTexture-19.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Meshpart4Mtl_normal.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4f4f4": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@4f4f4",
+      "displayName": "",
+      "id": "4f4f4",
+      "name": "Object_0.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 566
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "db32a": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@db32a",
+      "displayName": "",
+      "id": "db32a",
+      "name": "Object_1.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "triangleCount": 284
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ba1aa": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@ba1aa",
+      "displayName": "",
+      "id": "ba1aa",
+      "name": "Object_2.mesh",
+      "userData": {
+        "gltfIndex": 2,
+        "triangleCount": 1070
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9888b": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@9888b",
+      "displayName": "",
+      "id": "9888b",
+      "name": "Object_3.mesh",
+      "userData": {
+        "gltfIndex": 3,
+        "triangleCount": 2590
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e1aed": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@e1aed",
+      "displayName": "",
+      "id": "e1aed",
+      "name": "Object_4.mesh",
+      "userData": {
+        "gltfIndex": 4,
+        "triangleCount": 1418
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "450f5": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@450f5",
+      "displayName": "",
+      "id": "450f5",
+      "name": "Object_5.mesh",
+      "userData": {
+        "gltfIndex": 5,
+        "triangleCount": 3420
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cbb8e": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@cbb8e",
+      "displayName": "",
+      "id": "cbb8e",
+      "name": "Object_6.mesh",
+      "userData": {
+        "gltfIndex": 6,
+        "triangleCount": 5943
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d0cb9": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@d0cb9",
+      "displayName": "",
+      "id": "d0cb9",
+      "name": "Object_7.mesh",
+      "userData": {
+        "gltfIndex": 7,
+        "triangleCount": 5607
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6d525": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@6d525",
+      "displayName": "",
+      "id": "6d525",
+      "name": "Object_8.mesh",
+      "userData": {
+        "gltfIndex": 8,
+        "triangleCount": 5607
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2bea5": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@2bea5",
+      "displayName": "",
+      "id": "2bea5",
+      "name": "Object_9.mesh",
+      "userData": {
+        "gltfIndex": 9,
+        "triangleCount": 5943
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0c2c6": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@0c2c6",
+      "displayName": "",
+      "id": "0c2c6",
+      "name": "Object_10.mesh",
+      "userData": {
+        "gltfIndex": 10,
+        "triangleCount": 96
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "67dce": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@67dce",
+      "displayName": "",
+      "id": "67dce",
+      "name": "Object_11.mesh",
+      "userData": {
+        "gltfIndex": 11,
+        "triangleCount": 560
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "48db6": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@48db6",
+      "displayName": "",
+      "id": "48db6",
+      "name": "Object_12.mesh",
+      "userData": {
+        "gltfIndex": 12,
+        "triangleCount": 2088
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1604c": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@1604c",
+      "displayName": "",
+      "id": "1604c",
+      "name": "Object_13.mesh",
+      "userData": {
+        "gltfIndex": 13,
+        "triangleCount": 48
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2908b": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@2908b",
+      "displayName": "",
+      "id": "2908b",
+      "name": "Object_14.mesh",
+      "userData": {
+        "gltfIndex": 14,
+        "triangleCount": 6596
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "319fe": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@319fe",
+      "displayName": "",
+      "id": "319fe",
+      "name": "Object_15.mesh",
+      "userData": {
+        "gltfIndex": 15,
+        "triangleCount": 6596
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6c277": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@6c277",
+      "displayName": "",
+      "id": "6c277",
+      "name": "Object_16.mesh",
+      "userData": {
+        "gltfIndex": 16,
+        "triangleCount": 6596
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8fce1": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@8fce1",
+      "displayName": "",
+      "id": "8fce1",
+      "name": "Object_17.mesh",
+      "userData": {
+        "gltfIndex": 17,
+        "triangleCount": 6596
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a7e80": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@a7e80",
+      "displayName": "",
+      "id": "a7e80",
+      "name": "Object_18.mesh",
+      "userData": {
+        "gltfIndex": 18,
+        "triangleCount": 576
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0b61d": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@0b61d",
+      "displayName": "",
+      "id": "0b61d",
+      "name": "Object_20.mesh",
+      "userData": {
+        "gltfIndex": 20,
+        "triangleCount": 6225
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4d525": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@4d525",
+      "displayName": "",
+      "id": "4d525",
+      "name": "Object_21.mesh",
+      "userData": {
+        "gltfIndex": 21,
+        "triangleCount": 5108
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "037f5": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@037f5",
+      "displayName": "",
+      "id": "037f5",
+      "name": "Object_22.mesh",
+      "userData": {
+        "gltfIndex": 22,
+        "triangleCount": 4608
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "496ea": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@496ea",
+      "displayName": "",
+      "id": "496ea",
+      "name": "Object_23.mesh",
+      "userData": {
+        "gltfIndex": 23,
+        "triangleCount": 96
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c629e": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@c629e",
+      "displayName": "",
+      "id": "c629e",
+      "name": "Object_24.mesh",
+      "userData": {
+        "gltfIndex": 24,
+        "triangleCount": 96
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3f207": {
+      "importer": "gltf-mesh",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@3f207",
+      "displayName": "",
+      "id": "3f207",
+      "name": "Object_25.mesh",
+      "userData": {
+        "gltfIndex": 25,
+        "triangleCount": 192
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3effa": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@3effa",
+      "displayName": "",
+      "id": "3effa",
+      "name": "UnnamedTexture-0.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Badges1Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "221a5": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@221a5",
+      "displayName": "",
+      "id": "221a5",
+      "name": "UnnamedTexture-1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Badges1Mtl_emissive.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0089c": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@0089c",
+      "displayName": "",
+      "id": "0089c",
+      "name": "UnnamedTexture-2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Bodywork1Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9b633": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@9b633",
+      "displayName": "",
+      "id": "9b633",
+      "name": "UnnamedTexture-3.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/BodyworkL21Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9b782": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@9b782",
+      "displayName": "",
+      "id": "9b782",
+      "name": "UnnamedTexture-4.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/BodyworkL21Mtl_metallicRoughness.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "99ea5": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@99ea5",
+      "displayName": "",
+      "id": "99ea5",
+      "name": "UnnamedTexture-6.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/BodyworkL21Mtl_normal.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "006bd": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@006bd",
+      "displayName": "",
+      "id": "006bd",
+      "name": "UnnamedTexture-7.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Cab1Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "531b0": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@531b0",
+      "displayName": "",
+      "id": "531b0",
+      "name": "UnnamedTexture-8.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Chassis1Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9c3d2": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@9c3d2",
+      "displayName": "",
+      "id": "9c3d2",
+      "name": "UnnamedTexture-9.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Disc1Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f7e17": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@f7e17",
+      "displayName": "",
+      "id": "f7e17",
+      "name": "UnnamedTexture-10.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Disc1Mtl_emissive.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a2905": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@a2905",
+      "displayName": "",
+      "id": "a2905",
+      "name": "UnnamedTexture-11.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Glass1Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "809d9": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@809d9",
+      "displayName": "",
+      "id": "809d9",
+      "name": "UnnamedTexture-13.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Lights1Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b4841": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@b4841",
+      "displayName": "",
+      "id": "b4841",
+      "name": "UnnamedTexture-14.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Meshpart3Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3c999": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@3c999",
+      "displayName": "",
+      "id": "3c999",
+      "name": "UnnamedTexture-15.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Meshpart3Mtl_metallicRoughness.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d4524": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@d4524",
+      "displayName": "",
+      "id": "d4524",
+      "name": "UnnamedTexture-17.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Meshpart4Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d932b": {
+      "importer": "texture",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@d932b",
+      "displayName": "",
+      "id": "d932b",
+      "name": "UnnamedTexture-18.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Meshpart4Mtl_metallicRoughness.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8df22": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@8df22",
+      "displayName": "",
+      "id": "8df22",
+      "name": "Badges1Mtl.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d2df2": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@d2df2",
+      "displayName": "",
+      "id": "d2df2",
+      "name": "Banner1Mtl.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4f806": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@4f806",
+      "displayName": "",
+      "id": "4f806",
+      "name": "Bodywork1Mtl.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e66c8": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@e66c8",
+      "displayName": "",
+      "id": "e66c8",
+      "name": "BodyworkL21Mtl.material",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ea5b2": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@ea5b2",
+      "displayName": "",
+      "id": "ea5b2",
+      "name": "Cab1Mtl.material",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f037e": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@f037e",
+      "displayName": "",
+      "id": "f037e",
+      "name": "Chassis1Mtl.material",
+      "userData": {
+        "gltfIndex": 6
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ba185": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@ba185",
+      "displayName": "",
+      "id": "ba185",
+      "name": "Cupper1Mtl.material",
+      "userData": {
+        "gltfIndex": 7
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "02c90": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@02c90",
+      "displayName": "",
+      "id": "02c90",
+      "name": "Disc1Mtl.material",
+      "userData": {
+        "gltfIndex": 8
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "192c0": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@192c0",
+      "displayName": "",
+      "id": "192c0",
+      "name": "Glass1Mtl.material",
+      "userData": {
+        "gltfIndex": 9
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a9edf": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@a9edf",
+      "displayName": "",
+      "id": "a9edf",
+      "name": "Lights1Mtl.material",
+      "userData": {
+        "gltfIndex": 11
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e2d36": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@e2d36",
+      "displayName": "",
+      "id": "e2d36",
+      "name": "Meshpart3Mtl.material",
+      "userData": {
+        "gltfIndex": 14
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c53eb": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@c53eb",
+      "displayName": "",
+      "id": "c53eb",
+      "name": "Meshpart4Mtl.material",
+      "userData": {
+        "gltfIndex": 15
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "860dd": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@860dd",
+      "displayName": "",
+      "id": "860dd",
+      "name": "Misc1Mtl.material",
+      "userData": {
+        "gltfIndex": 16
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "85bcd": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@85bcd",
+      "displayName": "",
+      "id": "85bcd",
+      "name": "Springtop1Mtl.material",
+      "userData": {
+        "gltfIndex": 17
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "bc5fe": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@bc5fe",
+      "displayName": "",
+      "id": "bc5fe",
+      "name": "Upperarm1Mtl.material",
+      "userData": {
+        "gltfIndex": 18
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "10c39": {
+      "importer": "gltf-material",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@10c39",
+      "displayName": "",
+      "id": "10c39",
+      "name": "Upperarmb1Mtl.material",
+      "userData": {
+        "gltfIndex": 19
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d1932": {
+      "importer": "gltf-scene",
+      "uuid": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@d1932",
+      "displayName": "",
+      "id": "d1932",
+      "name": "scene.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Badges1Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Badges1Mtl_emissive.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Bodywork1Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/BodyworkL21Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/BodyworkL21Mtl_metallicRoughness.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/BodyworkL21Mtl_emissive.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/BodyworkL21Mtl_normal.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Cab1Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Chassis1Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Disc1Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Disc1Mtl_emissive.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Glass1Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Glass1Mtl_emissive.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Lights1Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Meshpart3Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Meshpart3Mtl_metallicRoughness.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Meshpart3Mtl_normal.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Meshpart4Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Meshpart4Mtl_metallicRoughness.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Meshpart4Mtl_normal.png"
+      },
+      {
+        "uri": "db://assets/models/2019_porsche_911_gt2_rs_clubsport/textures/Misc1Mtl_baseColor.png"
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@4f4f4",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@db32a",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@ba1aa",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@9888b",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@e1aed",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@450f5",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@cbb8e",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@d0cb9",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@6d525",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@2bea5",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@0c2c6",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@67dce",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@48db6",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@1604c",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@2908b",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@319fe",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@6c277",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@8fce1",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@a7e80",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@43063",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@0b61d",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@4d525",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@037f5",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@496ea",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@c629e",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@3f207"
+      ],
+      "skeletons": [],
+      "textures": [
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@3effa",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@221a5",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@0089c",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@9b633",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@9b782",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@50743",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@99ea5",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@006bd",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@531b0",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@9c3d2",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@f7e17",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@a2905",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@55257",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@809d9",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@b4841",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@3c999",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@10486",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@d4524",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@d932b",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@98962",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@14738"
+      ],
+      "materials": [
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@8df22",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@d2df2",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@4f806",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@e66c8",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@ea5b2",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@60369",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@f037e",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@ba185",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@02c90",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@192c0",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@15557",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@a9edf",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@85325",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@96630",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@e2d36",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@c53eb",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@860dd",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@85bcd",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@bc5fe",
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@10c39"
+      ],
+      "scenes": [
+        "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@d1932"
+      ]
+    },
+    "materials": {
+      "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@192c0": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "__editorExtras__": {},
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "c8f66d17-351a-48da-a12c-0212d28575c4",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 1,
+        "_defines": [
+          {},
+          {},
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {
+              "cullMode": 0
+            },
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainColor": {
+              "__type__": "cc.Color",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 185
+            },
+            "occlusion": 0.094,
+            "roughness": 0.054,
+            "metallic": 0.273,
+            "specularIntensity": 0.606,
+            "mainTexture": {
+              "__uuid__": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@a2905",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "emissiveMap": {
+              "__uuid__": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@55257",
+              "__expectedType__": "cc.Texture2D"
+            }
+          },
+          {},
+          {},
+          {},
+          {}
+        ]
+      },
+      "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@860dd": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "__editorExtras__": {},
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "c8f66d17-351a-48da-a12c-0212d28575c4",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "USE_ALBEDO_MAP": true,
+            "USE_EMISSIVE_MAP": true
+          },
+          {},
+          {},
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {
+              "cullMode": 0
+            },
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "occlusion": 0.342,
+            "roughness": 0.039,
+            "metallic": 0.123,
+            "mainTexture": {
+              "__uuid__": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@14738",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "emissiveMap": {
+              "__uuid__": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@14738",
+              "__expectedType__": "cc.Texture2D"
+            }
+          },
+          {},
+          {},
+          {},
+          {},
+          {}
+        ]
+      }
+    },
+    "redirect": "96853a74-3714-4e1a-b61e-7de0a4e9c1fb@d1932"
+  }
+}

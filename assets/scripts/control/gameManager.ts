@@ -1,4 +1,4 @@
-import { _decorator, Camera, CCInteger, Component, debug, director, EventKeyboard, EventMouse, EventTouch, Input, input, instantiate, KeyCode, lerp, Node, Prefab, profiler, sys, TextureCube, Vec3 } from 'cc';
+import { _decorator, CCInteger, Component, instantiate, Prefab, profiler, sys, TextureCube, Vec3 } from 'cc';
 import { Player } from '../player';
 import { CameraFollow } from '../cameraFollow';
 import { MapControl } from './mapControl';
@@ -6,9 +6,7 @@ import { UIManager } from './uiManager';
 import { InputKey } from '../enum';
 import { HandleInput } from './handlerInput';
 import { config } from '../utils/config';
-import { ObjectPool } from '../utils/patern/objectPool';
 import { tiltLerp } from '../utils/utils';
-import { CoinPool } from '../element/generateCoin';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameManager')
@@ -65,7 +63,7 @@ export class GameManager extends Component {
     start() {
         const handleInput = new HandleInput();
         profiler.showStats();
-        console.log("version 1.0.4");
+        console.log("version 1.0.5");
         this.nextLevel();
     }
 
@@ -146,17 +144,20 @@ export class GameManager extends Component {
         switch (this.mapIndex) {
             case 1: {
                 this.map.viewMax = config.map1.maxView;
-                this.map.speed = 200;
+                this.map.speed = config.map1.speed;
+                this.map.fuelSize = config.map1.fuelSize;
                 return;
             }
             case 2: {
                 this.map.viewMax = config.map2.maxView;
-                this.map.speed = 250;
+                this.map.speed = config.map2.speed;
+                this.map.fuelSize = config.map2.fuelSize;
                 return;
             }
             case 3: {
                 this.map.viewMax = config.map3.maxView;
-                this.map.speed = 300;
+                this.map.speed = config.map3.speed;
+                this.map.fuelSize = config.map3.fuelSize;
                 return;
             }
         }

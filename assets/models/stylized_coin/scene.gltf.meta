@@ -129,7 +129,6 @@
         "uri": "db://assets/models/stylized_coin/textures/Material_baseColor.jpeg"
       }
     ],
-    "redirect": "1a121859-c11c-48ac-9deb-f0ba0933e22c@d1932",
     "lods": {
       "enable": true,
       "hasBuiltinLOD": false,
@@ -164,6 +163,7 @@
       "scenes": [
         "1a121859-c11c-48ac-9deb-f0ba0933e22c@d1932"
       ]
-    }
+    },
+    "redirect": "1a121859-c11c-48ac-9deb-f0ba0933e22c@d1932"
   }
 }

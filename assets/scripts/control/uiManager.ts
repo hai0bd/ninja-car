@@ -1,9 +1,12 @@
-import { _decorator, Component, Label, Node } from 'cc';
+import { _decorator, Component, Label, Node, UITransform } from 'cc';
 import { FuelBar } from '../ui/fuelBar';
 const { ccclass, property } = _decorator;
 
 @ccclass('UIManager')
 export class UIManager extends Component {
+    @property(UITransform)
+    transform: UITransform;
+
     @property(FuelBar)
     fuelBar: FuelBar;
 

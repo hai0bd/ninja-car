@@ -6,29 +6,24 @@ import { CoinGroup, CoinType } from "../enum";
 import { ObjectPool } from "../utils/patern/objectPool";
 import { PoolManager } from "../utils/patern/poolManager";
 import { FloatingItem } from "../floatingItem";
+import { generateElements } from "./generateElements";
 
-export class GenerateCoin {
-    coins: Node;
+export class GenerateCoin extends generateElements {
     listCoin: Node[] = [];
+    listObstacle: Vec3[] = [];
     minePos: Vec3[] = [];
-    prefab: Prefab;
-    testNull: Prefab;
     posX: number = 0;
-    posZ: number = -100;
-    distance: number = 0;
+    posZ: number = 0;
 
     currentCoinGroup: CoinGroup = CoinGroup.Null;
     currentCoinAngle: number = 0;
 
     coinPools: CoinPool;
 
-    constructor(prefab: Prefab, testNull: Prefab, coinParent: Node) {
+    constructor(prefab: Prefab, coinParent: Node) {
+        super(prefab, coinParent)
         if (!this.coinPools) this.coinPools = new CoinPool(prefab);
-        this.prefab = prefab;
-        this.testNull = testNull;
-        this.coins = coinParent;
         this.posZ = config.startGenPoint;
-        this.distance = config.coin.distance;
     }
 
     generateCoin(cointType: CoinType) {
@@ -62,15 +57,11 @@ export class GenerateCoin {
     }
 
     coinNull() {
-        const listCoin = [];
-        let isOverride = false;
-
-        this.posX = randomChoice(3, 25, 0, -25);
-
         /* let rand = Math.floor(Math.random() * 2);
         if (this.currentCoinGroup == CoinGroup.Straight || this.currentCoinGroup == CoinGroup.Override) rand = 1; */
 
         for (let i = 0; i < 3; i++) {
+            this.listObstacle.push(new Vec3(-1, 0, this.posZ));
             /* if (rand == 0) {
                 if (this.posX == 0 && (this.posZ == this.distance / 2 || this.posZ == -this.distance / 2)) {
                     isOverride = true;
@@ -97,7 +88,7 @@ export class GenerateCoin {
         let isOverride = false;
 
         for (let i = 0; i < 3; i++) {
-            if (this.posX == 0 && (this.posZ == 10 || this.posZ == -10)) isOverride = true;
+            if (this.checkOverride(this.posZ)) isOverride = true;
             const coin = this.instantiateCoin("coinStraight", i);
             this.posZ += this.distance;
             listCoin.push(coin);
@@ -111,7 +102,7 @@ export class GenerateCoin {
     }
 
     coinLeft() {
-        if (this.posX == 25) {
+        if (this.posX == 25 || this.currentCoinGroup == CoinGroup.Left) {
             this.coinRight();
             return;
         }
@@ -123,7 +114,7 @@ export class GenerateCoin {
 
         for (let i = 0; i < 3; i++) {
             const coin = this.instantiateCoin("coinLeft", i);
-            if (this.posX == 0 && this.posZ == 0) isOverride = true;
+            if (this.checkOverride(this.posZ)) isOverride = true;
             this.posX += 12.5;
             this.posZ += this.distance;
             listCoin.push(coin)
@@ -138,7 +129,7 @@ export class GenerateCoin {
         }
     }
     coinRight() {
-        if (this.posX == -25) {
+        if (this.posX == -25 || this.currentCoinGroup == CoinGroup.Right) {
             this.coinLeft();
             return;
         }
@@ -149,7 +140,7 @@ export class GenerateCoin {
         if (this.currentCoinGroup == CoinGroup.Left) this.minePos.push(new Vec3(this.posX, 0, this.posZ));
 
         for (let i = 0; i < 3; i++) {
-            if (this.posX == 0 && this.posZ == 0) isOverride = true;
+            if (this.checkOverride(this.posZ)) isOverride = true;
 
             const coin = this.instantiateCoin("coinRight", i);
             this.posX -= 12.5;
@@ -183,7 +174,7 @@ export class GenerateCoin {
         // const coin = this.coinPools.acquireCoin();
         coin.name = name;
         coin.setPosition(new Vec3(this.posX, coin.position.y, this.posZ));
-        this.coins.addChild(coin);
+        this.parent.addChild(coin);
         this.listCoin.push(coin);
         return coin;
     }

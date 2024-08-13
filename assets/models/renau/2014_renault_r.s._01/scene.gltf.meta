@@ -1,0 +1,1147 @@
+{
+  "ver": "2.3.12",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "a374ac00-7281-4198-830a-a2e579d69c35",
+  "files": [],
+  "subMetas": {
+    "15605": {
+      "importer": "gltf-material",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@15605",
+      "displayName": "",
+      "id": "15605",
+      "name": "Meshpart12Mtl.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "22313": {
+      "importer": "gltf-material",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@22313",
+      "displayName": "",
+      "id": "22313",
+      "name": "Meshpart14Mtl.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "50743": {
+      "importer": "texture",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@50743",
+      "displayName": "",
+      "id": "50743",
+      "name": "UnnamedTexture-5.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/renau/2014_renault_r.s._01/textures/Meshpart14Mtl_emissive.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "51500": {
+      "importer": "gltf-material",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@51500",
+      "displayName": "",
+      "id": "51500",
+      "name": "Meshpart9Mtl.material",
+      "userData": {
+        "gltfIndex": 9
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "55257": {
+      "importer": "texture",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@55257",
+      "displayName": "",
+      "id": "55257",
+      "name": "UnnamedTexture-12.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/renau/2014_renault_r.s._01/textures/Rotor1Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "60369": {
+      "importer": "gltf-material",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@60369",
+      "displayName": "",
+      "id": "60369",
+      "name": "Caliper1Mtl.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "70322": {
+      "importer": "gltf-material",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@70322",
+      "displayName": "",
+      "id": "70322",
+      "name": "Meshpart16Mtl.material",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "85325": {
+      "importer": "gltf-material",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@85325",
+      "displayName": "",
+      "id": "85325",
+      "name": "Meshpart1Mtl.material",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "96630": {
+      "importer": "gltf-material",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@96630",
+      "displayName": "",
+      "id": "96630",
+      "name": "Meshpart2Mtl.material",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4f4f4": {
+      "importer": "gltf-mesh",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@4f4f4",
+      "displayName": "",
+      "id": "4f4f4",
+      "name": "Object_0.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 664
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "db32a": {
+      "importer": "gltf-mesh",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@db32a",
+      "displayName": "",
+      "id": "db32a",
+      "name": "Object_1.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "triangleCount": 102
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ba1aa": {
+      "importer": "gltf-mesh",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@ba1aa",
+      "displayName": "",
+      "id": "ba1aa",
+      "name": "Object_2.mesh",
+      "userData": {
+        "gltfIndex": 2,
+        "triangleCount": 128
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9888b": {
+      "importer": "gltf-mesh",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@9888b",
+      "displayName": "",
+      "id": "9888b",
+      "name": "Object_3.mesh",
+      "userData": {
+        "gltfIndex": 3,
+        "triangleCount": 264
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e1aed": {
+      "importer": "gltf-mesh",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@e1aed",
+      "displayName": "",
+      "id": "e1aed",
+      "name": "Object_4.mesh",
+      "userData": {
+        "gltfIndex": 4,
+        "triangleCount": 40
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "450f5": {
+      "importer": "gltf-mesh",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@450f5",
+      "displayName": "",
+      "id": "450f5",
+      "name": "Object_5.mesh",
+      "userData": {
+        "gltfIndex": 5,
+        "triangleCount": 26
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cbb8e": {
+      "importer": "gltf-mesh",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@cbb8e",
+      "displayName": "",
+      "id": "cbb8e",
+      "name": "Object_6.mesh",
+      "userData": {
+        "gltfIndex": 6,
+        "triangleCount": 1324
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d0cb9": {
+      "importer": "gltf-mesh",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@d0cb9",
+      "displayName": "",
+      "id": "d0cb9",
+      "name": "Object_7.mesh",
+      "userData": {
+        "gltfIndex": 7,
+        "triangleCount": 304
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6d525": {
+      "importer": "gltf-mesh",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@6d525",
+      "displayName": "",
+      "id": "6d525",
+      "name": "Object_8.mesh",
+      "userData": {
+        "gltfIndex": 8,
+        "triangleCount": 2512
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2bea5": {
+      "importer": "gltf-mesh",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@2bea5",
+      "displayName": "",
+      "id": "2bea5",
+      "name": "Object_9.mesh",
+      "userData": {
+        "gltfIndex": 9,
+        "triangleCount": 5513
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0c2c6": {
+      "importer": "gltf-mesh",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@0c2c6",
+      "displayName": "",
+      "id": "0c2c6",
+      "name": "Object_10.mesh",
+      "userData": {
+        "gltfIndex": 10,
+        "triangleCount": 9420
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "67dce": {
+      "importer": "gltf-mesh",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@67dce",
+      "displayName": "",
+      "id": "67dce",
+      "name": "Object_11.mesh",
+      "userData": {
+        "gltfIndex": 11,
+        "triangleCount": 4860
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "48db6": {
+      "importer": "gltf-mesh",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@48db6",
+      "displayName": "",
+      "id": "48db6",
+      "name": "Object_12.mesh",
+      "userData": {
+        "gltfIndex": 12,
+        "triangleCount": 576
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1604c": {
+      "importer": "gltf-mesh",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@1604c",
+      "displayName": "",
+      "id": "1604c",
+      "name": "Object_13.mesh",
+      "userData": {
+        "gltfIndex": 13,
+        "triangleCount": 1658
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3effa": {
+      "importer": "texture",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@3effa",
+      "displayName": "",
+      "id": "3effa",
+      "name": "UnnamedTexture-0.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/renau/2014_renault_r.s._01/textures/Caliper1Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "221a5": {
+      "importer": "texture",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@221a5",
+      "displayName": "",
+      "id": "221a5",
+      "name": "UnnamedTexture-1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/renau/2014_renault_r.s._01/textures/Caliper1Mtl_emissive.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0089c": {
+      "importer": "texture",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@0089c",
+      "displayName": "",
+      "id": "0089c",
+      "name": "UnnamedTexture-2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/renau/2014_renault_r.s._01/textures/Meshpart12Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9b633": {
+      "importer": "texture",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@9b633",
+      "displayName": "",
+      "id": "9b633",
+      "name": "UnnamedTexture-3.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/renau/2014_renault_r.s._01/textures/Meshpart12Mtl_emissive.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9b782": {
+      "importer": "texture",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@9b782",
+      "displayName": "",
+      "id": "9b782",
+      "name": "UnnamedTexture-4.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/renau/2014_renault_r.s._01/textures/Meshpart14Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "99ea5": {
+      "importer": "texture",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@99ea5",
+      "displayName": "",
+      "id": "99ea5",
+      "name": "UnnamedTexture-6.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/renau/2014_renault_r.s._01/textures/Meshpart1Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "006bd": {
+      "importer": "texture",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@006bd",
+      "displayName": "",
+      "id": "006bd",
+      "name": "UnnamedTexture-7.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/renau/2014_renault_r.s._01/textures/Meshpart1Mtl_emissive.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "531b0": {
+      "importer": "texture",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@531b0",
+      "displayName": "",
+      "id": "531b0",
+      "name": "UnnamedTexture-8.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/renau/2014_renault_r.s._01/textures/Meshpart2Mtl_emissive.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9c3d2": {
+      "importer": "texture",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@9c3d2",
+      "displayName": "",
+      "id": "9c3d2",
+      "name": "UnnamedTexture-9.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/renau/2014_renault_r.s._01/textures/Meshpart3Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f7e17": {
+      "importer": "texture",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@f7e17",
+      "displayName": "",
+      "id": "f7e17",
+      "name": "UnnamedTexture-10.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/renau/2014_renault_r.s._01/textures/Notpaint1Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a2905": {
+      "importer": "texture",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@a2905",
+      "displayName": "",
+      "id": "a2905",
+      "name": "UnnamedTexture-11.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/renau/2014_renault_r.s._01/textures/Rim1Mtl_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "809d9": {
+      "importer": "texture",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@809d9",
+      "displayName": "",
+      "id": "809d9",
+      "name": "UnnamedTexture-13.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/renau/2014_renault_r.s._01/textures/Rotor1Mtl_emissive.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e2d36": {
+      "importer": "gltf-material",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@e2d36",
+      "displayName": "",
+      "id": "e2d36",
+      "name": "Meshpart3Mtl.material",
+      "userData": {
+        "gltfIndex": 6
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a215a": {
+      "importer": "gltf-material",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@a215a",
+      "displayName": "",
+      "id": "a215a",
+      "name": "Meshpart6Mtl.material",
+      "userData": {
+        "gltfIndex": 7
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8c4c1": {
+      "importer": "gltf-material",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@8c4c1",
+      "displayName": "",
+      "id": "8c4c1",
+      "name": "Meshpart7Mtl.material",
+      "userData": {
+        "gltfIndex": 8
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b77fd": {
+      "importer": "gltf-material",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@b77fd",
+      "displayName": "",
+      "id": "b77fd",
+      "name": "Notpaint1Mtl.material",
+      "userData": {
+        "gltfIndex": 10
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c9619": {
+      "importer": "gltf-material",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@c9619",
+      "displayName": "",
+      "id": "c9619",
+      "name": "Rim1Mtl.material",
+      "userData": {
+        "gltfIndex": 11
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "91ea2": {
+      "importer": "gltf-material",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@91ea2",
+      "displayName": "",
+      "id": "91ea2",
+      "name": "Rotor1Mtl.material",
+      "userData": {
+        "gltfIndex": 12
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "76c00": {
+      "importer": "gltf-material",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@76c00",
+      "displayName": "",
+      "id": "76c00",
+      "name": "Tire1Mtl.material",
+      "userData": {
+        "gltfIndex": 13
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d1932": {
+      "importer": "gltf-scene",
+      "uuid": "a374ac00-7281-4198-830a-a2e579d69c35@d1932",
+      "displayName": "",
+      "id": "d1932",
+      "name": "scene.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "uri": "db://assets/models/renau/2014_renault_r.s._01/textures/Caliper1Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/renau/2014_renault_r.s._01/textures/Caliper1Mtl_emissive.png"
+      },
+      {
+        "uri": "db://assets/models/renau/2014_renault_r.s._01/textures/Meshpart12Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/renau/2014_renault_r.s._01/textures/Meshpart12Mtl_emissive.png"
+      },
+      {
+        "uri": "db://assets/models/renau/2014_renault_r.s._01/textures/Meshpart14Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/renau/2014_renault_r.s._01/textures/Meshpart14Mtl_emissive.png"
+      },
+      {
+        "uri": "db://assets/models/renau/2014_renault_r.s._01/textures/Meshpart1Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/renau/2014_renault_r.s._01/textures/Meshpart1Mtl_emissive.png"
+      },
+      {
+        "uri": "db://assets/models/renau/2014_renault_r.s._01/textures/Meshpart2Mtl_emissive.png"
+      },
+      {
+        "uri": "db://assets/models/renau/2014_renault_r.s._01/textures/Meshpart3Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/renau/2014_renault_r.s._01/textures/Notpaint1Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/renau/2014_renault_r.s._01/textures/Rim1Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/renau/2014_renault_r.s._01/textures/Rotor1Mtl_baseColor.png"
+      },
+      {
+        "uri": "db://assets/models/renau/2014_renault_r.s._01/textures/Rotor1Mtl_emissive.png"
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "a374ac00-7281-4198-830a-a2e579d69c35@4f4f4",
+        "a374ac00-7281-4198-830a-a2e579d69c35@db32a",
+        "a374ac00-7281-4198-830a-a2e579d69c35@ba1aa",
+        "a374ac00-7281-4198-830a-a2e579d69c35@9888b",
+        "a374ac00-7281-4198-830a-a2e579d69c35@e1aed",
+        "a374ac00-7281-4198-830a-a2e579d69c35@450f5",
+        "a374ac00-7281-4198-830a-a2e579d69c35@cbb8e",
+        "a374ac00-7281-4198-830a-a2e579d69c35@d0cb9",
+        "a374ac00-7281-4198-830a-a2e579d69c35@6d525",
+        "a374ac00-7281-4198-830a-a2e579d69c35@2bea5",
+        "a374ac00-7281-4198-830a-a2e579d69c35@0c2c6",
+        "a374ac00-7281-4198-830a-a2e579d69c35@67dce",
+        "a374ac00-7281-4198-830a-a2e579d69c35@48db6",
+        "a374ac00-7281-4198-830a-a2e579d69c35@1604c"
+      ],
+      "skeletons": [],
+      "textures": [
+        "a374ac00-7281-4198-830a-a2e579d69c35@3effa",
+        "a374ac00-7281-4198-830a-a2e579d69c35@221a5",
+        "a374ac00-7281-4198-830a-a2e579d69c35@0089c",
+        "a374ac00-7281-4198-830a-a2e579d69c35@9b633",
+        "a374ac00-7281-4198-830a-a2e579d69c35@9b782",
+        "a374ac00-7281-4198-830a-a2e579d69c35@50743",
+        "a374ac00-7281-4198-830a-a2e579d69c35@99ea5",
+        "a374ac00-7281-4198-830a-a2e579d69c35@006bd",
+        "a374ac00-7281-4198-830a-a2e579d69c35@531b0",
+        "a374ac00-7281-4198-830a-a2e579d69c35@9c3d2",
+        "a374ac00-7281-4198-830a-a2e579d69c35@f7e17",
+        "a374ac00-7281-4198-830a-a2e579d69c35@a2905",
+        "a374ac00-7281-4198-830a-a2e579d69c35@55257",
+        "a374ac00-7281-4198-830a-a2e579d69c35@809d9"
+      ],
+      "materials": [
+        "a374ac00-7281-4198-830a-a2e579d69c35@60369",
+        "a374ac00-7281-4198-830a-a2e579d69c35@15605",
+        "a374ac00-7281-4198-830a-a2e579d69c35@22313",
+        "a374ac00-7281-4198-830a-a2e579d69c35@70322",
+        "a374ac00-7281-4198-830a-a2e579d69c35@85325",
+        "a374ac00-7281-4198-830a-a2e579d69c35@96630",
+        "a374ac00-7281-4198-830a-a2e579d69c35@e2d36",
+        "a374ac00-7281-4198-830a-a2e579d69c35@a215a",
+        "a374ac00-7281-4198-830a-a2e579d69c35@8c4c1",
+        "a374ac00-7281-4198-830a-a2e579d69c35@51500",
+        "a374ac00-7281-4198-830a-a2e579d69c35@b77fd",
+        "a374ac00-7281-4198-830a-a2e579d69c35@c9619",
+        "a374ac00-7281-4198-830a-a2e579d69c35@91ea2",
+        "a374ac00-7281-4198-830a-a2e579d69c35@76c00"
+      ],
+      "scenes": [
+        "a374ac00-7281-4198-830a-a2e579d69c35@d1932"
+      ]
+    },
+    "materials": {
+      "a374ac00-7281-4198-830a-a2e579d69c35@96630": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "__editorExtras__": {},
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "c8f66d17-351a-48da-a12c-0212d28575c4",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 1,
+        "_defines": [
+          {},
+          {},
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {
+              "cullMode": 0
+            },
+            "depthStencilState": {
+              "depthWrite": false
+            },
+            "blendState": {
+              "targets": [
+                {
+                  "blend": true,
+                  "blendSrc": 2,
+                  "blendDst": 4,
+                  "blendDstAlpha": 4
+                }
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainColor": {
+              "__type__": "cc.Color",
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 189
+            },
+            "albedoScale": {
+              "__type__": "cc.Vec3",
+              "x": 0.2980650742199495,
+              "y": 0.2980650742199495,
+              "z": 0.2980650742199495
+            },
+            "roughness": 0,
+            "emissiveMap": {
+              "__uuid__": "a374ac00-7281-4198-830a-a2e579d69c35@531b0",
+              "__expectedType__": "cc.Texture2D"
+            }
+          },
+          {},
+          {},
+          {},
+          {}
+        ]
+      },
+      "a374ac00-7281-4198-830a-a2e579d69c35@b77fd": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "__editorExtras__": {},
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "c8f66d17-351a-48da-a12c-0212d28575c4",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "USE_ALBEDO_MAP": true,
+            "USE_EMISSIVE_MAP": true
+          },
+          {},
+          {},
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {
+              "cullMode": 0
+            },
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "occlusion": 0.142,
+            "roughness": 0.105,
+            "metallic": 0.802,
+            "specularIntensity": 0.498,
+            "mainTexture": {
+              "__uuid__": "a374ac00-7281-4198-830a-a2e579d69c35@f7e17",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "emissiveMap": {
+              "__uuid__": "a374ac00-7281-4198-830a-a2e579d69c35@f7e17",
+              "__expectedType__": "cc.Texture2D"
+            }
+          },
+          {},
+          {},
+          {},
+          {},
+          {}
+        ]
+      }
+    },
+    "redirect": "a374ac00-7281-4198-830a-a2e579d69c35@d1932"
+  }
+}

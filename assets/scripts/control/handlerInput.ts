@@ -1,9 +1,12 @@
 import { EventKeyboard, EventMouse, EventTouch, Input, input, KeyCode } from "cc";
 import { InputKey } from "../enum";
 import { GameManager } from "./gameManager";
+import { UIManager } from "./uiManager";
 
 export class HandleInput {
+    distance: number;
     constructor() {
+        this.distance = UIManager.instance.transform.width / 2;
         input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
         input.on(Input.EventType.KEY_PRESSING, this.onKeyDown, this);
         input.on(Input.EventType.KEY_UP, this.onKeyUp, this);
@@ -31,7 +34,7 @@ export class HandleInput {
     }
 
     onTouchStart(event: EventTouch) {
-        if (event.getUILocation().x - 270 > 0) {
+        if (event.getUILocation().x - this.distance > 0) {
             GameManager.instance.inputKey = InputKey.Press_Right;
         }
         else GameManager.instance.inputKey = InputKey.Press_Left;

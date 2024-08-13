@@ -86,7 +86,6 @@
         "uri": "db://assets/models/KayKit_City_Builder_Bits_1.0_FREE/KayKit_City_Builder_Bits_1.0_FREE/Assets/gltf/citybits_texture.png"
       }
     ],
-    "redirect": "b8cfeb3c-9bca-4d1f-b4b0-23087c18dd64@d7179",
     "lods": {
       "enable": false,
       "hasBuiltinLOD": false,
@@ -119,6 +118,7 @@
       "scenes": [
         "b8cfeb3c-9bca-4d1f-b4b0-23087c18dd64@d7179"
       ]
-    }
+    },
+    "redirect": "b8cfeb3c-9bca-4d1f-b4b0-23087c18dd64@d7179"
   }
 }

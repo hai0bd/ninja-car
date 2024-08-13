@@ -95,7 +95,6 @@
     "fbx": {
       "smartMaterialEnabled": true
     },
-    "redirect": "201618fa-92fd-4e25-9f9c-d53360a73bd4@a50ae",
     "lods": {
       "enable": false,
       "hasBuiltinLOD": false,
@@ -128,6 +127,7 @@
       "scenes": [
         "201618fa-92fd-4e25-9f9c-d53360a73bd4@a50ae"
       ]
-    }
+    },
+    "redirect": "201618fa-92fd-4e25-9f9c-d53360a73bd4@a50ae"
   }
 }

@@ -123,6 +123,9 @@
       },
       "custom-pipeline": {
         "_value": false
+      },
+      "graphics": {
+        "_value": true
       }
     },
     "flags": {},

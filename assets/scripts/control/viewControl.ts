@@ -14,6 +14,9 @@ export class ViewControl extends Component {
     coinParent: Node;
 
     @property(Node)
+    obstacleParent: Node;
+
+    @property(Node)
     mineParent: Node;
 
     @property(Node)
@@ -35,7 +38,8 @@ export class ViewControl extends Component {
     gasPump: Prefab;
 
     listNode: Node[] = [];
-    listCoin: Node[] = [];
+    listPoint: Vec3[] = [];
+    listObstacle: Node[] = [];
     coinPool: CoinPool;
     genCoin: GenerateCoin;
     genObstacle: GenerateObstacle;
@@ -47,18 +51,18 @@ export class ViewControl extends Component {
     onEnable() {
         this.clearNode();
 
-        this.genCoin = new GenerateCoin(this.coinPrefab, this.conePrefab, this.coinParent);
-        // const genMine = ...
+        this.genCoin = new GenerateCoin(this.coinPrefab, this.coinParent);
+
         for (let i = 0; i < this.roads.length; i++) {
             const coinType = randomChoice(4, CoinType.Null, CoinType.Straight, CoinType.Mix, CoinType.Zikzak);
             this.genCoin.generateCoin(coinType);
-
-            // const 
         }
 
-        // this.listNode = this.genCoin.listCoin;
-        this.listCoin = this.genCoin.listCoin;
-        this.coinPool = this.genCoin.coinPools;
+        this.listPoint = this.genCoin.listObstacle;
+        this.genObstacle = new GenerateObstacle(this.conePrefab, this.obstacleParent, this.listPoint);
+
+        this.listObstacle = this.genObstacle.listObstacle;
+        // this.listCoin = this.genCoin.listCoin;
         this.genFuel();
 
         const listMine = this.genCoin.minePos;
@@ -99,28 +103,16 @@ export class ViewControl extends Component {
     }
 
     clearNode() {
-        // console.log(this.listNode.length);
         if (this.genCoin) {
             this.genCoin.clearCoin();
         }
 
-        /* this.listCoin.forEach((coin) => {
-            this.coinPool.releaseCoin(coin);
-            console.log(coin.name);
-        })
-        console.log(this.coinPool);
-        this.listCoin = []; */
+        if (this.genObstacle) {
+            this.genObstacle.clearObstacle();
+        }
 
-        /* console.log('fist index: ', this.listNode[0]);
-        for (let i = 0; i < this.listNode.length; i++) {
-            // if (this.listNode[i].name == 'gasPump') console.log('is not destroy?');
-            console.log(`${this.listNode[i].name} is destroy`);
-            this.listNode[i].removeFromParent();
-            this.listNode[i].destroy();
-        } */
         this.listNode.forEach((node) => {
             if (node) {
-                // if (node.name == 'gasPump') console.log('is not destroy?');
                 node.removeFromParent();
                 node.destroy();
             }

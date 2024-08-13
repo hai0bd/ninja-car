@@ -163,7 +163,6 @@
         "uri": "db://assets/models/landmine/textures/lambert2_normal.png"
       }
     ],
-    "redirect": "4da7c408-f8c7-40e6-b434-aee9b029b586@d1932",
     "lods": {
       "enable": false,
       "hasBuiltinLOD": false,
@@ -199,6 +198,7 @@
       "scenes": [
         "4da7c408-f8c7-40e6-b434-aee9b029b586@d1932"
       ]
-    }
+    },
+    "redirect": "4da7c408-f8c7-40e6-b434-aee9b029b586@d1932"
   }
 }

@@ -180,7 +180,6 @@
   },
   "userData": {
     "imageMetas": [],
-    "redirect": "4db9b6c4-9157-4bed-99cc-d0803965707f@d1932",
     "lods": {
       "enable": true,
       "hasBuiltinLOD": false,
@@ -217,6 +216,7 @@
       "scenes": [
         "4db9b6c4-9157-4bed-99cc-d0803965707f@d1932"
       ]
-    }
+    },
+    "redirect": "4db9b6c4-9157-4bed-99cc-d0803965707f@d1932"
   }
 }

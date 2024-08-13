@@ -258,7 +258,6 @@
   },
   "userData": {
     "imageMetas": [],
-    "redirect": "16adea53-2fd6-4ac4-beca-b5386398e9fe@d1932",
     "lods": {
       "enable": true,
       "hasBuiltinLOD": false,
@@ -402,6 +401,7 @@
           {}
         ]
       }
-    }
+    },
+    "redirect": "16adea53-2fd6-4ac4-beca-b5386398e9fe@d1932"
   }
 }

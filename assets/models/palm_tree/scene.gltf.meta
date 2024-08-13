@@ -1,0 +1,411 @@
+{
+  "ver": "2.3.12",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "ed816e66-d965-4239-aba6-830ae55500bd",
+  "files": [],
+  "subMetas": {
+    "50743": {
+      "importer": "texture",
+      "uuid": "ed816e66-d965-4239-aba6-830ae55500bd@50743",
+      "displayName": "",
+      "id": "50743",
+      "name": "UnnamedTexture-5.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/palm_tree/textures/palmTree_M_normal.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "56f4a": {
+      "importer": "gltf-mesh",
+      "uuid": "ed816e66-d965-4239-aba6-830ae55500bd@56f4a",
+      "displayName": "",
+      "id": "56f4a",
+      "name": "defaultMaterial-0.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 120
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "09509": {
+      "importer": "gltf-mesh",
+      "uuid": "ed816e66-d965-4239-aba6-830ae55500bd@09509",
+      "displayName": "",
+      "id": "09509",
+      "name": "defaultMaterial-1.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "triangleCount": 438
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ac4af": {
+      "importer": "gltf-mesh",
+      "uuid": "ed816e66-d965-4239-aba6-830ae55500bd@ac4af",
+      "displayName": "",
+      "id": "ac4af",
+      "name": "defaultMaterial-2.mesh",
+      "userData": {
+        "gltfIndex": 2,
+        "triangleCount": 100
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3effa": {
+      "importer": "texture",
+      "uuid": "ed816e66-d965-4239-aba6-830ae55500bd@3effa",
+      "displayName": "",
+      "id": "3effa",
+      "name": "UnnamedTexture-0.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/palm_tree/textures/PalmLeaf_baseColor.jpeg"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "221a5": {
+      "importer": "texture",
+      "uuid": "ed816e66-d965-4239-aba6-830ae55500bd@221a5",
+      "displayName": "",
+      "id": "221a5",
+      "name": "UnnamedTexture-1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/palm_tree/textures/PalmLeaf_metallicRoughness.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0089c": {
+      "importer": "texture",
+      "uuid": "ed816e66-d965-4239-aba6-830ae55500bd@0089c",
+      "displayName": "",
+      "id": "0089c",
+      "name": "UnnamedTexture-2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/palm_tree/textures/PalmLeaf_normal.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9b633": {
+      "importer": "texture",
+      "uuid": "ed816e66-d965-4239-aba6-830ae55500bd@9b633",
+      "displayName": "",
+      "id": "9b633",
+      "name": "UnnamedTexture-3.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/palm_tree/textures/palmTree_M_baseColor.jpeg"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9b782": {
+      "importer": "texture",
+      "uuid": "ed816e66-d965-4239-aba6-830ae55500bd@9b782",
+      "displayName": "",
+      "id": "9b782",
+      "name": "UnnamedTexture-4.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/palm_tree/textures/palmTree_M_metallicRoughness.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "99ea5": {
+      "importer": "texture",
+      "uuid": "ed816e66-d965-4239-aba6-830ae55500bd@99ea5",
+      "displayName": "",
+      "id": "99ea5",
+      "name": "UnnamedTexture-6.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/palm_tree/textures/coconut_baseColor.jpeg"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "006bd": {
+      "importer": "texture",
+      "uuid": "ed816e66-d965-4239-aba6-830ae55500bd@006bd",
+      "displayName": "",
+      "id": "006bd",
+      "name": "UnnamedTexture-7.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/palm_tree/textures/coconut_metallicRoughness.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "531b0": {
+      "importer": "texture",
+      "uuid": "ed816e66-d965-4239-aba6-830ae55500bd@531b0",
+      "displayName": "",
+      "id": "531b0",
+      "name": "UnnamedTexture-8.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/palm_tree/textures/coconut_normal.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ef6de": {
+      "importer": "gltf-material",
+      "uuid": "ed816e66-d965-4239-aba6-830ae55500bd@ef6de",
+      "displayName": "",
+      "id": "ef6de",
+      "name": "PalmLeaf.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "561f2": {
+      "importer": "gltf-material",
+      "uuid": "ed816e66-d965-4239-aba6-830ae55500bd@561f2",
+      "displayName": "",
+      "id": "561f2",
+      "name": "palmTree_M.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "46f1b": {
+      "importer": "gltf-material",
+      "uuid": "ed816e66-d965-4239-aba6-830ae55500bd@46f1b",
+      "displayName": "",
+      "id": "46f1b",
+      "name": "coconut.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d1932": {
+      "importer": "gltf-scene",
+      "uuid": "ed816e66-d965-4239-aba6-830ae55500bd@d1932",
+      "displayName": "",
+      "id": "d1932",
+      "name": "scene.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "uri": "db://assets/models/palm_tree/textures/PalmLeaf_baseColor.jpeg"
+      },
+      {
+        "uri": "db://assets/models/palm_tree/textures/PalmLeaf_metallicRoughness.png"
+      },
+      {
+        "uri": "db://assets/models/palm_tree/textures/PalmLeaf_normal.png"
+      },
+      {
+        "uri": "db://assets/models/palm_tree/textures/palmTree_M_baseColor.jpeg"
+      },
+      {
+        "uri": "db://assets/models/palm_tree/textures/palmTree_M_metallicRoughness.png"
+      },
+      {
+        "uri": "db://assets/models/palm_tree/textures/palmTree_M_normal.png"
+      },
+      {
+        "uri": "db://assets/models/palm_tree/textures/coconut_baseColor.jpeg"
+      },
+      {
+        "uri": "db://assets/models/palm_tree/textures/coconut_metallicRoughness.png"
+      },
+      {
+        "uri": "db://assets/models/palm_tree/textures/coconut_normal.png"
+      }
+    ],
+    "redirect": "ed816e66-d965-4239-aba6-830ae55500bd@d1932",
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "ed816e66-d965-4239-aba6-830ae55500bd@56f4a",
+        "ed816e66-d965-4239-aba6-830ae55500bd@09509",
+        "ed816e66-d965-4239-aba6-830ae55500bd@ac4af"
+      ],
+      "skeletons": [],
+      "textures": [
+        "ed816e66-d965-4239-aba6-830ae55500bd@3effa",
+        "ed816e66-d965-4239-aba6-830ae55500bd@221a5",
+        "ed816e66-d965-4239-aba6-830ae55500bd@0089c",
+        "ed816e66-d965-4239-aba6-830ae55500bd@9b633",
+        "ed816e66-d965-4239-aba6-830ae55500bd@9b782",
+        "ed816e66-d965-4239-aba6-830ae55500bd@50743",
+        "ed816e66-d965-4239-aba6-830ae55500bd@99ea5",
+        "ed816e66-d965-4239-aba6-830ae55500bd@006bd",
+        "ed816e66-d965-4239-aba6-830ae55500bd@531b0"
+      ],
+      "materials": [
+        "ed816e66-d965-4239-aba6-830ae55500bd@ef6de",
+        "ed816e66-d965-4239-aba6-830ae55500bd@561f2",
+        "ed816e66-d965-4239-aba6-830ae55500bd@46f1b"
+      ],
+      "scenes": [
+        "ed816e66-d965-4239-aba6-830ae55500bd@d1932"
+      ]
+    }
+  }
+}

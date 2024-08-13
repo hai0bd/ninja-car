@@ -56,7 +56,7 @@ export class MapControl extends Component {
     update(deltaTime: number) {
         this.speed += 2 * deltaTime;
 
-        // this.calculateFuel(deltaTime);
+        this.calculateFuel(deltaTime);
 
         if (this.viewAmount > this.viewMax) {
             if (this.nextView.position.z <= -110) {

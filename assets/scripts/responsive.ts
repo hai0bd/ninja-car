@@ -1,4 +1,4 @@
-import { _decorator, Component, size, UITransform, view, } from "cc";
+import { _decorator, Component, size, UITransform, view, macro, ResolutionPolicy } from "cc";
 
 const { ccclass, property } = _decorator;
 
