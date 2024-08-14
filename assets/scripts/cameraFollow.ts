@@ -1,4 +1,5 @@
 import { _decorator, CCFloat, Component, game, lerp, Mesh, Node, tween, Vec3 } from 'cc';
+import { GameManager } from './control/gameManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('CameraFollow')
@@ -32,6 +33,9 @@ export class CameraFollow extends Component {
     start() {
         this.offset = this.node.getPosition();
         this.currentTargetPos = this.target.getPosition();
+    }
+
+    onEnable() {
         this.rotateAroundCar();
     }
 
@@ -40,7 +44,7 @@ export class CameraFollow extends Component {
         this.isRotating = true;
 
         let startAngle = -180;
-        let endAngle = 180;
+        let endAngle = 270;
 
         tween(this.node)
             .to(this.rotationDuration, {}, {
@@ -58,6 +62,8 @@ export class CameraFollow extends Component {
             .call(() => {
                 this.isRotating = false;
                 this.node.setRotationFromEuler(-9.9, 180, 0);
+                // GameManager.instance.gameOn();
+                GameManager.instance.map.enabled = true;
                 // Có thể thêm logic sau khi quay xong ở đây
             })
             .start();

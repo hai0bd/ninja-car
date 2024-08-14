@@ -61,9 +61,8 @@ export class GameManager extends Component {
     }
 
     start() {
-        const handleInput = new HandleInput();
         profiler.showStats();
-        console.log("version 1.0.5");
+        const handleInput = new HandleInput();
         this.nextLevel();
     }
 
@@ -126,6 +125,10 @@ export class GameManager extends Component {
         this.mainCam.enabled = false;
     }
 
+    gameOn() {
+        this.map.enabled = true;
+    }
+
     nextLevel() {
         this.mapIndex++;
         this.resetMap()
@@ -139,6 +142,7 @@ export class GameManager extends Component {
         const nextMap = instantiate(this.mapPrefab);
         if (this.map) this.map.node.destroy();
         this.map = nextMap.getComponent(MapControl);
+        this.map.enabled = false;
         this.node.addChild(nextMap);
 
         switch (this.mapIndex) {

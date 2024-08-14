@@ -8,16 +8,16 @@ export const config = {
     map1: {
         maxView: 20,
         speed: 200,
-        fuelSize: 2400
+        fuelSize: 3000
     },
     map2: {
         maxView: 30,
         speed: 250,
-        fuelSize: 2000
+        fuelSize: 2400
     },
     map3: {
         maxView: 40,
         speed: 300,
-        fuelSize: 1800
+        fuelSize: 2000
     }
 }

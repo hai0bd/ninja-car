@@ -28,7 +28,7 @@ export class GenerateObstacle extends generateElements {
             if (this.obstacleType == ObstacleType.Null) continue;
 
             const posZ = this.listPoint[i].z;
-            if (this.checkOverride(posZ)) return;
+            if (this.checkOverride(posZ)) continue;
 
             this.instantiateObstacle(new Vec3(this.posX, 0, posZ));
         }

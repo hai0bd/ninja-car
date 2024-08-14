@@ -40,7 +40,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 5,
+      "y": 3.5,
       "z": 18.5
     },
     "_lrot": {
@@ -99,9 +99,9 @@
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": 8,
-      "y": 1,
-      "z": 8
+      "x": 7,
+      "y": 0.7,
+      "z": 7
     },
     "_mobility": 0,
     "_layer": 2,
@@ -207,8 +207,8 @@
       "y": 0,
       "z": 0
     },
-    "_radius": 4,
-    "_height": 2,
+    "_radius": 3.5,
+    "_height": 1.4,
     "_direction": 2,
     "_id": ""
   },
@@ -228,7 +228,7 @@
     "__prefab": {
       "__id__": 10
     },
-    "floatAmplitude": 2,
+    "floatAmplitude": 0,
     "floatDuration": 2,
     "rotationSpeed": 50,
     "_id": ""

@@ -12,7 +12,6 @@ export class GenerateCoin extends generateElements {
     listCoin: Node[] = [];
     listObstacle: Vec3[] = [];
     minePos: Vec3[] = [];
-    posX: number = 0;
     posZ: number = 0;
 
     currentCoinGroup: CoinGroup = CoinGroup.Null;
@@ -57,46 +56,25 @@ export class GenerateCoin extends generateElements {
     }
 
     coinNull() {
-        /* let rand = Math.floor(Math.random() * 2);
-        if (this.currentCoinGroup == CoinGroup.Straight || this.currentCoinGroup == CoinGroup.Override) rand = 1; */
-
         for (let i = 0; i < 3; i++) {
-            this.listObstacle.push(new Vec3(-1, 0, this.posZ));
-            /* if (rand == 0) {
-                if (this.posX == 0 && (this.posZ == this.distance / 2 || this.posZ == -this.distance / 2)) {
-                    isOverride = true;
-                }
-
-                const test = instantiate(this.testNull);
-                test.setPosition(new Vec3(this.posX, test.position.y, this.posZ));
-                this.coins.addChild(test);
-                listCoin.push(test);
-                this.listCoin.push(test);
-            } */
+            if (this.currentCoinGroup == CoinGroup.Null) this.listObstacle.push(new Vec3(-1, 0, this.posZ));
             this.posZ += this.distance;
         }
-        /* if (isOverride) {
-            this.destroyList(listCoin);
-            this.currentCoinGroup = CoinGroup.Override;
-            return;
-        } */
         this.currentCoinGroup = CoinGroup.Null;
     }
 
     coinStraight() {
-        const listCoin: Node[] = [];
-        let isOverride = false;
-
-        for (let i = 0; i < 3; i++) {
-            if (this.checkOverride(this.posZ)) isOverride = true;
-            const coin = this.instantiateCoin("coinStraight", i);
-            this.posZ += this.distance;
-            listCoin.push(coin);
-        }
-        if (isOverride) {
-            this.destroyList(listCoin);
+        if (this.checkOverride(this.posZ) || this.currentCoinGroup == CoinGroup.Null) {
+            this.currentCoinGroup = CoinGroup.Straight;
+            this.coinNull();
             this.currentCoinGroup = CoinGroup.Override;
             return;
+        }
+
+        this.posX = randomChoice(3, -25, 0, 25);
+        for (let i = 0; i < 3; i++) {
+            const coin = this.instantiateCoin("coinStraight", i);
+            this.posZ += this.distance;
         }
         this.currentCoinGroup = CoinGroup.Straight;
     }
@@ -107,26 +85,23 @@ export class GenerateCoin extends generateElements {
             return;
         }
 
-        const listCoin = [];
-        let isOverride = false;
+        if (this.checkOverride(this.posZ) || this.currentCoinGroup == CoinGroup.Null) {
+            this.currentCoinGroup = CoinGroup.Left;
+            this.coinNull();
+            this.currentCoinGroup = CoinGroup.Override;
+            return;
+        }
 
         if (this.currentCoinGroup == CoinGroup.Right) this.minePos.push(new Vec3(this.posX, 0, this.posZ));
 
         for (let i = 0; i < 3; i++) {
             const coin = this.instantiateCoin("coinLeft", i);
-            if (this.checkOverride(this.posZ)) isOverride = true;
             this.posX += 12.5;
             this.posZ += this.distance;
-            listCoin.push(coin)
         }
         this.posX -= 12.5;
 
         this.currentCoinGroup = CoinGroup.Left;
-        if (isOverride) {
-            this.destroyList(listCoin);
-            this.currentCoinGroup = CoinGroup.Override;
-            return;
-        }
     }
     coinRight() {
         if (this.posX == -25 || this.currentCoinGroup == CoinGroup.Right) {
@@ -134,27 +109,23 @@ export class GenerateCoin extends generateElements {
             return;
         }
 
-        const listCoin = [];
-        let isOverride = false;
+        if (this.checkOverride(this.posZ) || this.currentCoinGroup == CoinGroup.Null) {
+            this.currentCoinGroup = CoinGroup.Straight;
+            this.coinNull();
+            this.currentCoinGroup = CoinGroup.Override;
+            return;
+        }
 
         if (this.currentCoinGroup == CoinGroup.Left) this.minePos.push(new Vec3(this.posX, 0, this.posZ));
 
         for (let i = 0; i < 3; i++) {
-            if (this.checkOverride(this.posZ)) isOverride = true;
-
             const coin = this.instantiateCoin("coinRight", i);
             this.posX -= 12.5;
             this.posZ += this.distance;
-            listCoin.push(coin);
         }
         this.posX += 12.5;
 
         this.currentCoinGroup = CoinGroup.Right;
-        if (isOverride) {
-            this.destroyList(listCoin);
-            this.currentCoinGroup = CoinGroup.Override;
-            return;
-        }
     }
 
     coinZikZak() {
