@@ -1,5 +1,6 @@
-import { _decorator, CCFloat, Component, game, lerp, Mesh, Node, tween, Vec3 } from 'cc';
+import { _decorator, CCFloat, Component, easing, game, lerp, Mesh, Node, tween, Vec3 } from 'cc';
 import { GameManager } from './control/gameManager';
+import { GameState } from './enum';
 const { ccclass, property } = _decorator;
 
 @ccclass('CameraFollow')
@@ -16,8 +17,20 @@ export class CameraFollow extends Component {
     @property({ type: Vec3 })
     offset: Vec3 = new Vec3();
 
+    @property(Node)
+    frontPos: Node;
+
+    @property(Node)
+    backPos: Node;
+
+    @property(Node)
+    abovePos: Node;
+
     @property
     rotationDuration: number = 5; // Thời gian quay (giây)
+
+    @property
+    movementDuration: number = 5; // Thời gian lia (giây)
 
     @property
     rotationRadius: number = 10; // Bán kính quay
@@ -25,28 +38,44 @@ export class CameraFollow extends Component {
     @property
     rotationHeight: number = 5; // Độ cao của camera
 
-    isRotating: boolean = false;
     currentTargetPos: Vec3;
+    timeCountDown: number = 3;
+    isMoving: boolean = false;
 
     meshes: Mesh = new Mesh();
 
     start() {
-        this.offset = this.node.getPosition();
+        // this.offset = this.node.getPosition();
         this.currentTargetPos = this.target.getPosition();
     }
 
     onEnable() {
-        this.rotateAroundCar();
+        this.introCar();
+    }
+
+    update(deltaTime: number) {
+        if (this.isMoving) return;
+        const pos = this.node.getPosition();
+        const targetPos = this.target.getPosition().subtract(this.currentTargetPos);
+
+        // this.node.lookAt(new Vec3(this.target.position.x));
+
+        Vec3.slerp(pos, pos, targetPos.add(this.offset), this.speed * deltaTime);
+
+        this.node.setPosition(pos);
     }
 
     rotateAroundCar() {
-        if (this.isRotating) return;
-        this.isRotating = true;
+        if (this.isMoving) return;
+        this.isMoving = true;
 
         let startAngle = -180;
         let endAngle = 270;
 
+        this.node.setRotation(this.frontPos.rotation);
+        this.node.setPosition(this.frontPos.position);
         tween(this.node)
+            // quay xung quanh car
             .to(this.rotationDuration, {}, {
                 onUpdate: (target, ratio) => {
                     let currentAngle = startAngle + (endAngle - startAngle) * ratio;
@@ -60,25 +89,95 @@ export class CameraFollow extends Component {
                 }
             })
             .call(() => {
-                this.isRotating = false;
+                this.isMoving = false;
                 this.node.setRotationFromEuler(-9.9, 180, 0);
-                // GameManager.instance.gameOn();
-                GameManager.instance.map.enabled = true;
+
+                let timeCountDown = 3;
+                this.schedule(() => {
+                    console.log(timeCountDown);
+                    timeCountDown--;
+                }, 1, timeCountDown);
+
+                this.scheduleOnce(() => {
+                    GameManager.instance.state = GameState.Playing;
+                }, timeCountDown + 1);
                 // Có thể thêm logic sau khi quay xong ở đây
             })
             .start();
     }
 
-    update(deltaTime: number) {
-        if (this.isRotating) return;
-        const pos = this.node.getPosition();
-        const targetPos = this.target.getPosition().subtract(this.currentTargetPos);
+    introCar() {
+        if (this.isMoving) return;
+        this.isMoving = true;
 
-        // this.node.lookAt(new Vec3(this.target.position.x));
+        this.atBackCar();
+    }
 
-        Vec3.slerp(pos, pos, targetPos.add(this.offset), this.speed * deltaTime);
+    atAboveCar() {
+        this.node.setRotation(this.abovePos.rotation);
+        tween(this.node)
+            .to(0.5, { position: this.abovePos.position }, { easing: 'backOut' })
+            .call(() => {
+                this.node.setPosition(this.offset);
+                this.isMoving = false;
+            })
+            .start();
+    }
 
-        this.node.setPosition(pos);
+    atBackCar() {
+        this.node.setRotation(this.backPos.rotation);
+        this.node.setPosition(this.backPos.position);
+
+        tween(this.node)
+            .to(this.movementDuration, {}, {
+                onUpdate: (target, ratio) => {
+                    // Tính toán vị trí mới trên trục X
+                    let startX = this.target.position.x - 5; // Vị trí bắt đầu
+                    let endX = this.target.position.x + 4; // Vị trí kết thúc (chính diện target)
+                    let currentX = startX + (endX - startX) * ratio;
+                    const pos = this.node.getPosition()
+
+                    // Đặt vị trí mới cho camera
+                    this.camera.setPosition(new Vec3(currentX, pos.y, pos.z));
+                }
+            })
+            .call(() => { this.atFrontCar() })
+            .start();
+    }
+
+    atFrontCar() {
+        this.node.setRotation(this.frontPos.rotation);
+        this.node.setPosition(this.frontPos.position);
+
+        tween(this.node)
+            .to(this.movementDuration, {}, {
+                onUpdate: (target, ratio) => {
+                    // Tính toán vị trí mới trên trục X
+                    let startX = this.target.position.x - 5; // Vị trí bắt đầu
+                    let endX = this.target.position.x + 5; // Vị trí kết thúc (chính diện target)
+                    let currentX = startX + (endX - startX) * ratio;
+                    const pos = this.node.getPosition()
+
+                    // Đặt vị trí mới cho camera
+                    this.camera.setPosition(new Vec3(currentX, pos.y, pos.z));
+                }
+            })
+            .call(() => {
+                this.isMoving = false;
+                this.node.setRotationFromEuler(-9.9, 180, 0);
+
+                let timeCountDown = 3;
+                this.schedule(() => {
+                    console.log(timeCountDown);
+                    timeCountDown--;
+                }, 1, timeCountDown);
+
+                this.scheduleOnce(() => {
+                    GameManager.instance.state = GameState.Playing;
+                }, timeCountDown + 1);
+                // Có thể thêm logic sau khi quay xong ở đây
+            })
+            .start();
     }
 }
 

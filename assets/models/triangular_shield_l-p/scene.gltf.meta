@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.12",
+  "ver": "2.3.13",
   "importer": "gltf",
   "imported": true,
   "uuid": "69d590b1-cf9e-4e20-8088-ee70abf0d0d4",
@@ -59,12 +59,12 @@
       ],
       "subMetas": {}
     },
-    "191c1": {
+    "c3b1f": {
       "importer": "gltf-mesh",
-      "uuid": "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@191c1",
+      "uuid": "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@c3b1f",
       "displayName": "",
-      "id": "191c1",
-      "name": "Object_0_LOD1.mesh",
+      "id": "c3b1f",
+      "name": "Object_0LOD1.mesh",
       "userData": {
         "gltfIndex": 0,
         "lodLevel": 1,
@@ -81,12 +81,12 @@
       ],
       "subMetas": {}
     },
-    "ab87e": {
+    "03bfc": {
       "importer": "gltf-mesh",
-      "uuid": "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@ab87e",
+      "uuid": "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@03bfc",
       "displayName": "",
-      "id": "ab87e",
-      "name": "Object_0_LOD2.mesh",
+      "id": "03bfc",
+      "name": "Object_0LOD2.mesh",
       "userData": {
         "gltfIndex": 0,
         "lodLevel": 2,
@@ -103,12 +103,12 @@
       ],
       "subMetas": {}
     },
-    "f2b88": {
+    "03ccc": {
       "importer": "gltf-mesh",
-      "uuid": "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@f2b88",
+      "uuid": "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@03ccc",
       "displayName": "",
-      "id": "f2b88",
-      "name": "Object_1_LOD1.mesh",
+      "id": "03ccc",
+      "name": "Object_1LOD1.mesh",
       "userData": {
         "gltfIndex": 1,
         "lodLevel": 1,
@@ -125,12 +125,12 @@
       ],
       "subMetas": {}
     },
-    "88c6c": {
+    "6f904": {
       "importer": "gltf-mesh",
-      "uuid": "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@88c6c",
+      "uuid": "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@6f904",
       "displayName": "",
-      "id": "88c6c",
-      "name": "Object_1_LOD2.mesh",
+      "id": "6f904",
+      "name": "Object_1LOD2.mesh",
       "userData": {
         "gltfIndex": 1,
         "lodLevel": 2,
@@ -147,12 +147,12 @@
       ],
       "subMetas": {}
     },
-    "f9ccc": {
+    "18a68": {
       "importer": "gltf-mesh",
-      "uuid": "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@f9ccc",
+      "uuid": "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@18a68",
       "displayName": "",
-      "id": "f9ccc",
-      "name": "Object_2_LOD1.mesh",
+      "id": "18a68",
+      "name": "Object_2LOD1.mesh",
       "userData": {
         "gltfIndex": 2,
         "lodLevel": 1,
@@ -169,12 +169,12 @@
       ],
       "subMetas": {}
     },
-    "566f3": {
+    "6f29d": {
       "importer": "gltf-mesh",
-      "uuid": "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@566f3",
+      "uuid": "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@6f29d",
       "displayName": "",
-      "id": "566f3",
-      "name": "Object_2_LOD2.mesh",
+      "id": "6f29d",
+      "name": "Object_2LOD2.mesh",
       "userData": {
         "gltfIndex": 2,
         "lodLevel": 2,
@@ -265,12 +265,12 @@
         "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@4f4f4",
         "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@db32a",
         "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@ba1aa",
-        "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@191c1",
-        "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@ab87e",
-        "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@f2b88",
-        "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@88c6c",
-        "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@f9ccc",
-        "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@566f3"
+        "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@c3b1f",
+        "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@03bfc",
+        "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@03ccc",
+        "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@6f904",
+        "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@18a68",
+        "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@6f29d"
       ],
       "skeletons": [],
       "textures": [],
@@ -281,7 +281,6 @@
       "scenes": [
         "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@d1932"
       ]
-    },
-    "redirect": "69d590b1-cf9e-4e20-8088-ee70abf0d0d4@d1932"
+    }
   }
 }

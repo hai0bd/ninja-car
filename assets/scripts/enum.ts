@@ -6,6 +6,13 @@ export enum Layer {
     Shield = 16
 }
 
+export enum GameState {
+    Waiting = 0,
+    Playing = 1,
+    Paused = 2,
+    Finished = 3,
+}
+
 export enum InputKey {
     Press_Left = 0,
     Press_Right = 1,

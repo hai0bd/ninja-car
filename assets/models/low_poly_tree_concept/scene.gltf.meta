@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.12",
+  "ver": "2.3.13",
   "importer": "gltf",
   "imported": true,
   "uuid": "87bc6b8c-0aa2-4946-98c1-01c9227899dc",
@@ -85,7 +85,6 @@
         "uri": "db://assets/models/low_poly_tree_concept/textures/initialShadingGroup_baseColor.png"
       }
     ],
-    "redirect": "87bc6b8c-0aa2-4946-98c1-01c9227899dc@d1932",
     "lods": {
       "enable": false,
       "hasBuiltinLOD": false,

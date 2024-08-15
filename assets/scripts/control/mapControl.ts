@@ -1,9 +1,10 @@
-import { _decorator, CCFloat, CCInteger, Component, Game, instantiate, math, Node, Prefab, tween, Vec3 } from 'cc';
+import { _decorator, CCFloat, Component, instantiate, Node, Prefab } from 'cc';
 import { GameManager } from './gameManager';
 import { UIManager } from './uiManager';
 import { ObjectPool } from '../utils/patern/objectPool';
 import { ViewControl } from './viewControl';
 import { PoolManager } from '../utils/patern/poolManager';
+import { GameState } from '../enum';
 const { ccclass, property } = _decorator;
 
 @ccclass('MapControl')
@@ -31,13 +32,14 @@ export class MapControl extends Component {
     viewAmount: number = 0;
     viewIndex: number = 0;
     currentIndex: number = -1;
+    // state: GameState = GameManager.instance.state;
 
     onLoad() {
         // khởi tạo object pool cho mỗi dạng vỉew
         for (let i = 0; i < this.viewPrefabs.length; i++) {
             const prefab = this.viewPrefabs[i];
             const pool = PoolManager.getInstance().getPool(`view_${i}`, 3,
-                () => instantiate(prefab),
+                () => { console.log(prefab.name); return instantiate(prefab) },
                 (node: Node) => {
                     node.removeFromParent();
                     node.active = false;
@@ -51,16 +53,18 @@ export class MapControl extends Component {
         this.instatiateNextView(0);
 
         this.stage = this.fuelSize;
+        GameManager.instance.state = GameState.Waiting;
     }
 
     update(deltaTime: number) {
+        if (GameManager.instance.state != GameState.Playing) return;
         this.speed += 2 * deltaTime;
 
         this.calculateFuel(deltaTime);
 
         if (this.viewAmount > this.viewMax) {
-            if (this.nextView.position.z <= -110) {
-                this.line.destroy();
+            if (this.nextView.position.z <= 110) {
+                // this.line.destroy();
                 UIManager.instance.onWin();
                 GameManager.instance.onWin();
             }
@@ -120,10 +124,6 @@ export class MapControl extends Component {
 
     private acquireView(index: number): Node {
         const view = this.viewPools[index].acquire();
-        /* const viewControl = view.getComponent(ViewControl);
-        if (viewControl) {
-            viewControl.resetView();
-        } */
         view.active = true;
         return view;
     }
@@ -143,6 +143,11 @@ export class MapControl extends Component {
         view.active = false;
         this.viewPools[this.currentIndex].release(view);
         this.currentIndex = this.viewIndex;
+    }
+
+    clearView() {
+        this.releaseView(this.view);
+        this.releaseView(this.nextView);
     }
 
     refuel() {

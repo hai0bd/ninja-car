@@ -5,7 +5,7 @@ const { ccclass, property } = _decorator;
 export class home extends Component {
     isTranslate: boolean = false;
     onLoad() {
-        console.log('version 1.0.6');
+        console.log('version 1.0.7');
         utils.changeLanguage('en');
     }
 

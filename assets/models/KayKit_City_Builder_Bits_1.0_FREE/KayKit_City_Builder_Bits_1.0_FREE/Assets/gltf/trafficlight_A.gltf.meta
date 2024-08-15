@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.12",
+  "ver": "2.3.13",
   "importer": "gltf",
   "imported": true,
   "uuid": "8059455e-9514-42e7-a7ee-bc1f8f6f60d9",
@@ -118,7 +118,6 @@
       "scenes": [
         "8059455e-9514-42e7-a7ee-bc1f8f6f60d9@45a41"
       ]
-    },
-    "redirect": "8059455e-9514-42e7-a7ee-bc1f8f6f60d9@45a41"
+    }
   }
 }

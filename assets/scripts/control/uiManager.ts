@@ -39,9 +39,11 @@ export class UIManager extends Component {
     }
 
     onWin() {
-        this.background.active = true;
-        this.winPopUp.active = true;
-        this.fuelBar.node.active = false;
+        this.scheduleOnce(() => {
+            this.background.active = true;
+            this.winPopUp.active = true;
+            this.fuelBar.node.active = false;
+        }, 1);
     }
 
     winClick() {

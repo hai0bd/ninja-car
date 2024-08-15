@@ -24,6 +24,7 @@ window.data = {
         { name: 'xetim', id: 0, isBought: false, description: '', topSpeed: 300, fuel: 1200, acceleration: 4.5 },
         { name: 'RS01', id: 1, isBought: false, description: '', topSpeed: 300, fuel: 1200, acceleration: 4.5 },
         { name: 'porche2019', id: 2, isBought: false, description: '', topSpeed: 300, fuel: 1200, acceleration: 4.5 },
+        { name: 'lamborcar', id: 3, isBought: false, description: '', topSpeed: 300, fuel: 1200, acceleration: 4.5 }
     ],
     coin: 0,
 }

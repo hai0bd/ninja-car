@@ -3,7 +3,7 @@ import { Player } from '../player';
 import { CameraFollow } from '../cameraFollow';
 import { MapControl } from './mapControl';
 import { UIManager } from './uiManager';
-import { InputKey } from '../enum';
+import { GameState, InputKey } from '../enum';
 import { HandleInput } from './handlerInput';
 import { config } from '../utils/config';
 import { tiltLerp } from '../utils/utils';
@@ -26,9 +26,6 @@ export class GameManager extends Component {
     @property(CCInteger)
     mapIndex: number = 0;
 
-    @property(TextureCube)
-    nightSkyBox: TextureCube;
-
     map: MapControl;
 
     maxTilt = 35; // Độ nghiêng tối đa (độ)
@@ -41,6 +38,7 @@ export class GameManager extends Component {
     isSpeedUp: boolean = false;
 
     inputKey: InputKey = InputKey.Key_Up;
+    state: GameState = GameState.Waiting;
 
     private static _instance: GameManager;
     public static get instance(): GameManager {
@@ -58,6 +56,7 @@ export class GameManager extends Component {
         } else {
             this.destroy();
         }
+        // screen.orientation.lock()
     }
 
     start() {
@@ -67,6 +66,7 @@ export class GameManager extends Component {
     }
 
     update(deltaTime: number) {
+        if (this.state != GameState.Playing) return;
         // let targetTilt = this.calculateTilt();
 
         const speed = this.map.speed * this.speedTilt * 0.0165;
@@ -104,15 +104,15 @@ export class GameManager extends Component {
     }
 
     onWin() {
-        // play hiệu ứng pháo hoa
-        // ..
+        this.mainCam.atAboveCar();
+        this.scheduleOnce(() => {
+            this.gamePause();
 
-        this.gamePause();
-
-        // lưu best score
-        if (this.mapIndex == 3 /* && bestScore < this.player.coin */) {
-            sys.localStorage.setItem("playerCoins", this.player.coin);
-        }
+            // lưu best score
+            if (this.mapIndex == 3 /* && bestScore < this.player.coin */) {
+                sys.localStorage.setItem("playerCoins", this.player.coin);
+            }
+        }, 1);
     }
 
     onLose() {
@@ -120,13 +120,10 @@ export class GameManager extends Component {
     }
 
     gamePause() {
+        this.map.line.destroy();
         this.map.enabled = false;
         this.player.collider.enabled = false;
         this.mainCam.enabled = false;
-    }
-
-    gameOn() {
-        this.map.enabled = true;
     }
 
     nextLevel() {
@@ -138,11 +135,14 @@ export class GameManager extends Component {
         this.resetPlayer();
 
         this.mainCam.enabled = true;
+        UIManager.instance.fuelBar.updateBar(1);
 
         const nextMap = instantiate(this.mapPrefab);
-        if (this.map) this.map.node.destroy();
+        if (this.map) {
+            this.map.clearView();
+            this.map.node.destroy();
+        }
         this.map = nextMap.getComponent(MapControl);
-        this.map.enabled = false;
         this.node.addChild(nextMap);
 
         switch (this.mapIndex) {
@@ -168,16 +168,15 @@ export class GameManager extends Component {
     }
 
     resetPlayer() {
-        this.player.coin = 0;
+        // this.player.coin = 0;
         this.player.collider.enabled = true;
 
         const pos = this.player.node.getPosition();
         pos.x = 0;
         this.player.node.setPosition(pos);
-
         this.player.node.setRotationFromEuler(Vec3.ZERO);
 
-        UIManager.instance.coinAmount.string = '0';
+        // UIManager.instance.coinAmount.string = '0';
     }
 }
 

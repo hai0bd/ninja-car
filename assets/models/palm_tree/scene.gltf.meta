@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.12",
+  "ver": "2.3.13",
   "importer": "gltf",
   "imported": true,
   "uuid": "ed816e66-d965-4239-aba6-830ae55500bd",
@@ -361,7 +361,6 @@
         "uri": "db://assets/models/palm_tree/textures/coconut_normal.png"
       }
     ],
-    "redirect": "ed816e66-d965-4239-aba6-830ae55500bd@d1932",
     "lods": {
       "enable": false,
       "hasBuiltinLOD": false,

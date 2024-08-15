@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.12",
+  "ver": "2.3.13",
   "importer": "gltf",
   "imported": true,
   "uuid": "ec4cc048-7b30-44a1-9846-bb0d02792aeb",
@@ -85,7 +85,6 @@
         "uri": "db://assets/models/jerrycan/textures/Material_baseColor.png"
       }
     ],
-    "redirect": "ec4cc048-7b30-44a1-9846-bb0d02792aeb@d1932",
     "lods": {
       "enable": false,
       "hasBuiltinLOD": false,

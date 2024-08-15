@@ -1,4 +1,4 @@
-import { instantiate, Node, Prefab, random, Vec3 } from "cc";
+import { instantiate, math, Node, Prefab, random, randomRange, Vec3 } from "cc";
 import { Coin } from "./coin";
 import { config } from "../utils/config";
 import { randomChoice } from "../utils/utils";
@@ -26,14 +26,14 @@ export class GenerateCoin extends generateElements {
     }
 
     generateCoin(cointType: CoinType) {
-        if (cointType == CoinType.Null || cointType == CoinType.Zikzak) {
+        if (cointType == CoinType.Null /* || cointType == CoinType.Zikzak */) {
             for (let i = 0; i < 5; i++) {
                 this.coinNull();
             }
         }
-        /* else if (cointType == CoinType.Zikzak) {
+        else if (cointType == CoinType.Zikzak) {
             this.coinZikZak();
-        } */
+        }
         else if (cointType == CoinType.Straight) {
             for (let i = 0; i < 5; i++) {
                 this.coinStraight();
@@ -129,13 +129,18 @@ export class GenerateCoin extends generateElements {
     }
 
     coinZikZak() {
+        this.posZ += this.distance;
+        if (this.posX == 0) this.posX = Math.random() < 0.5 ? -25 : 25;
         let direction = (this.posX / Math.abs(this.posX)); // 1 || -1
-        for (let i = 0; i < 15; i++) {
+
+        for (let i = 0; i < 13; i++) {
             this.instantiateCoin(`coinZikZak ${direction}`, i % 3);
             if (Math.abs(this.posX) >= 25) direction = -direction;
             this.posX += 12.5 * direction;
             this.posZ += this.distance;
         }
+        this.posZ += this.distance;
+        this.posX -= 12.5 * direction;
     }
 
     instantiateCoin(name: string, index: number) {

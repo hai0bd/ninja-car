@@ -1,10 +1,32 @@
 {
-  "ver": "2.3.12",
+  "ver": "2.3.13",
   "importer": "gltf",
   "imported": true,
   "uuid": "1a121859-c11c-48ac-9deb-f0ba0933e22c",
   "files": [],
   "subMetas": {
+    "68590": {
+      "importer": "gltf-mesh",
+      "uuid": "1a121859-c11c-48ac-9deb-f0ba0933e22c@68590",
+      "displayName": "",
+      "id": "68590",
+      "name": "Coin_Material_0LOD2.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "lodLevel": 2,
+        "lodOptions": {
+          "faceCount": 0.1
+        },
+        "triangleCount": 42
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
     "91085": {
       "importer": "gltf-mesh",
       "uuid": "1a121859-c11c-48ac-9deb-f0ba0933e22c@91085",
@@ -23,12 +45,12 @@
       ],
       "subMetas": {}
     },
-    "bab90": {
+    "86cca": {
       "importer": "gltf-mesh",
-      "uuid": "1a121859-c11c-48ac-9deb-f0ba0933e22c@bab90",
+      "uuid": "1a121859-c11c-48ac-9deb-f0ba0933e22c@86cca",
       "displayName": "",
-      "id": "bab90",
-      "name": "Coin_Material_0_LOD1.mesh",
+      "id": "86cca",
+      "name": "Coin_Material_0LOD1.mesh",
       "userData": {
         "gltfIndex": 0,
         "lodLevel": 1,
@@ -36,28 +58,6 @@
           "faceCount": 0.25
         },
         "triangleCount": 108
-      },
-      "ver": "1.1.1",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "cd9e8": {
-      "importer": "gltf-mesh",
-      "uuid": "1a121859-c11c-48ac-9deb-f0ba0933e22c@cd9e8",
-      "displayName": "",
-      "id": "cd9e8",
-      "name": "Coin_Material_0_LOD2.mesh",
-      "userData": {
-        "gltfIndex": 0,
-        "lodLevel": 2,
-        "lodOptions": {
-          "faceCount": 0.1
-        },
-        "triangleCount": 42
       },
       "ver": "1.1.1",
       "imported": true,
@@ -150,8 +150,8 @@
     "assetFinder": {
       "meshes": [
         "1a121859-c11c-48ac-9deb-f0ba0933e22c@91085",
-        "1a121859-c11c-48ac-9deb-f0ba0933e22c@bab90",
-        "1a121859-c11c-48ac-9deb-f0ba0933e22c@cd9e8"
+        "1a121859-c11c-48ac-9deb-f0ba0933e22c@86cca",
+        "1a121859-c11c-48ac-9deb-f0ba0933e22c@68590"
       ],
       "skeletons": [],
       "textures": [
@@ -163,7 +163,6 @@
       "scenes": [
         "1a121859-c11c-48ac-9deb-f0ba0933e22c@d1932"
       ]
-    },
-    "redirect": "1a121859-c11c-48ac-9deb-f0ba0933e22c@d1932"
+    }
   }
 }
