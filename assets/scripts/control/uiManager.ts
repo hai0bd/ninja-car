@@ -45,7 +45,6 @@ export class UIManager extends Component {
         this.countDown.node.active = true;
         this.schedule(() => {
             if (timeCountDown <= 0) { this.countDown.node.active = false; return; }
-            console.log(timeCountDown);
             this.countDown.string = timeCountDown.toString();
             timeCountDown--;
         }, 1, timeCountDown);

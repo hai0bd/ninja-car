@@ -95,7 +95,6 @@ export class CameraFollow extends Component {
 
                 let timeCountDown = 3;
                 this.schedule(() => {
-                    console.log(timeCountDown);
                     timeCountDown--;
                 }, 1, timeCountDown);
 

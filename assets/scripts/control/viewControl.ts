@@ -50,7 +50,7 @@ export class ViewControl extends Component {
     }
  */
     onEnable() {
-        this.clearNode();
+        // this.clearNode();
 
         this.genCoin = new GenerateCoin(this.coinPrefab, this.coinParent);
 

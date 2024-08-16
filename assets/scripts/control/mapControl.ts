@@ -39,7 +39,7 @@ export class MapControl extends Component {
         for (let i = 0; i < this.viewPrefabs.length; i++) {
             const prefab = this.viewPrefabs[i];
             const pool = PoolManager.getInstance().getPool(`view_${i}`, 3,
-                () => { console.log(prefab.name); return instantiate(prefab) },
+                () => instantiate(prefab),
                 (node: Node) => {
                     node.removeFromParent();
                     node.active = false;
@@ -77,7 +77,6 @@ export class MapControl extends Component {
             if (this.nextView && this.nextView.position.z <= 0) {
                 this.releaseView(this.view);
                 this.view = this.nextView;
-                // console.log(this.viewAmount);
                 this.viewAmount++;
                 if (this.viewAmount % 5 == 0) {
                     this.viewIndex++;
@@ -131,7 +130,6 @@ export class MapControl extends Component {
         if (viewControl) {
             viewControl.clearNode();
         }
-        // console.log(this.viewPools);
         if (this.currentIndex == -1) {
             view.active = false;
             view.removeFromParent()

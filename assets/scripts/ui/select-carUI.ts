@@ -24,7 +24,6 @@ export class select_carUI extends Component {
         this.currentCarID++;
         if (data.cars[this.currentCarID].isBought) this.buttonBuy.node.active = false;
         else this.buttonBuy.node.active = true;
-        console.log(data.cars[this.currentCarID]);
     }
     previousCar() {
         const pos = this.listCar.getPosition();
@@ -35,7 +34,6 @@ export class select_carUI extends Component {
         this.currentCarID--;
         if (data.cars[this.currentCarID].isBought) this.buttonBuy.node.active = false;
         else this.buttonBuy.node.active = true;
-        console.log(data.cars[this.currentCarID]);
     }
     buy() {
         data.cars[this.currentCarID].isBought = true;

@@ -141,7 +141,6 @@ export class GameManager extends Component {
     }
 
     resetMap() {
-        console.log(this.mapIndex);
         this.resetPlayer();
 
         this.mainCam.enabled = true;

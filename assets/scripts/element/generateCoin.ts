@@ -22,6 +22,7 @@ export class GenerateCoin extends generateElements {
     constructor(prefab: Prefab, coinParent: Node) {
         super(prefab, coinParent)
         if (!this.coinPools) this.coinPools = new CoinPool(prefab);
+        console.log(this.coinPools.pool.size);
         this.posZ = config.startGenPoint;
     }
 
@@ -41,10 +42,6 @@ export class GenerateCoin extends generateElements {
         }
         else if (cointType == CoinType.Mix) {
             for (let i = 0; i < 5; i++) {
-                /* if (i % 2) {
-                    this.coinNull();
-                    continue;
-                } */
                 const mixType = randomChoice(4, CoinGroup.Null, CoinGroup.Straight, CoinGroup.Left, CoinGroup.Right);
 
                 if (mixType == CoinGroup.Null) this.coinNull();
@@ -144,33 +141,33 @@ export class GenerateCoin extends generateElements {
     }
 
     instantiateCoin(name: string, index: number) {
-        const coin = instantiate(this.prefab);
+        // const coin = instantiate(this.prefab);
+        const coin = this.coinPools.acquireCoin();
+        coin.name = name + ' ' + (this.listCoin.length).toString();
+        coin.setPosition(new Vec3(this.posX, coin.position.y, this.posZ));
         coin.setRotationFromEuler(new Vec3(0, this.currentCoinAngle += 10, 0));
         if (this.currentCoinAngle >= 180) this.currentCoinAngle = 0;
-        // const coin = this.coinPools.acquireCoin();
-        coin.name = name;
-        coin.setPosition(new Vec3(this.posX, coin.position.y, this.posZ));
         this.parent.addChild(coin);
         this.listCoin.push(coin);
         return coin;
     }
 
     clearCoin() {
-        for (let i = 0; i < this.listCoin.length; i++) {
-            // this.coinPools.releaseCoin(this.listCoin.pop());
-            // console.log(this.listCoin[i].name);
-            this.listCoin[i].destroy();
+        console.log("this.listCoin.length before destroy: ", this.listCoin.length);
+        const length = this.listCoin.length;
+        for (let i = 0; i < length; i++) {
+            const coin = this.listCoin.pop();
+            if (coin) {
+                console.log(coin.name);
+                this.coinPools.releaseCoin(coin);
+            }
+            else {
+                console.log("coin = null");
+            }
+            // this.listCoin[i].destroy();
         }
+        console.log("this.listCoin.length after destroy: ", this.listCoin.length);
         this.listCoin = [];
-        // console.log(this.coinPools.pool.size);
-    }
-
-    destroyList(list: Node[]) {
-        for (let i = 0; i < list.length; i++) {
-            // this.coinPools.releaseCoin(list[i]);
-            list[i].active = false;
-            // list[i].destroy();
-        }
     }
 }
 
@@ -181,7 +178,7 @@ export class CoinPool {
         this.pool = PoolManager.getInstance().getPool('coin', 90,
             () => {
                 const coin = instantiate(coinPrefab);
-                const coinFloating = coin.getComponent(FloatingItem);
+                // const coinFloating = coin.getComponent(FloatingItem);
                 const coinComponent = coin.getComponent(Coin);
                 if (coinComponent) {
                     coinComponent.setPool(this);
@@ -193,7 +190,6 @@ export class CoinPool {
                 coin.active = false;
             }
         );
-        // this.pool.preload(100);
     }
 
     acquireCoin(): Node {
@@ -204,6 +200,5 @@ export class CoinPool {
 
     releaseCoin(coin: Node) {
         this.pool.release(coin);
-        // console.log(this.pool.size);
     }
 }

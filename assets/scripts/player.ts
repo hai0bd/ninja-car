@@ -30,8 +30,8 @@ export class Player extends Component {
     onTriggerEnter(event: ITriggerEvent) {
         const otherLayer = event.otherCollider.node.layer;
         if (otherLayer == Layer.Coin) {
-            event.otherCollider.node.getComponent(Coin).release();
-            // event.otherCollider.node.active = false;
+            // event.otherCollider.node.getComponent(Coin).release();
+            event.otherCollider.node.active = false;
             this.coin++;
             UIManager.instance.coinAmount.string = this.coin.toString();
         }
