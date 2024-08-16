@@ -1,5 +1,5 @@
 {
-  "__version__": "1.0.9",
+  "__version__": "1.0.8",
   "modules": {
     "cache": {
       "base": {
@@ -141,7 +141,6 @@
       "intersection-2d",
       "light-probe",
       "marionette",
-      "meshopt",
       "particle",
       "physics-ammo",
       "primitive",
