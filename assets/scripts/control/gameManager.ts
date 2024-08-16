@@ -1,4 +1,4 @@
-import { _decorator, CCInteger, Component, instantiate, Prefab, profiler, sys, TextureCube, Vec3 } from 'cc';
+import { _decorator, CCInteger, Component, instantiate, macro, Prefab, profiler, ResolutionPolicy, screen, Size, sys, TextureCube, Vec3, view } from 'cc';
 import { Player } from '../player';
 import { CameraFollow } from '../cameraFollow';
 import { MapControl } from './mapControl';
@@ -56,7 +56,13 @@ export class GameManager extends Component {
         } else {
             this.destroy();
         }
-        // screen.orientation.lock()
+        /* // screen.orientation.lock()
+        let frameSize = screen.windowSize;
+        view.setOrientation(macro.ORIENTATION_LANDSCAPE)
+        if (frameSize.height > frameSize.width)
+            screen.windowSize = new Size(frameSize.height, frameSize.width)
+        // this.canvas.designResolution =  new Size(1280,720)
+        view.setDesignResolutionSize(1280, 720, ResolutionPolicy.FIXED_WIDTH); */
     }
 
     start() {
@@ -103,6 +109,10 @@ export class GameManager extends Component {
         this.map.hitObstacle();
     }
 
+    activeBomb() {
+        this.map.activeBomb();
+    }
+
     onWin() {
         this.mainCam.atAboveCar();
         this.scheduleOnce(() => {
@@ -120,7 +130,6 @@ export class GameManager extends Component {
     }
 
     gamePause() {
-        this.map.line.destroy();
         this.map.enabled = false;
         this.player.collider.enabled = false;
         this.mainCam.enabled = false;
@@ -132,6 +141,7 @@ export class GameManager extends Component {
     }
 
     resetMap() {
+        console.log(this.mapIndex);
         this.resetPlayer();
 
         this.mainCam.enabled = true;
@@ -139,6 +149,7 @@ export class GameManager extends Component {
 
         const nextMap = instantiate(this.mapPrefab);
         if (this.map) {
+            if (this.map.line) this.map.line.destroy();
             this.map.clearView();
             this.map.node.destroy();
         }

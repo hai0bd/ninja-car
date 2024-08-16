@@ -28,6 +28,10 @@
     {
       "name": "Shield",
       "value": 16
+    },
+    {
+      "name": "Bomb",
+      "value": 32
     }
   ],
   "custom_joint_texture_layouts": [],

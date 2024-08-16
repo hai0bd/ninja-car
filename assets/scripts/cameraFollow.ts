@@ -1,6 +1,7 @@
 import { _decorator, CCFloat, Component, easing, game, lerp, Mesh, Node, tween, Vec3 } from 'cc';
 import { GameManager } from './control/gameManager';
 import { GameState } from './enum';
+import { UIManager } from './control/uiManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('CameraFollow')
@@ -167,10 +168,7 @@ export class CameraFollow extends Component {
                 this.node.setRotationFromEuler(-9.9, 180, 0);
 
                 let timeCountDown = 3;
-                this.schedule(() => {
-                    console.log(timeCountDown);
-                    timeCountDown--;
-                }, 1, timeCountDown);
+                UIManager.instance.onCountDown(timeCountDown);
 
                 this.scheduleOnce(() => {
                     GameManager.instance.state = GameState.Playing;

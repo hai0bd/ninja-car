@@ -3,6 +3,7 @@ import { randomChoice } from '../utils/utils';
 import { CoinGroup, CoinType } from '../enum';
 import { CoinPool, GenerateCoin } from '../element/generateCoin';
 import { GenerateObstacle } from '../element/generateObstacle';
+import { GameManager } from './gameManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('ViewControl')
@@ -65,19 +66,21 @@ export class ViewControl extends Component {
         // this.listCoin = this.genCoin.listCoin;
         this.genFuel();
 
-        const listMine = this.genCoin.minePos;
-        for (let i = 0; i < listMine.length; i++) {
-            if (listMine[i].x == 25) {
-                this.genMine(listMine, i);
-                this.genShield(listMine, i);
-            }
-            else if (listMine[i].x == 0) {
-                this.genMine(listMine, i);
-                this.genShield(listMine, i);
-            }
-            else if (listMine[i].x == -25) {
-                this.genMine(listMine, i);
-                this.genShield(listMine, i);
+        if (GameManager.instance.mapIndex >= 3) {
+            const listMine = this.genCoin.minePos;
+            for (let i = 0; i < listMine.length; i++) {
+                if (listMine[i].x == 25) {
+                    this.genMine(listMine, i);
+                    this.genShield(listMine, i);
+                }
+                else if (listMine[i].x == 0) {
+                    this.genMine(listMine, i);
+                    this.genShield(listMine, i);
+                }
+                else if (listMine[i].x == -25) {
+                    this.genMine(listMine, i);
+                    this.genShield(listMine, i);
+                }
             }
         }
     }

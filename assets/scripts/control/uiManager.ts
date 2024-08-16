@@ -13,6 +13,9 @@ export class UIManager extends Component {
     @property(Label)
     coinAmount: Label;
 
+    @property(Label)
+    countDown: Label;
+
     @property(Node)
     background: Node;
 
@@ -36,6 +39,16 @@ export class UIManager extends Component {
         } else {
             this.destroy();
         }
+    }
+
+    onCountDown(timeCountDown: number) {
+        this.countDown.node.active = true;
+        this.schedule(() => {
+            if (timeCountDown <= 0) { this.countDown.node.active = false; return; }
+            console.log(timeCountDown);
+            this.countDown.string = timeCountDown.toString();
+            timeCountDown--;
+        }, 1, timeCountDown);
     }
 
     onWin() {

@@ -41,10 +41,10 @@ export class GenerateCoin extends generateElements {
         }
         else if (cointType == CoinType.Mix) {
             for (let i = 0; i < 5; i++) {
-                if (i % 2) {
+                /* if (i % 2) {
                     this.coinNull();
                     continue;
-                }
+                } */
                 const mixType = randomChoice(4, CoinGroup.Null, CoinGroup.Straight, CoinGroup.Left, CoinGroup.Right);
 
                 if (mixType == CoinGroup.Null) this.coinNull();

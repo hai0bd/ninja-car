@@ -3,7 +3,8 @@ export enum Layer {
     Coin = 2,
     Obstacle = 4,
     Gas = 8,
-    Shield = 16
+    Shield = 16,
+    Bomb = 32,
 }
 
 export enum GameState {

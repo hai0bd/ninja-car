@@ -64,7 +64,6 @@ export class MapControl extends Component {
 
         if (this.viewAmount > this.viewMax) {
             if (this.nextView.position.z <= 110) {
-                // this.line.destroy();
                 UIManager.instance.onWin();
                 GameManager.instance.onWin();
             }
@@ -97,14 +96,13 @@ export class MapControl extends Component {
         // this.travels += displacement; // tổng quãng đường đi được
         this.stage -= displacement;
 
-        let fuelPercent = this.stage / this.fuelSize;
         if (this.stage < 0.1) { // hết nhiên liệu
-            // this.stage = this.fuelSize;
             UIManager.instance.onLose();
             GameManager.instance.onLose();
             return;
         }
 
+        let fuelPercent = Math.max(0, this.stage / this.fuelSize);
         UIManager.instance.fuelBar.updateBar(fuelPercent);
     }
 
@@ -156,6 +154,10 @@ export class MapControl extends Component {
 
     hitObstacle() {
         this.stage -= 100;
+    }
+
+    activeBomb() {
+        this.stage -= this.fuelSize;
     }
 }
 

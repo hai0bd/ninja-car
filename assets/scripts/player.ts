@@ -46,6 +46,9 @@ export class Player extends Component {
             event.otherCollider.node.active = false;
             GameManager.instance.onShield();
         }
+        else if (otherLayer == Layer.Bomb) {
+            GameManager.instance.activeBomb();
+        }
     }
 
     steer(angle: number, deviation: number) {
