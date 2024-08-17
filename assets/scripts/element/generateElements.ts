@@ -17,7 +17,7 @@ export class generateElements {
 
     checkOverride(posZ: number): boolean {
         if (this.posX == 0) {
-            if (posZ > -30 && posZ < 30) return true;
+            if (posZ >= -30 && posZ <= 30) return true;
         }
         return false;
     }

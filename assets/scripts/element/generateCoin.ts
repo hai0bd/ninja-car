@@ -61,7 +61,7 @@ export class GenerateCoin extends generateElements {
     }
 
     coinStraight() {
-        if (this.checkOverride(this.posZ) || this.currentCoinGroup == CoinGroup.Null) {
+        if (this.checkOverride(this.posZ) /* || this.currentCoinGroup == CoinGroup.Null */) {
             this.currentCoinGroup = CoinGroup.Straight;
             this.coinNull();
             this.currentCoinGroup = CoinGroup.Override;
@@ -141,32 +141,26 @@ export class GenerateCoin extends generateElements {
     }
 
     instantiateCoin(name: string, index: number) {
-        // const coin = instantiate(this.prefab);
-        const coin = this.coinPools.acquireCoin();
-        coin.name = name + ' ' + (this.listCoin.length).toString();
+        const coin = instantiate(this.prefab);
+        // const coin = this.coinPools.acquireCoin();
+        coin.name = name;
+        this.parent.addChild(coin);
         coin.setPosition(new Vec3(this.posX, coin.position.y, this.posZ));
         coin.setRotationFromEuler(new Vec3(0, this.currentCoinAngle += 10, 0));
         if (this.currentCoinAngle >= 180) this.currentCoinAngle = 0;
-        this.parent.addChild(coin);
         this.listCoin.push(coin);
         return coin;
     }
 
     clearCoin() {
-        console.log("this.listCoin.length before destroy: ", this.listCoin.length);
         const length = this.listCoin.length;
         for (let i = 0; i < length; i++) {
-            const coin = this.listCoin.pop();
+            this.listCoin.pop().destroy();
+            /* const coin = this.listCoin.pop();
             if (coin) {
-                console.log(coin.name);
                 this.coinPools.releaseCoin(coin);
-            }
-            else {
-                console.log("coin = null");
-            }
-            // this.listCoin[i].destroy();
+            } */
         }
-        console.log("this.listCoin.length after destroy: ", this.listCoin.length);
         this.listCoin = [];
     }
 }
@@ -178,7 +172,6 @@ export class CoinPool {
         this.pool = PoolManager.getInstance().getPool('coin', 90,
             () => {
                 const coin = instantiate(coinPrefab);
-                // const coinFloating = coin.getComponent(FloatingItem);
                 const coinComponent = coin.getComponent(Coin);
                 if (coinComponent) {
                     coinComponent.setPool(this);
@@ -187,6 +180,7 @@ export class CoinPool {
             },
             (coin: Node) => {
                 coin.removeFromParent();
+                console.info(`name: ${coin.name}, pos: ${coin.position}`);
                 coin.active = false;
             }
         );

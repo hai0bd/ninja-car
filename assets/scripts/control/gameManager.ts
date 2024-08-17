@@ -21,7 +21,7 @@ export class GameManager extends Component {
     mapPrefab: Prefab;
 
     @property(Prefab)
-    coinPrefab: Prefab;
+    cars: Prefab[] = [];
 
     @property(CCInteger)
     mapIndex: number = 0;
@@ -68,6 +68,10 @@ export class GameManager extends Component {
     start() {
         profiler.showStats();
         const handleInput = new HandleInput();
+        const currentCar = data.currentCarID;
+        const carModel = instantiate(this.cars[currentCar]);
+        this.player.node.addChild(carModel);
+        this.player.carModel = carModel;
         this.nextLevel();
     }
 

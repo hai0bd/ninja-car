@@ -42,6 +42,7 @@ export class UIManager extends Component {
     }
 
     onCountDown(timeCountDown: number) {
+        this.countDown.string = "";
         this.countDown.node.active = true;
         this.schedule(() => {
             if (timeCountDown <= 0) { this.countDown.node.active = false; return; }
