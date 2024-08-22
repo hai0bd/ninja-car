@@ -2808,6 +2808,15 @@
     },
     "_enabled": true,
     "__prefab": null,
+    "background": {
+      "__id__": 47
+    },
+    "winPopUp": {
+      "__id__": 51
+    },
+    "losePopUp": {
+      "__id__": 73
+    },
     "_id": "c2f30O2mpKl75oxOonDqD1"
   },
   {
@@ -4055,14 +4064,8 @@
     "countDown": {
       "__id__": 115
     },
-    "background": {
-      "__id__": 47
-    },
-    "losePopUp": {
-      "__id__": 73
-    },
-    "winPopUp": {
-      "__id__": 51
+    "popUp": {
+      "__id__": 85
     },
     "_id": "b9LrMBcd9Dk6cvYGrTlV5K"
   },

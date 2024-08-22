@@ -1,5 +1,6 @@
 import { _decorator, Component, Label, Node, UITransform } from 'cc';
 import { FuelBar } from '../ui/fuelBar';
+import { PopUp } from '../popup';
 const { ccclass, property } = _decorator;
 
 @ccclass('UIManager')
@@ -16,14 +17,8 @@ export class UIManager extends Component {
     @property(Label)
     countDown: Label;
 
-    @property(Node)
-    background: Node;
-
-    @property(Node)
-    losePopUp: Node;
-
-    @property(Node)
-    winPopUp: Node;
+    @property(PopUp)
+    popUp: PopUp;
 
     private static _instance: UIManager;
     public static get instance(): UIManager {
@@ -53,27 +48,27 @@ export class UIManager extends Component {
 
     onWin() {
         this.scheduleOnce(() => {
-            this.background.active = true;
-            this.winPopUp.active = true;
+            this.popUp.background.active = true;
+            this.popUp.winPopUp.active = true;
             this.fuelBar.node.active = false;
         }, 1);
     }
 
     winClick() {
-        this.background.active = false;
-        this.winPopUp.active = false;
+        this.popUp.background.active = false;
+        this.popUp.winPopUp.active = false;
         this.fuelBar.node.active = true;
     }
 
     onLose() {
-        this.background.active = true;
-        this.losePopUp.active = true;
+        this.popUp.background.active = true;
+        this.popUp.losePopUp.active = true;
         this.fuelBar.node.active = false;
     }
 
     loseClick() {
-        this.background.active = false;
-        this.losePopUp.active = false;
+        this.popUp.background.active = false;
+        this.popUp.losePopUp.active = false;
         this.fuelBar.node.active = true;
     }
 }

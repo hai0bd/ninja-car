@@ -1,4 +1,4 @@
-import { _decorator, CCInteger, Component, instantiate, macro, Prefab, profiler, ResolutionPolicy, screen, Size, sys, TextureCube, Vec3, view } from 'cc';
+import { _decorator, CCInteger, Component, input, instantiate, macro, Prefab, profiler, ResolutionPolicy, screen, Size, sys, TextureCube, Vec3, view } from 'cc';
 import { Player } from '../player';
 import { CameraFollow } from '../cameraFollow';
 import { MapControl } from './mapControl';
@@ -30,14 +30,18 @@ export class GameManager extends Component {
 
     maxTilt = 35; // Độ nghiêng tối đa (độ)
     speedTilt = 4; // Tốc độ nghiêng
-    targetTilt = 0;
+    // targetTilt = 0;
 
     fuelPercent: number;
     tiltAngle: number = 0;
 
     isSpeedUp: boolean = false;
 
-    inputKey: InputKey = InputKey.Key_Up;
+    // inputKey: InputKey = InputKey.Key_Up;
+    inputKey = {
+        keyLeft: false,
+        keyRight: false
+    }
     state: GameState = GameState.Waiting;
 
     private static _instance: GameManager;
@@ -77,22 +81,21 @@ export class GameManager extends Component {
 
     update(deltaTime: number) {
         if (this.state != GameState.Playing) return;
-        // let targetTilt = this.calculateTilt();
+        let targetTilt = this.calculateTilt();
 
         const speed = this.map.speed * this.speedTilt * 0.0165;
-        this.tiltAngle = tiltLerp(this.tiltAngle, this.targetTilt, speed * 0.0165);
+        this.tiltAngle = tiltLerp(this.tiltAngle, targetTilt, speed * 0.0165);
 
-        this.player.steer(this.tiltAngle, this.targetTilt * 0.03);
+        this.player.steer(this.tiltAngle, targetTilt * 0.03);
     }
 
     calculateTilt() {
-        if (this.inputKey == InputKey.Key_Up) {
-            this.targetTilt = 0;
-        }
-        else if (this.inputKey == InputKey.Press_Left) {
-            this.targetTilt = this.maxTilt;
-        } else if (this.inputKey == InputKey.Press_Right) {
-            this.targetTilt = -this.maxTilt;
+        if (this.inputKey.keyLeft == true && this.inputKey.keyRight == false) {
+            return this.maxTilt;
+        } else if (this.inputKey.keyLeft == false && this.inputKey.keyRight == true) {
+            return -this.maxTilt;
+        } else {
+            return 0;
         }
     }
 
@@ -122,9 +125,11 @@ export class GameManager extends Component {
         this.scheduleOnce(() => {
             this.gamePause();
 
+            data.coin += this.player.coin;
+
             // lưu best score
             if (this.mapIndex == 3 /* && bestScore < this.player.coin */) {
-                sys.localStorage.setItem("playerCoins", this.player.coin);
+                sys.localStorage.setItem("playerCoins", data.coin);
             }
         }, 1);
     }
@@ -182,7 +187,7 @@ export class GameManager extends Component {
     }
 
     resetPlayer() {
-        // this.player.coin = 0;
+        this.player.coin = 0;
         this.player.collider.enabled = true;
 
         const pos = this.player.node.getPosition();

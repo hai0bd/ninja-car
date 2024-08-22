@@ -1,3 +1,7 @@
+export enum Language{
+    Vietnam = 0,
+    English = 1
+}
 export enum Layer {
     Player = 1,
     Coin = 2,

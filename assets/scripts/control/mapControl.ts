@@ -25,7 +25,7 @@ export class MapControl extends Component {
     stage: number; // quãng đường mà mỗi fuel có thể đi
     fuelSize: number = 1500;
 
-    line: Node;
+    line: Node = null;
     nextView: Node = null;
     viewPools: ObjectPool<Node>[] = [];
     viewMax: number = 10;

@@ -1,4 +1,5 @@
-import { _decorator, Component, director, error, Label, Node, UITransform, Vec2, Vec3 } from 'cc';
+import { _decorator, Component, director, Label, Node, UITransform, Vec3 } from 'cc';
+import { HomePopUp } from './homePopUp';
 const { ccclass, property } = _decorator;
 
 @ccclass('homeUI')
@@ -15,12 +16,19 @@ export class homeUI extends Component {
     @property(Label)
     progressLabel: Label;
 
+    @property(HomePopUp)
+    popUp: HomePopUp;
+
     start() {
         const currentCarID = data.currentCarID;
         this.listCar.setPosition(new Vec3(currentCarID * -33, 0, 0));
     }
+    onSetting() {
+        this.popUp.setting.active = true;
+    }
+
     race() {
-        director.preloadScene('game', this.onProgress.bind(this), (err, scene) => { director.loadScene('game') });
+        director.loadScene('game');
     }
 
     garage() {
@@ -34,5 +42,3 @@ export class homeUI extends Component {
         this.progressLabel.string = Math.floor((progress * 100)).toString() + '%';
     }
 }
-
-
